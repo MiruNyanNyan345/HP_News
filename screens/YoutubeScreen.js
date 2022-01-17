@@ -1,12 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import {
-  Button,
-  Modal,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import React, {useState} from 'react';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 import CustomDropDownPicker from '../components/CustomDropDownPicker';
 import CustomYoutubeVideoFlatList from '../components/CustomYoutubeVideoFlatList';
 import YoutubePlayer from 'react-native-youtube-iframe';
@@ -27,27 +20,8 @@ const YoutubeScreen = props => {
   const [videoModalVisible, showVideoModal] = useState(false);
   const [videoId, setVideoId] = useState('');
 
-  // const initialFetchVideos = () => {
-  //   fetch(
-  //     'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&' +
-  //       'playlistId=' +
-  //       PLAYLIST_ID +
-  //       '&' +
-  //       'key=' +
-  //       API_KEY +
-  //       '&' +
-  //       'maxResults=' +
-  //       MAX_RESULTS,
-  //   )
-  //     .then(async (response) => {
-  //       const jsonData = await response.json();
-  //       setVideoItems(jsonData);
-  //     })
-  //     .catch((error) => console.log(error));
-  // };
-
   const initialFetchVideos = () => {
-    const json = require('../test.json');
+    const json = require('../mm_playlists.json');
     setVideoItems(json);
   };
 

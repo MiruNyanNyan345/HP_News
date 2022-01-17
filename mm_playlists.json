@@ -1,12 +1,174 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "JDjwiX4DStna4MOO3vOnkSdT81M",
+  "etag": "1HtNemaEkXD0Vy8Qgyv4IxyBHNk",
   "nextPageToken": "EAAaBlBUOkNCUQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "Kf5_rUOxIbD-g1Y8Hrjm4xkR7GY",
-      "id": "UExBQUVBODJEMjk1MEJDNzdELkQyNjU2ODM yMEVCRTEwQkI",
+      "etag": "LguNsLSfuCpgKfGYEbtv1np7llc",
+      "id": "UExBQUVBODJEMjk1MEJDNzdELjhDMENGQTdFN0FCMTdGNTI",
+      "snippet": {
+        "publishedAt": "2021-12-04T12:02:50Z",
+        "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
+        "title": "モーニング娘。'21『ビートの惑星』Promotion Edit",
+        "description": "2021年12月8日発売のモーニング娘。'21 NEWシングル『Teenage Solution/よしよししてほしいの/ビートの惑星』から「ビートの惑星」のPromotion Editです。 \n\n作詞：児玉雨子　作曲：Erik Lidbom/miwaflower　編曲：Erik Lidbom\nMV Director：ZUMI\n\n●【初回生産限定盤A】\nEPCE-7649 ￥2,200 (税抜価格 ￥2,000)\n\n●【初回生産限定盤B】\nEPCE-7651 ￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤C】\nEPCE-7653 ￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤SP1】\nEPCE-7655 ￥2,200 (税抜価格 ￥2,000)\n特典：28Pフォトブックレット+デジパック仕様・トールケースサイズ\n\n●【初回生産限定盤SP2】\nEPCE-7656 ￥1,650 (税抜価格 ￥1,500)\n特典：「よしよししてほしいの」フリーアングルぐるっと動画ダウンロードカード14種より1種ランダム封入\n\n●【通常盤A】 EPCE-7657　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤B】 EPCE-7658　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤C】 EPCE-7659　定価 ￥1,300 (税抜価格 ￥1,182)\n\n【通常盤】\n特典：トレーディングカードソロ14種＋キラ仕様の集合1種よりランダムで1枚封入\n(通常盤A：Teenage Solution Ver.) \n(通常盤B：よしよししてほしいの Ver.) \n(通常盤C：ビートの惑星 Ver.) \n\nAmazon⇒ https://amzn.to/3oiZWxK\n\n☆★モーニング娘。'21　シングルV「ビートの惑星」発売決定！★☆\n「ビートの惑星」Music Videoに加えて、2種類のDance Shot Ver.、メイキング映像を収録。（収録時間：約30分）\nモーニング娘。'21「よしよししてほしいの」集合Ver.のフリーアングルぐるっと動画ダウンロードカード封入。\n※こちらの商品はBlu-ray Discです。\n\n以下にて先行受注販売後、一般発売を予定しております。\n★e-LineUP!Mall【Hello! Projectオフィシャルファンクラブショップ】＜受注期間：2021年12月27日(月)18:00 ～ 2022年1月28日(金)23:59＞\nhttps://www.elineupmall.com/c720/c2057/20221-bd-21-v-uae5iyzs/\n\n★e-LineUP!Mall【アップフロントワークス Web Store】＜受注期間：2022年1月12日(水)18:00 ～ 2022年2月6日(日)23:59＞\nhttps://www.elineupmall.com/c671/mm21singlev-beatplanet-bd-senko\n※こちらの商品ページURLは受付開始日時以降に有効になります。\n\n#モーニング娘21 #ビートの惑星 #ハロプロ #Helloproject",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/X54GDkHabRM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/X54GDkHabRM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/X54GDkHabRM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/X54GDkHabRM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/X54GDkHabRM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "モーニング娘。",
+        "playlistId": "PLAAEA82D2950BC77D",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "X54GDkHabRM"
+        },
+        "videoOwnerChannelTitle": "モーニング娘。",
+        "videoOwnerChannelId": "UCoKXb95K5h3sME3c9OCBaeA"
+      },
+      "contentDetails": {
+        "videoId": "X54GDkHabRM",
+        "videoPublishedAt": "2021-12-04T12:00:15Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "4b7m6A7ix6fs3wqNPgjgM9oYq0E",
+      "id": "UExBQUVBODJEMjk1MEJDNzdELjc3NjA1ODcxRjkyOThGRUI",
+      "snippet": {
+        "publishedAt": "2021-11-18T11:04:54Z",
+        "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
+        "title": "モーニング娘。'21『よしよししてほしいの』Promotion Edit",
+        "description": "2021年12月8日発売のモーニング娘。'21 NEWシングル『Teenage Solution/よしよししてほしいの/ビートの惑星』から「よしよししてほしいの」のPromotion Editです。 \n\n「つんく♂ライナーノーツ」\nhttps://note.tsunku.net/n/nf9d96afbbc6b\n\n作詞・作曲：つんく　編曲：大久保薫\nMV Director：森本敬大\n\n●【初回生産限定盤A】\nEPCE-7649 ￥2,200 (税抜価格 ￥2,000)\n\n●【初回生産限定盤B】\nEPCE-7651 ￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤C】\nEPCE-7653 ￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤SP1】\nEPCE-7655 ￥2,200 (税抜価格 ￥2,000)\n特典：28Pフォトブックレット+デジパック仕様・トールケースサイズ\n\n●【初回生産限定盤SP2】\nEPCE-7656 ￥1,650 (税抜価格 ￥1,500)\n特典：「よしよししてほしいの」フリーアングルぐるっと動画ダウンロードカード14種より1種ランダム封入\n\n●【通常盤A】 EPCE-7657　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤B】 EPCE-7658　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤C】 EPCE-7659　定価 ￥1,300 (税抜価格 ￥1,182)\n\n【通常盤】\n特典：トレーディングカードソロ14種＋キラ仕様の集合1種よりランダムで1枚封入\n(通常盤A：Teenage Solution Ver.) \n(通常盤B：よしよししてほしいの Ver.) \n(通常盤C：ビートの惑星 Ver.) \n\nAmazon⇒ https://amzn.to/2YWtSWF\n\n#モーニング娘21 #よしよししてほしいの #ハロプロ #Helloproject",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oINFx-xhmkc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oINFx-xhmkc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oINFx-xhmkc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/oINFx-xhmkc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/oINFx-xhmkc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "モーニング娘。",
+        "playlistId": "PLAAEA82D2950BC77D",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "oINFx-xhmkc"
+        },
+        "videoOwnerChannelTitle": "モーニング娘。",
+        "videoOwnerChannelId": "UCoKXb95K5h3sME3c9OCBaeA"
+      },
+      "contentDetails": {
+        "videoId": "oINFx-xhmkc",
+        "videoPublishedAt": "2021-11-18T11:00:32Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Ilso7hNUHdm6HbhqmLZzGlgoeWM",
+      "id": "UExBQUVBODJEMjk1MEJDNzdELjIwMjAxOTQ5NjRCQ0JBRTM",
+      "snippet": {
+        "publishedAt": "2021-10-31T01:01:55Z",
+        "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
+        "title": "モーニング娘。'21『Teenage Solution』Promotion Edit",
+        "description": "2021年12月8日発売のモーニング娘。'21 NEWシングル『Teenage Solution/よしよししてほしいの/ビートの惑星』から「Teenage Solution」のPromotion Editです。 \n\n「つんく♂ライナーノーツ」\nhttps://note.tsunku.net/n/n8e5f078f9de4\n\n作詞・作曲：つんく　編曲：平田祥一郎\nMV Director：今村 繁\n\n●【初回生産限定盤A】\nEPCE-7649 ￥2,200 (税抜価格 ￥2,000)\n\n●【初回生産限定盤B】\nEPCE-7651 ￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤C】\nEPCE-7653 ￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤SP1】\nEPCE-7655 ￥2,200 (税抜価格 ￥2,000)\n特典：28Pフォトブックレット+デジパック仕様・トールケースサイズ\n\n●【初回生産限定盤SP2】\nEPCE-7656 ￥1,650 (税抜価格 ￥1,500)\n特典：「よしよししてほしいの」フリーアングルぐるっと動画ダウンロードカード14種より1種ランダム封入\n\n●【通常盤A】 EPCE-7657　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤B】 EPCE-7658　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤C】 EPCE-7659　定価 ￥1,300 (税抜価格 ￥1,182)\n\n【通常盤】\n特典：トレーディングカードソロ14種＋キラ仕様の集合1種よりランダムで1枚封入\n(通常盤A：Teenage Solution Ver.) \n(通常盤B：よしよししてほしいの Ver.) \n(通常盤C：ビートの惑星 Ver.) \n\nAmazon⇒ https://amzn.to/2ZGDsgG\n\n#モーニング娘21 #TeenageSolution #ハロプロ #Helloproject",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bfZAkBXEUZU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bfZAkBXEUZU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bfZAkBXEUZU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/bfZAkBXEUZU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/bfZAkBXEUZU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "モーニング娘。",
+        "playlistId": "PLAAEA82D2950BC77D",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "bfZAkBXEUZU"
+        },
+        "videoOwnerChannelTitle": "モーニング娘。",
+        "videoOwnerChannelId": "UCoKXb95K5h3sME3c9OCBaeA"
+      },
+      "contentDetails": {
+        "videoId": "bfZAkBXEUZU",
+        "videoPublishedAt": "2021-10-31T01:00:16Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "OJXqxXM48nNcZOwHIDuAKUxVjs4",
+      "id": "UExBQUVBODJEMjk1MEJDNzdELkQyNjU2ODMyMEVCRTEwQkI",
       "snippet": {
         "publishedAt": "2020-11-12T12:00:09Z",
         "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
@@ -36,7 +198,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 0,
+        "position": 3,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Ty0dkunCvNw"
@@ -54,7 +216,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "wFAaQOtL6wxhnympV7BNOe48b2U",
+      "etag": "hrR03cxHpSeM1iYBqZux6gNAD_8",
       "id": "UExBQUVBODJEMjk1MEJDNzdELkUyNUY0RjNDQ0JEREY1RDI",
       "snippet": {
         "publishedAt": "2020-11-28T00:24:16Z",
@@ -85,7 +247,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 1,
+        "position": 4,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "yKVvQNY_-8M"
@@ -103,7 +265,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QOfgxhQmDhooA6OWV0vHI6PDRlw",
+      "etag": "eqULQwgqL8sxdjz4Vq4GKlHbiRU",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjI1OUZCRDI3RDcyODNFQjc",
       "snippet": {
         "publishedAt": "2019-12-05T12:00:04Z",
@@ -139,7 +301,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 2,
+        "position": 5,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "D-sByTkmwzg"
@@ -157,7 +319,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "14lBavbhcXxqaPgD9RMuQeLy7bQ",
+      "etag": "MHKrzmLI0vvi4Z1-QdQko_Pnr-w",
       "id": "UExBQUVBODJEMjk1MEJDNzdELkJFOUI1M0I2RjU2Q0RFQ0E",
       "snippet": {
         "publishedAt": "2019-12-27T08:00:05Z",
@@ -193,7 +355,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 3,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QoB0W4B7Vj0"
@@ -211,7 +373,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "eq32qH_gC0dHhkZJ2mLQcUw4xyU",
+      "etag": "trHTcG2vBUz3KP5WN9B6ahOjbJc",
       "id": "UExBQUVBODJEMjk1MEJDNzdELkVGNTlGMjVCNDdEMkFCRDI",
       "snippet": {
         "publishedAt": "2019-12-27T08:00:09Z",
@@ -247,7 +409,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 4,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "NtI3UL8tje4"
@@ -265,7 +427,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "sAImuBLtXEBNAcaRHS95Vekc5Lw",
+      "etag": "tQ1zuiO7-hGZ0opwmwTY9Jz6SRE",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjIzRDE1QjA2QjkyNENERDU",
       "snippet": {
         "publishedAt": "2019-06-01T12:00:10Z",
@@ -301,7 +463,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 5,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "TB-xE5H5xQU"
@@ -319,7 +481,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "iY8_0ODKu8oLXsO25axp5iFfj1A",
+      "etag": "ldZbFgWx_rGGDWpBvTA3qCHhKsc",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjUwRUYwNjQ2NDJEQTI2NzA",
       "snippet": {
         "publishedAt": "2019-05-24T12:00:08Z",
@@ -355,7 +517,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 6,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SKgFDdDyKLE"
@@ -373,7 +535,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "z6Rw0b6abq0g3_F_tYjpwtPvnh8",
+      "etag": "QgoVH2chshbO8qiK0fgz7qlsgEU",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjFFQjJGRkQ1M0UzN0RBMEY",
       "snippet": {
         "publishedAt": "2019-02-14T03:03:51Z",
@@ -409,7 +571,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 7,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "dzKA5w9B6x0"
@@ -427,7 +589,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "zKjF6zQr8tCZvgnQlq5ReT5pmFk",
+      "etag": "eDfjvcqlf4iCxPn4mO9d8W5o2hY",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjEwMDAyNzAyODJCODBERjg",
       "snippet": {
         "publishedAt": "2018-10-26T08:33:24Z",
@@ -463,7 +625,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 8,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "QnNjvcmMAZU"
@@ -481,7 +643,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "WDMzTvFgsuaKbx4u2tn9d3_UehY",
+      "etag": "PL_RGmcmBRiIipuI5ICwc0lknJk",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjkzMjc2ODNGQkY0OEE4RUY",
       "snippet": {
         "publishedAt": "2018-10-12T08:00:16Z",
@@ -517,7 +679,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 9,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "CO3orpe6140"
@@ -535,7 +697,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "n-ZrT6-za_jo9sEVKMHW12Lqzuc",
+      "etag": "ijMIzj1RDCxKg3uBkpXTM4qXOcs",
       "id": "UExBQUVBODJEMjk1MEJDNzdELkVGMDc1NUI0ODZCOEZERTQ",
       "snippet": {
         "publishedAt": "2018-10-05T08:00:15Z",
@@ -571,7 +733,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 10,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_uG3Z3hMLj0"
@@ -589,7 +751,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "CidB-ShP8V9Fmk2WHMKE3_oH3nM",
+      "etag": "l2c_8_21XvO4WBmQK-NUV9t6abU",
       "id": "UExBQUVBODJEMjk1MEJDNzdELkE0MDU2OEE2NkIzNkE1Rjg",
       "snippet": {
         "publishedAt": "2018-06-04T08:00:22Z",
@@ -625,7 +787,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 11,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "DGKGT91D9dI"
@@ -643,7 +805,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "o0V7lb9HnM-qj56oASLqY-v95Tw",
+      "etag": "DrpBc1S1-V_SNoFZgsRfuqk-YBQ",
       "id": "UExBQUVBODJEMjk1MEJDNzdELkMxMkQyODYyNUQyMzdDRkY",
       "snippet": {
         "publishedAt": "2018-05-28T01:48:42Z",
@@ -679,7 +841,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 12,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "KeWmeqmtOiQ"
@@ -697,7 +859,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "-jZgagr87REp3VaOFbsp0ocyrTM",
+      "etag": "pbYA_pAMiRpuJDnX_YlY6GbYO5M",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjIxOTA4MEJCREMxMjI1QjA",
       "snippet": {
         "publishedAt": "2017-09-24T12:00:13Z",
@@ -733,7 +895,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 13,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "0JzR89gMSK0"
@@ -751,7 +913,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "kmZWLyb05fwy388QhfZySTLTwJA",
+      "etag": "KR_zlNkuBkE5iYnjGpXMUH4k-8o",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjk3QTAzMDhEMzIxMTM5MzY",
       "snippet": {
         "publishedAt": "2017-09-23T12:00:14Z",
@@ -787,7 +949,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 14,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SQmLjcLfVbo"
@@ -805,7 +967,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "igvPlWlgZZ02Beu0v7jB2mRlrws",
+      "etag": "yPN1cs6vgNFckzJfpJTXE_wIIHg",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjI3N0NFODgyMkE3NDZBRUY",
       "snippet": {
         "publishedAt": "2017-09-18T08:00:11Z",
@@ -841,7 +1003,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 15,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "t2wyGiixDmo"
@@ -859,7 +1021,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QYMsFk0P00GnUAld4dKNiYAblWg",
+      "etag": "YqAZDpEmkPpPLgObGz1wxP58lts",
       "id": "UExBQUVBODJEMjk1MEJDNzdELjQxQUY4OEUzQTFDNUMwNjc",
       "snippet": {
         "publishedAt": "2017-02-27T08:02:01Z",
@@ -895,7 +1057,7 @@
         },
         "channelTitle": "モーニング娘。",
         "playlistId": "PLAAEA82D2950BC77D",
-        "position": 16,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "XdV88f-OxCA"
@@ -910,172 +1072,10 @@
       "status": {
         "privacyStatus": "public"
       }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "4fHEDyILJ87e9zfNJLBlDHWFj7I",
-      "id": "UExBQUVBODJEMjk1MEJDNzdELkI1NDBFNDNCQ0NGMjY4RUQ",
-      "snippet": {
-        "publishedAt": "2017-02-20T08:01:26Z",
-        "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
-        "title": "モーニング娘。'17『BRAND NEW MORNING』(Morning Musume。'17[BRAND NEW MORNING])(Promotion Edit)",
-        "description": "2017年3月8日発売の両A面シングル「BRAND NEW MORNING／ジェラシー ジェラシー」から「BRAND NEW MORNING」のPromotion Editです。\n\n作詞：星部ショウ　作曲：Jean Luc Ponpon & 星部ショウ　編曲：Jean Luc Ponpon\nMV Director：ZUMI\n\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7306／￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7308／￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7310／￥1,800＋税\n\n【初回生産限定盤A、B、SP】 特典\nイベント抽選シリアルナンバーカード封入\n\n● 【通常盤A】\nEPCE-7312／定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7313／定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカード ソロ12種+集合1種よりランダムにて1枚封入\n（通常盤A：BRAND NEW MORNING Ver.）\n（通常盤B：ジェラシー ジェラシー Ver.）\n\n\nAmazon⇒http://amzn.to/2mhoFj3\n\n\nPlease note: this is a literal translation, the translation may not be perfect.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/2Z-3jHbbcZU/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/2Z-3jHbbcZU/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/2Z-3jHbbcZU/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/2Z-3jHbbcZU/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/2Z-3jHbbcZU/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "モーニング娘。",
-        "playlistId": "PLAAEA82D2950BC77D",
-        "position": 17,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "2Z-3jHbbcZU"
-        },
-        "videoOwnerChannelTitle": "モーニング娘。",
-        "videoOwnerChannelId": "UCoKXb95K5h3sME3c9OCBaeA"
-      },
-      "contentDetails": {
-        "videoId": "2Z-3jHbbcZU",
-        "videoPublishedAt": "2017-02-20T08:00:00Z"
-      },
-      "status": {
-        "privacyStatus": "public"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "Bovmk7I4ajDnA9KyqTB1d5aZh7Q",
-      "id": "UExBQUVBODJEMjk1MEJDNzdELjAxMUY5OEQxODhGMEEzRTY",
-      "snippet": {
-        "publishedAt": "2017-01-31T14:16:13Z",
-        "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
-        "title": "モーニング娘。'17『モーニングみそ汁』(Morning Musume。'17[Morning Miso Soup])(MV)",
-        "description": "「モーニングみそ汁、飲もうよ。」プロジェクトの第2弾として、モーニング娘。のメジャーデビューシングル「モーニングコーヒー」をリメイクした「モーニングみそ汁」のMVを公開\n\nモーニングみそ汁、飲もうよプロジェクト→http://www.marukome.co.jp/morning/\n\nモーニングみそ汁 / モーニング娘。'17\n作詞：つんく　作曲：つんく　編曲：平田祥一郎\n　\nPlease note: this is a literal translation, the translation may not be perfect.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/51FbTQ1DUWM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/51FbTQ1DUWM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/51FbTQ1DUWM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/51FbTQ1DUWM/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/51FbTQ1DUWM/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "モーニング娘。",
-        "playlistId": "PLAAEA82D2950BC77D",
-        "position": 18,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "51FbTQ1DUWM"
-        },
-        "videoOwnerChannelTitle": "モーニング娘。",
-        "videoOwnerChannelId": "UCoKXb95K5h3sME3c9OCBaeA"
-      },
-      "contentDetails": {
-        "videoId": "51FbTQ1DUWM",
-        "videoPublishedAt": "2017-01-31T14:13:23Z"
-      },
-      "status": {
-        "privacyStatus": "public"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "8jxt6oLjIRDG3fPedGDahJtnNGU",
-      "id": "UExBQUVBODJEMjk1MEJDNzdELkVCQTg3MDMyQjk5RDhDMzI",
-      "snippet": {
-        "publishedAt": "2016-11-14T08:01:35Z",
-        "channelId": "UCoKXb95K5h3sME3c9OCBaeA",
-        "title": "モーニング娘。'16『ムキダシで向き合って』(Morning Musume。'16[Confront With Bare Nakedness])(Promotion Edit)",
-        "description": "2016年11月23日発売のトリプルA面シングル「セクシーキャットの演説／ムキダシで向き合って／そうじゃない」から「ムキダシで向き合って」のPromotion Editです。\n\n作詞：星部ショウ　作曲：Jean Luc Ponpon & 星部ショウ　編曲：Jean Luc Ponpon\n\n\namazon⇒http://ur0.link/zcPL\n\n\nPlease note: this is a literal translation, the translation may not be perfect.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/fdtgnmV7HU0/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/fdtgnmV7HU0/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/fdtgnmV7HU0/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/fdtgnmV7HU0/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/fdtgnmV7HU0/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "モーニング娘。",
-        "playlistId": "PLAAEA82D2950BC77D",
-        "position": 19,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "fdtgnmV7HU0"
-        },
-        "videoOwnerChannelTitle": "モーニング娘。",
-        "videoOwnerChannelId": "UCoKXb95K5h3sME3c9OCBaeA"
-      },
-      "contentDetails": {
-        "videoId": "fdtgnmV7HU0",
-        "videoPublishedAt": "2016-11-14T08:00:02Z"
-      },
-      "status": {
-        "privacyStatus": "public"
-      }
     }
   ],
   "pageInfo": {
-    "totalResults": 101,
+    "totalResults": 104,
     "resultsPerPage": 20
   }
 }

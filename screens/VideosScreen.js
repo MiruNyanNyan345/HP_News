@@ -1,51 +1,29 @@
-import React, {useState} from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
+import React, {useState} from 'react';
 import CustomDropDownPicker from '../components/CustomDropDownPicker';
 import CustomYoutubeVideoFlatList from '../components/CustomYoutubeVideoFlatList';
-import YoutubePlayer from 'react-native-youtube-iframe';
 import CustomVideoModal from '../components/CustomVideoModal';
+import json from '../res/mm_playlists.json';
+import ChannelScreen from './ChannelScreen';
 
-const YoutubeScreen = props => {
-  const CHANNELS = [
-    {
-      label: 'モーニング娘。 Music Video',
-      value: 'PLAAEA82D2950BC77D',
-    },
-  ];
-  const PLAYLIST_ID = 'PLAAEA82D2950BC77D';
-  const API_KEY = 'AIzaSyAJ7xP9SfUisfv60auxOtwxoMBW524giGo';
-  const MAX_RESULTS = 10;
-
-  const [videoItems, setVideoItems] = useState({});
+const VideosScreen = props => {
+  // const [videoItems, setVideoItems] = useState(require());
+  const videoItems = props.route.params.data
   const [videoModalVisible, showVideoModal] = useState(false);
   const [videoId, setVideoId] = useState('');
 
-  const initialFetchVideos = () => {
-    const json = require('../mm_playlists.json');
-    setVideoItems(json);
-  };
+  // const initialFetchVideos = () => {
+  //   const json = require('../mm_playlists.json');
+  //   setVideoItems(json);
+  // };
 
   return (
     <SafeAreaView style={styles.safeView}>
-      <View style={styles.dropdownContainer}>
-        <CustomDropDownPicker
-          height={50}
-          width={300}
-          items={CHANNELS}
-          labelColor={'#000000'}
-          labelSize={15}
-          labelWeight={'bold'}
-          backgroundColor={'white'}
-          loadBlogItems={initialFetchVideos}
-          placeholder={'Pick Videos List'}
-        />
-      </View>
-
       <View style={styles.container}>
         <CustomYoutubeVideoFlatList
           items={videoItems.items}
           videoType="mv"
-          videoModalVisable={() => showVideoModal()}
+          videoModalVisable={() => showVideoModal(true)}
           setVideoIdForVideoModal={id => setVideoId(id)}
         />
       </View>
@@ -91,14 +69,8 @@ const styles = StyleSheet.create({
   safeView: {
     flex: 1,
   },
-  dropdownContainer: {
-    alignItems: 'center',
-    padding: 5,
-    zIndex: 100,
-  },
   container: {
     flex: 1,
   },
 });
-
-export default YoutubeScreen;
+export default VideosScreen;

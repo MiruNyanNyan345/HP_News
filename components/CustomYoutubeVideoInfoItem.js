@@ -13,14 +13,13 @@ const CustomYoutubeVideoInfoItem = props => {
 
   if (props.videoType === 'mv') {
     let regExp = /\『(.+?)\』/g;
-    if (props.channelTitle) {
-      channelTitle = props.channelTitle;
-    }
+    // if (props.channelTitle) {
+    //   channelTitle = props.channelTitle;
+    // }
     if (props.videoTitle) {
-      title = regExp.exec(props.videoTitle)[1];
+      // title = regExp.exec(props.videoTitle)[1];
+      title = props.videoTitle;
     }
-  } else {
-    title = props.videoTitle;
   }
 
   return (
@@ -35,7 +34,7 @@ const CustomYoutubeVideoInfoItem = props => {
         source={{uri: props.videoThumbnail}}
       />
       <View style={props.videoTitleContainerStyle}>
-        <Text style={props.channelTitleStyle}>{channelTitle}</Text>
+        {/*<Text style={props.channelTitleStyle}>{channelTitle}</Text>*/}
         <Text style={props.videoTitleStyle}>{title}</Text>
       </View>
     </TouchableOpacity>

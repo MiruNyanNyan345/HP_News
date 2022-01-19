@@ -1,0 +1,545 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "U8WdqRi8yxj5h2mDK5P9kUL9bDU",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "VelH9QHq9vK3KQXry9Mz3-NqLjo",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy5GNjNDRDREMDQxOThCMDQ2",
+      "snippet": {
+        "publishedAt": "2021-06-25T03:50:31Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS 『フレフレ・エブリデイ』",
+        "description": "BEYOOOOONDS 「ＧＯ！ＭＥ.プロジェクト」２０２１始動！！ \n第２弾となるタイアップソング『フレフレ・エブリデイ』のミュージックビデオ公開！ \n  \nBEYOOOOONDSが “朝のCheering song” をお届け♪♪ \n今作はKAGOME「野菜生活100」とのコラボレーションに合わせて、 \nメンバーがアイリッシュ風の衣装に身を包み、 \n野菜やフルーツに見立てた色とりどりのバルーンに \n囲まれたステージで元気にパフォーマンス！ \nみんなの朝を応援します！ \n  \n▼野菜の力で心もカラダも支えるKAGOME「GO！ME.」プロジェクト２０２１ \n特設サイト： https://www.kagome.co.jp/campaign/go_me/ \n\n▼BEYOOOOONDS「フレフレ・エブリデイ」7/28配信スタート！\n【iTunes Store】https://music.apple.com/jp/album/1576453403?app=itunes\n【レコチョク】https://recochoku.jp/album/A1018020262\n【mora（ハイレゾ）】https://mora.jp/package/43000030/UFDL-1482-HR/\n※リンク先のページは配信開始時刻からご覧いただけます。\n\n『フレフレ・エブリデイ』 \n作詞：児玉雨子　作曲：星部ショウ　編曲：星部ショウ\n\nジリリ ジリリ もうあと5分\nジリリ 寝ていたいが (朝だよ！)\nきっかり やっぱり 今日が来たよ\nさぁ 張り切ってこ (Let’s go! Let’s go!)\n\nど・れ・に・し・よ・う・か・な\nもう 大好きなコーデだらけ\nド・レ・ミ・ファ・ソ・ラ・シ・ド \nもう 遅れちゃうよ\n 「ヤバ〜い!」 (おはよう！)\n\nフレフレ!\n信じてる エブリデイ\n夜の夢より\n今朝はカラフル(Fooo!)\nフレフレ!\n早く会おう マイフレンド \n今日もいい日にしよう\n1(ワン) 2(ツー) フレフレ! エブリデイ\n (おはよう！)\n\n言えない 消えない\nそのモヤモヤ\nちょっと話聞くよ\n (どうしたの？) \nいつも いつも\n絶好調\nとはいかないね\n (ほどほど)\n\nダメな日 あっていいよ Yes\n手を取って補い合おう\nド・レ・ミ・ファ・ソ・ラ・シ・ド Yes\nビタミンのように\n「ビタミーーーーーンズ!」\n (いつでも)\n\nフレフレ!\n傍にいる エブリデイ\n憂鬱なんて\n君がいれば Yeah！(Yeah！) \nフレフレ!\nかけがえない マイフレンド\n頑張る時は一緒\n1(ワン) 2(ツー) フレフレ!！エブリデイ \n(いつでも！)\n\n太陽に おはよう！\n親にそっと おはよう…\n犬や猫 おはよう！\n電車では しずかに\n\nすれ違って おはよう！\n好きなひと おはよう... \n君に せーの おはよう！\n無理せず 頑張ろう\n\n※repeat\n\nフレフレ！\n過ぎてゆく エブリデイズ\nかなしい言葉\n胸を締めたら\nフレフレ！\n思い出して マイフレンド\n君はこの世にひとりだけって\n (フレフレ！ エブリデイ)\n\nフレフレ！\n傍にいる エブリデイ\n憂鬱なんて\n君がいれば Yeah! (Yeah!) \nフレフレ！\n\nかけがえない マイフレンド \n頑張るときは一緒\n1, 2 フレフレ！ エブリデイ\n (フレフレ！ エブリデイ)\n\n#BEYOOOOONDS\n#KAGOME\n#GOME\n#野菜生活100",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dqK7AMrLCm0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dqK7AMrLCm0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dqK7AMrLCm0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dqK7AMrLCm0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "dqK7AMrLCm0"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "dqK7AMrLCm0",
+        "videoPublishedAt": "2021-06-25T03:30:14Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "FZ6tpeAPGVqWqjwANLsFdvuIcvo",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy45NDk1REZENzhEMzU5MDQz",
+      "snippet": {
+        "publishedAt": "2021-02-03T12:41:14Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『こんなハズジャナカッター！』(BEYOOOOONDS[This is not how I pictured myself.])(Promotion Edit)",
+        "description": "2021年 3月3日発売のBEYOOOOONDS 2ndシングル「激辛LOVE/Now Now Ningen/こんなハズジャナカッター！」から「こんなハズジャナカッター！」のPromotion Editです。 \n\n作詞：星部ショウ・野沢トオル　作曲・編曲：星部ショウ\nMV Director：植＋北\n\n●【初回生産限定盤A】\n EPCE-7608 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤B】 \nEPCE-7610 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤C】 \nEPCE-7612 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤ビタミン】 \nEPCE-7614 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【通常盤A】 EPCE-7616　定価 ￥1,000＋税\n●【通常盤B】 EPCE-7617　定価 ￥1,000＋税 \n●【通常盤C】 EPCE-7618　定価 ￥1,000＋税 \n\n\n【通常盤】 \n特典：トレーディングカードソロ12種＋集合1種よりランダムにて1枚封入\n(通常盤A：激辛LOVE Ver.) \n(通常盤B：Now Now Ningen Ver.) \n(通常盤C：こんなハズジャナカッター！ Ver.)\n\nAmazon⇒https://amzn.to/2NPKs4J\n\n●BEYOOOOONDS 本日3/3発売ニューシングル「激辛LOVE／Now Now Ningen／こんなハズジャナカッター！(Special Edition)」\nシングル・ハイレゾ・ビデオ配信スタートしました！\n\n【iTunes(Apple Digital Masters)】\nhttps://music.apple.com/jp/album/1554052739?app=itunes\n\n【レコチョク】\nhttps://recochoku.jp/album/A2002020784/album\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/UFDL-1472-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/r2-Fv3iXX6w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/r2-Fv3iXX6w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/r2-Fv3iXX6w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/r2-Fv3iXX6w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/r2-Fv3iXX6w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "r2-Fv3iXX6w"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "r2-Fv3iXX6w",
+        "videoPublishedAt": "2021-02-03T12:00:31Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xr8alOmK5yIpNPhND3xn02nbxhk",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy5DQUNERDQ2NkIzRUQxNTY1",
+      "snippet": {
+        "publishedAt": "2021-02-03T12:41:10Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『激辛LOVE』(BEYOOOOONDS[The Hottest Love])(Promotion Edit)",
+        "description": "2021年 3月3日発売のBEYOOOOONDS 2ndシングル「激辛LOVE/Now Now Ningen/こんなハズジャナカッター！」から「激辛LOVE」のPromotion Editです。 \n\n原題: Dracula's Tango (Sucker For Your Love)\n作詞作曲: Barry Blue / Paul Greedus\n日本語詞: 星部ショウ\n編曲: 大久保薫\n\nPublished by SM Publishing (UK) Limited / IQ MUSIC LTD\n\nMV Director：隈本遼平\n\n●【初回生産限定盤A】\n EPCE-7608 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤B】 \nEPCE-7610 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤C】 \nEPCE-7612 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤ビタミン】 \nEPCE-7614 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【通常盤A】 EPCE-7616　定価 ￥1,000＋税\n●【通常盤B】 EPCE-7617　定価 ￥1,000＋税 \n●【通常盤C】 EPCE-7618　定価 ￥1,000＋税 \n\n\n【通常盤】 \n特典：トレーディングカードソロ12種＋集合1種よりランダムにて1枚封入\n(通常盤A：激辛LOVE Ver.) \n(通常盤B：Now Now Ningen Ver.) \n(通常盤C：こんなハズジャナカッター！ Ver.)\n\nAmazon⇒https://amzn.to/39tdCio\n\n●BEYOOOOONDS 本日3/3発売ニューシングル「激辛LOVE／Now Now Ningen／こんなハズジャナカッター！(Special Edition)」\nシングル・ハイレゾ・ビデオ配信スタートしました！\n\n【iTunes(Apple Digital Masters)】\nhttps://music.apple.com/jp/album/1554052739?app=itunes\n\n【レコチョク】\nhttps://recochoku.jp/album/A2002020784/album\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/UFDL-1472-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QrkqQYH1elA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QrkqQYH1elA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QrkqQYH1elA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QrkqQYH1elA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QrkqQYH1elA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "QrkqQYH1elA"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "QrkqQYH1elA",
+        "videoPublishedAt": "2021-02-03T12:00:23Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "tqljjAB-jY9LOQBDymLvH4E-Da8",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy41MzJCQjBCNDIyRkJDN0VD",
+      "snippet": {
+        "publishedAt": "2021-02-03T12:41:04Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『Now Now Ningen』(BEYOOOOONDS[“Now, Now, Humans.”])(Promotion Edit)",
+        "description": "2021年 3月3日発売のBEYOOOOONDS 2ndシングル「激辛LOVE/Now Now Ningen/こんなハズジャナカッター！」から「Now Now Ningen」のPromotion Editです。 \n\n作詞：児玉雨子　作曲・編曲：星部ショウ\nMV Director：植＋北\n\n●【初回生産限定盤A】\n EPCE-7608 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤B】 \nEPCE-7610 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤C】 \nEPCE-7612 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【初回生産限定盤ビタミン】 \nEPCE-7614 ￥1,700＋税\n特典：DVD+イベント参加券封入\n\n●【通常盤A】 EPCE-7616　定価 ￥1,000＋税\n●【通常盤B】 EPCE-7617　定価 ￥1,000＋税 \n●【通常盤C】 EPCE-7618　定価 ￥1,000＋税 \n\n【通常盤】 \n特典：トレーディングカードソロ12種＋集合1種よりランダムにて1枚封入\n(通常盤A：激辛LOVE Ver.) \n(通常盤B：Now Now Ningen Ver.) \n(通常盤C：こんなハズジャナカッター！ Ver.)\n\nAmazon⇒https://amzn.to/3iZuJLW\n\n\n【BEYOOOOONDS×チャイハネ】\n「個性って素晴らしい」\n─ 自分自身一人ひとりの魅力や輝く個性を楽しんでもらいたい ─\n今の時代だからこそ、明るく前向きに自由な個性を発揮してもらいたい！\nそんな思いを持つチャイハネと、BEYOOOOONDSが「Now Now Ningen」のミュージックビデオでコラボ！\nチャイハネ提供によるメンバーが着るカラフルな衣装、様々な模様のクロスや雑貨で埋め尽くされた世界観は、New Normalな世界、そして一人一人の個性が輝く世界を象徴しています。\n\nこのコラボレーションを記念して、チャイハネ衣装のみでパフォーマンスする\n“「Now Now Ningen」Cayhane Dance Shot Ver.”バージョン”を、2月5日（金）よりチャイハネ全店で期間限定公開いたします。\n\nメンバーのコーディネートやインテリアの詳細がわかる、特集ページを公式通販内にオープン。\nhttps://bit.ly/3actqoG\nぜひ、店頭や服を通じて、BEYOOOOONDSとチャイハネの個性を体感してください。\n\n\nチャイハネとは\n－TRIBE PRIDE－\n現代に自分らしい個性とパワーを取り戻す\n\n地球の土地土地に生まれた多様な文化の美しさと、それぞれの個性に込められた人々の誇り。\nその活力に触れるとき、私たちの魂も踊り、笑顔があふれます。\nチャイハネは、そんな、太陽の光をたくさん浴びたような、\n誇りある諸国文化を集めたバザールを展開します。\n\n◎公式オンラインショップ タイアップ特集ページ https://bit.ly/3actqoG   （2月3日21時オープン）\n◎公式オンラインショップ https://bit.ly/3iVpbSE\n◎公式サイト https://earth.cayhane.jp/\n\n●BEYOOOOONDS 本日3/3発売ニューシングル「激辛LOVE／Now Now Ningen／こんなハズジャナカッター！(Special Edition)」\nシングル・ハイレゾ・ビデオ配信スタートしました！\n\n【iTunes(Apple Digital Masters)】\nhttps://music.apple.com/jp/album/1554052739?app=itunes\n\n【レコチョク】\nhttps://recochoku.jp/album/A2002020784/album\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/UFDL-1472-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QZ-CHNF7CLw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QZ-CHNF7CLw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QZ-CHNF7CLw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QZ-CHNF7CLw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QZ-CHNF7CLw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "QZ-CHNF7CLw"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "QZ-CHNF7CLw",
+        "videoPublishedAt": "2021-02-03T12:00:15Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "6IMDG3KE3-JrFx6KTgPqG702Z_E",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy4xMkVGQjNCMUM1N0RFNEUx",
+      "snippet": {
+        "publishedAt": "2020-04-29T16:04:13Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『ビタミンME』",
+        "description": "BEYOOOOONDS初となるタイアップソング「ビタミンME」のミュージックビデオです。\nBEYOOOOONDSが「カゴメONEDAY」の妖精「VITAMIIIIINS（ビタミーーーーーンズ）」に変身!?\n舞台にはあの“眼鏡の男の子”のキャラクターたちも登場！！\n\n作詞／作曲 ：作詞：児玉雨子　作曲：星部ショウ　編曲：板垣祐介\n\n▼「GO！ME.」プロジェクトは次世代を担う若者たちをスポンサードするカゴメの取り組みです。\nプロジェクトサイト   https://www.kagome.co.jp/campaign/go_me/ \nメンバーが出演するWebCM   https://youtu.be/U7BuAxbpIMk\n\n▼商品情報 \nONEDAY　カラダの力を呼び起こす   https://www.kagome.co.jp/oneday/ \nAOJIL　カラダを内側からキレイにする   https://www.kagome.co.jp/aojil/\n\n▼関連動画\nhttps://www.youtube.com/watch?v=8D_H51VvINs",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YhJHUxQtnkM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YhJHUxQtnkM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YhJHUxQtnkM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YhJHUxQtnkM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YhJHUxQtnkM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "YhJHUxQtnkM"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "YhJHUxQtnkM",
+        "videoPublishedAt": "2020-04-15T08:00:17Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "NGqug-gG4bwGGlqkU6h5cDOEO5o",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy4wOTA3OTZBNzVEMTUzOTMy",
+      "snippet": {
+        "publishedAt": "2019-12-30T10:57:21Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『眼鏡の男の子』(Panic Train Ver.)",
+        "description": "2019年8月19日付 オリコン週間シングルランキング1位獲得を記念して「眼鏡の男の子　Panic Train Ver.」を公開！\n\n「眼鏡の男の子」ミュージックビデオ\nhttps://www.youtube.com/watch?v=8D_H51VvINs\n\nBEYOOOOOND「眼鏡の男の子/ニッポンノD・N・A！/Go Waist」特設サイト\nhttp://r.helloproject.com/beyooooonds/megane/\n \nAmazon⇒https://amzn.to/2RKgHAa",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4it1XdFZ6jM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4it1XdFZ6jM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4it1XdFZ6jM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4it1XdFZ6jM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4it1XdFZ6jM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "4it1XdFZ6jM"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "4it1XdFZ6jM",
+        "videoPublishedAt": "2019-08-14T11:58:49Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Nvr0jA3Iko4kx5K6mPODvRHG3yk",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy41MjE1MkI0OTQ2QzJGNzNG",
+      "snippet": {
+        "publishedAt": "2019-12-30T10:56:47Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『アツイ！』(BEYOOOOONDS [HOT!])(MV)",
+        "description": "2019年11月27日発売のBEYOOOOONDS1stアルバム『BEYOOOOOND1St』(初回生産限定盤AのBD)に収録される\nBEYOOOOONDSの「アツイ！」のミュージックビデオです。\n\n作詞：星部ショウ　作曲：星部ショウ　編曲：朝井泰生\nMV Director：渡邉直\n\n\n● 【初回生産限定盤A】（CD+BD）\nEPCE-7543　￥6,000＋税\n特典：BD付＋特製BEYOOOOONDSデザイン3D眼鏡封入\n\n● 【初回生産限定盤B】（CD）\nEPCE-7545　定価 ￥4,000＋税\n特典：スペシャルドラマCD＋特製ビヨ～ンとのびる蛇腹ブックレット封入\n\n● 【通常盤】\nEPCE-7547　定価 ￥2,727＋税\n\nAmazon⇒https://amzn.to/36RPa6T\n\n【レコチョク】\nhttps://recochoku.jp/album/A2001621840/\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1486711495?app=itunes\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/EPCE-7547-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Pr5Kq51zO-8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Pr5Kq51zO-8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Pr5Kq51zO-8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Pr5Kq51zO-8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Pr5Kq51zO-8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Pr5Kq51zO-8"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "Pr5Kq51zO-8",
+        "videoPublishedAt": "2019-11-16T01:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "-svacKtfASQ6ii-iyIgx_4ui-Zo",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy4wMTcyMDhGQUE4NTIzM0Y5",
+      "snippet": {
+        "publishedAt": "2019-07-16T12:12:56Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『眼鏡の男の子』(BEYOOOOONDS [The boy with the glasses.])(Promotion Edit)",
+        "description": "2019年8月7日発売のBEYOOOOONDS メジャーデビューシングル「眼鏡の男の子/ニッポンノD・N・A！/Go Waist」から「眼鏡の男の子」のPromotion Editです。\n\n作詞：星部ショウ　作曲：星部ショウ　編曲：大久保薫\nMV Director：田村啓介\n\n\n● 【初回生産限定盤A】（CD+DVD）イベント参加券封入\nEPCE-7504　￥1,700＋税\n「眼鏡の男の子」Music Video/Music Video(Dance Shot Ver.)\n\n● 【初回生産限定盤B】（CD+DVD）イベント参加券封入\nEPCE-7506　￥1,700＋税\n「ニッポンノD・N・A！」Music Video/Music Video(Dance Shot Ver.)\n\n● 【初回生産限定盤C】（CD+DVD）イベント参加券封入\nEPCE-7508　￥1,700＋税\n「Go Waist」Music Video/Music Video(Dance Shot Ver.)\n\n● 【通常盤A】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\nGIRL ZONE／雨ノ森 川海\nEPCE-7510　定価 ￥1,000＋税\n● 【通常盤B】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\n文化祭実行委員長の恋／BEYOOOOONDS\nEPCE-7511　定価 ￥1,000＋税\n● 【通常盤C】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\n都営大江戸線の六本木駅で抱きしめて／CHICA # TETSU\nEPCE-7512　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ12種＋集合1種よりランダムにて1枚封入\n（通常盤A：眼鏡の男の子 Ver.）\n（通常盤B：ニッポンノD・N・A！ Ver.)\n（通常盤C：Go Waist Ver.)\n\nAmazon⇒https://amzn.to/2RKgHAa\n\n【レコチョク】\nhttp://recochoku.jp/artist/2001173279/\n【iTunes(Mastered for iTunes)】\nhttps://music.apple.com/jp/artist/1473212760?app=itunes\n【mora】\nhttps://mora.jp/artist/1157416/all",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8D_H51VvINs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8D_H51VvINs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8D_H51VvINs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8D_H51VvINs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8D_H51VvINs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "8D_H51VvINs"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "8D_H51VvINs",
+        "videoPublishedAt": "2019-07-16T12:00:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "zEhJGGYbJRXQMMrldUJbsdxMEi4",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy4yODlGNEE0NkRGMEEzMEQy",
+      "snippet": {
+        "publishedAt": "2019-07-16T12:12:34Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『ニッポンノD・N・A！』(BEYOOOOONDS [The Japanese D・N・A!])(Promotion Edit)",
+        "description": "2019年8月7日発売のBEYOOOOONDS メジャーデビューシングル「眼鏡の男の子/ニッポンノD・N・A！/Go Waist」から「ニッポンノD・N・A！」のPromotion Editです。\n\n作詞：野沢トオル　作曲：星部ショウ　編曲：星部ショウ\nMV Director：下津優太\n\n\n● 【初回生産限定盤A】（CD+DVD）イベント参加券封入\nEPCE-7504　￥1,700＋税\n「眼鏡の男の子」Music Video/Music Video(Dance Shot Ver.)\n\n● 【初回生産限定盤B】（CD+DVD）イベント参加券封入\nEPCE-7506　￥1,700＋税\n「ニッポンノD・N・A！」Music Video/Music Video(Dance Shot Ver.)\n\n● 【初回生産限定盤C】（CD+DVD）イベント参加券封入\nEPCE-7508　￥1,700＋税\n「Go Waist」Music Video/Music Video(Dance Shot Ver.)\n\n● 【通常盤A】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\nGIRL ZONE／雨ノ森 川海\nEPCE-7510　定価 ￥1,000＋税\n● 【通常盤B】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\n文化祭実行委員長の恋／BEYOOOOONDS\nEPCE-7511　定価 ￥1,000＋税\n● 【通常盤C】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\n都営大江戸線の六本木駅で抱きしめて／CHICA # TETSU\nEPCE-7512　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ12種＋集合1種よりランダムにて1枚封入\n（通常盤A：眼鏡の男の子 Ver.）\n（通常盤B：ニッポンノD・N・A！ Ver.)\n（通常盤C：Go Waist Ver.)\n\nAmazon⇒https://amzn.to/2X5xE8X\n\n【レコチョク】\nhttp://recochoku.jp/artist/2001173279/\n【iTunes(Mastered for iTunes)】\nhttps://music.apple.com/jp/artist/1473212760?app=itunes\n【mora】\nhttps://mora.jp/artist/1157416/all",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KYVMtijS74U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KYVMtijS74U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KYVMtijS74U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KYVMtijS74U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/KYVMtijS74U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "KYVMtijS74U"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "KYVMtijS74U",
+        "videoPublishedAt": "2019-07-16T12:00:04Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "1kHxOY0uLjTYyQbOLDzdkbGFZAs",
+      "id": "UEw4bTg2aVYzcC1uUmRXMmNja0F3cXJ1Qkt1enJ4b1Z2Vy41NkI0NEY2RDEwNTU3Q0M2",
+      "snippet": {
+        "publishedAt": "2019-07-16T12:12:12Z",
+        "channelId": "UCE5GP4BHm2EJx4xyxBVSLlg",
+        "title": "BEYOOOOONDS『Go Waist』(BEYOOOOONDS [Go Waist])(Promotion Edit)",
+        "description": "2019年8月7日発売のBEYOOOOONDS メジャーデビューシングル「眼鏡の男の子/ニッポンノD・N・A！/Go Waist」から「Go Waist」のPromotion Editです。\n\n(原曲：Go West) 作詞：Henri Belolo/Victor Edward Willis/日本語詞：児玉雨子 作曲：Jacques Morali 編曲：大久保薫\nMV Director：植+北\n\n\n● 【初回生産限定盤A】（CD+DVD）イベント参加券封入\nEPCE-7504　￥1,700＋税\n「眼鏡の男の子」Music Video/Music Video(Dance Shot Ver.)\n\n● 【初回生産限定盤B】（CD+DVD）イベント参加券封入\nEPCE-7506　￥1,700＋税\n「ニッポンノD・N・A！」Music Video/Music Video(Dance Shot Ver.)\n\n● 【初回生産限定盤C】（CD+DVD）イベント参加券封入\nEPCE-7508　￥1,700＋税\n「Go Waist」Music Video/Music Video(Dance Shot Ver.)\n\n● 【通常盤A】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\nGIRL ZONE／雨ノ森 川海\nEPCE-7510　定価 ￥1,000＋税\n● 【通常盤B】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\n文化祭実行委員長の恋／BEYOOOOONDS\nEPCE-7511　定価 ￥1,000＋税\n● 【通常盤C】通常盤には、4曲目にそれぞれ異なる楽曲を収録！\n都営大江戸線の六本木駅で抱きしめて／CHICA # TETSU\nEPCE-7512　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ12種＋集合1種よりランダムにて1枚封入\n（通常盤A：眼鏡の男の子 Ver.）\n（通常盤B：ニッポンノD・N・A！ Ver.)\n（通常盤C：Go Waist Ver.)\n\nAmazon⇒https://amzn.to/2FCgwlo\n\n【レコチョク】\nhttp://recochoku.jp/artist/2001173279/\n【iTunes(Mastered for iTunes)】\nhttps://music.apple.com/jp/artist/1473212760?app=itunes\n【mora】\nhttps://mora.jp/artist/1157416/all",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dM_o4LBA0gw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dM_o4LBA0gw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dM_o4LBA0gw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dM_o4LBA0gw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dM_o4LBA0gw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ビヨーンズ",
+        "playlistId": "PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "dM_o4LBA0gw"
+        },
+        "videoOwnerChannelTitle": "ビヨーンズ",
+        "videoOwnerChannelId": "UCE5GP4BHm2EJx4xyxBVSLlg"
+      },
+      "contentDetails": {
+        "videoId": "dM_o4LBA0gw",
+        "videoPublishedAt": "2019-07-16T12:00:09Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 10,
+    "resultsPerPage": 20
+  }
+}

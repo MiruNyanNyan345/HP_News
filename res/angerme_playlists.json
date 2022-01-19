@@ -1,0 +1,1091 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "SGNZDd9LbCU1Lpy-i-wTNe2yqQs",
+  "nextPageToken": "EAAaBlBUOkNCUQ",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "4tnQjlaMANJnL4ITtr6iNGwPu_A",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LkJGMTg4NzNCMzk0NEUzODc",
+      "snippet": {
+        "publishedAt": "2021-07-12T01:15:02Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム「SHAKA SHAKA #2 LOVE カラフルライフ編」",
+        "description": "オーラルビューティケアブランド「オーラツー」とのタイアップ第2弾！\n「SHAKA SHAKA ＃2 LOVE　カラフルライフ編」のＭＶが完成！\n夏っぽく元気なアレンジで、さらにパワーアップして帰ってきました♪\n \n好きなカラーでオーラツーアイテムをそろえて、毎日をもっとBrush Up！してみませんか？\nオリジナルコラボグッズが当たるキャンペーンをいますぐcheck ▼\nhttps://m-series2107store.ora2campaign.com/\n応募期間：７/１２(月) ～ ８/３１(火)\n\n-----------------------------------------------------------------------------------------------------\nアンジュルム「SHAKA SHAKA #2 LOVE カラフルライフ編」9/1配信スタート！\n\nアンジュルム「SHAKA SHAKA #2 LOVE カラフルライフ編」\n【iTunes Store】：https://music.apple.com/jp/album/1581714468?app=itunes\n【レコチョク】：https://recochoku.jp/album/A2002355426\n【mora（ハイレゾ）】：https://mora.jp/package/43000030/UFDL-1483-HR/\n-----------------------------------------------------------------------------------------------------\n\n「SHAKA SHAKA ＃2 LOVE　カラフルライフ編」\n作詞：児玉雨子　作曲：星部ショウ　編曲：大久保薫\n\nSHAKA SHAKA SHAKA SHAKA COLORS\nSHAKA SHAKA SHAKA SHAKA #2 LOVE\nSHAKA SHAKA SHAKA SHAKA COLORS\nCOLOR COLORFUL LIFE\n\nまどろむ時間 お気に入りパン\n好きな曲や 好きなフレーバー\nどれもこれも絶対に欠かせない\nけれど ちょっと焦る朝\n\n疲れてたり ムカついたり\n失敗した その次の日\nいつも頑張れるワケないじゃない？\nだから ちょっと すごいワザ\n\n当たり前に 叶えて\nルーティン・マジック\n「自分磨き もう楽勝〜！」\n\nあふれるオーラ Brush up\nもっと輝いていいでしょ\nそりゃね いろいろ×４ あるけど\nポジティブ 超Yeah! Foo!\n\n私のカラー Brush up\nもう邪魔なんてさせないよ\n今日もシャカリキ×４ 起こすよ\nきらめくミラクル Foo! \n\nSHAKA SHAKA SHAKA SHAKA COLORS\nSHAKA SHAKA SHAKA SHAKA #2 LOVE\nSHAKA SHAKA SHAKA SHAKA COLORS\nCOLOR COLORFUL LIFE\n\n家にいても デートの日も\n服はあるが 着たいコーデ…ない！\nクローゼットが またぐちゃぐちゃ\nあぁもう ちゃっちゃ選べたら\n\n自分だけの 絶対カラー\nルーティン・ハッピー\n「でもやっぱ迷っちゃうよー！」\n\n毎朝オーラ Pick up\n大好きをフル装備で\nもっと いろいろ×４ 揃えて\n変えてゆく My life\n\n幸せいっぱい Pick up\n色とりどりに行きましょう\n日々を キラキラ×４ 磨けば\n笑顔似合っちゃうなぁ～！ Foo!\n\nEveryday〜\n♪SHAKA！ SHAKA！\nいろいろあっても キラキラしちゃうよー！\n\nルーティン・最強\n「どんな色(ジブン)も好きになっていいんだよ！」\n\n\n毎朝オーラ Brush up\n大好きをフル装備で\nもっと いろいろ×４ 揃えて\n変えてゆく My life\n\n私の「らしさ」 Shine up\nまだ君が知らないような\n顔を 次々続々×２ 見せたい\n待ってろ My love Foo!\n\nSHAKA SHAKA SHAKA SHAKA COLORS\nSHAKA SHAKA SHAKA SHAKA #2 LOVE\nSHAKA SHAKA SHAKA SHAKA COLORS\nSHAKA SHAKA SHAKA SHAKA #2 LOVE\n\n「One More Time!」\nSHAKA SHAKA SHAKA SHAKA COLORS\nSHAKA SHAKA SHAKA SHAKA #2 LOVE\nSHAKA SHAKA SHAKA SHAKA COLORS\nCOLOR COLORFUL LIFE\n\n\nアンジュルムオフィシャルサイト▼\nhttp://www.helloproject.com/angerme/\n\n#アンジュルム #Ora2",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/M38CBgQeMyI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/M38CBgQeMyI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/M38CBgQeMyI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/M38CBgQeMyI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/M38CBgQeMyI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "M38CBgQeMyI"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "M38CBgQeMyI",
+        "videoPublishedAt": "2021-07-12T01:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xg9wi5yyK2jCLdVFYCKrpRn3CQ8",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LkMzNUFFRTgwNzkyQUUyNjQ",
+      "snippet": {
+        "publishedAt": "2021-05-25T15:10:55Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『はっきりしようぜ』Promotion Edit",
+        "description": "2021年6月23日発売のアンジュルム NEWシングル『はっきりしようぜ/泳げないMermaid/愛されルート A or B？』から「はっきりしようぜ」のPromotion Editです。 \n\n作詞・作曲 : 根本要　編曲：鈴木俊介\nMV Director：杉山弘樹\n\nスターダスト☆レビュー 「はっきりしようぜ」\nhttps://www.youtube.com/watch?v=7vurahRJ4iQ\n© 2020 by TV TOKYO Music, Inc. , UP FRONT MUSIC INC. & RHAPSODY CO., LTD.\n\n●【初回生産限定盤A】\nHKCN-50656　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤B】 \nHKCN-50658　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤C】 \nHKCN-50660　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤SP】 \nHKCN-50662  ￥2,200 (税抜価格 ￥2,000)\n特典：DVD+イベント抽選応募券封入\n\n●【通常盤A】 HKCN-50664　定価 ￥1,100 (税抜価格 ￥1,000)\n●【通常盤B】 HKCN-50665　定価 ￥1,100 (税抜価格 ￥1,000)\n●【通常盤C】 HKCN-50666　定価 ￥1,100 (税抜価格 ￥1,000)\n\n【通常盤】 \n特典：トレーディングカードソロ10種+集合1種よりランダムにて1枚封入\n(通常盤A：はっきりしようぜ Ver.) \n(通常盤B：泳げないMermaid Ver.) \n(通常盤C：愛されルート A or B？Ver.) \n\nAmazon⇒ https://amzn.to/3u2Kbux\n\n楽曲のダウンロードはこちら⇒\n【iTunes(Apple Digital Master)】http://itunes.apple.com/jp/album/1571440658?app=itunes\n【レコチョク】https://recochoku.jp/album/A2002225120/album\n【mora（ハイレゾ）】https://mora.jp/package/43000030/HKCN-50664-HR/\n\n#アンジュルム #ANGERME #はっきりしようぜ",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/L-SAgT_z4II/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/L-SAgT_z4II/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/L-SAgT_z4II/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/L-SAgT_z4II/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/L-SAgT_z4II/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "L-SAgT_z4II"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "L-SAgT_z4II",
+        "videoPublishedAt": "2021-05-25T15:00:10Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "rT1I0B12g3PKkLpnIVp_OKjxkIY",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2Ljg3NzY3NTI3RDdCQjEwNkI",
+      "snippet": {
+        "publishedAt": "2021-05-25T15:10:47Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『泳げないMermaid』Promotion Edit",
+        "description": "2021年6月23日発売のアンジュルム NEWシングル『はっきりしようぜ/泳げないMermaid/愛されルート A or B？』から「泳げないMermaid」のPromotion Editです。 \n\n作詞 : 井筒日美　作曲 : 星部ショウ　編曲：平田祥一郎\nMV Director：北平誠治\n\n●【初回生産限定盤A】\nHKCN-50656　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤B】 \nHKCN-50658　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤C】 \nHKCN-50660　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤SP】 \nHKCN-50662  ￥2,200 (税抜価格 ￥2,000)\n特典：DVD+イベント抽選応募券封入\n\n●【通常盤A】 HKCN-50664　定価 ￥1,100 (税抜価格 ￥1,000)\n●【通常盤B】 HKCN-50665　定価 ￥1,100 (税抜価格 ￥1,000)\n●【通常盤C】 HKCN-50666　定価 ￥1,100 (税抜価格 ￥1,000)\n\n【通常盤】 \n特典：トレーディングカードソロ10種+集合1種よりランダムにて1枚封入\n(通常盤A：はっきりしようぜ Ver.) \n(通常盤B：泳げないMermaid Ver.) \n(通常盤C：愛されルート A or B？Ver.) \n\nAmazon⇒ https://amzn.to/3v57HbC\n\n楽曲のダウンロードはこちら⇒\n【iTunes(Apple Digital Master)】http://itunes.apple.com/jp/album/1571440658?app=itunes\n【レコチョク】https://recochoku.jp/album/A2002225120/album\n【mora（ハイレゾ）】https://mora.jp/package/43000030/HKCN-50664-HR/\n\n#アンジュルム #ANGERME #泳げないMermaid",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WSaN1JuS_2I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WSaN1JuS_2I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WSaN1JuS_2I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WSaN1JuS_2I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WSaN1JuS_2I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "WSaN1JuS_2I"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "WSaN1JuS_2I",
+        "videoPublishedAt": "2021-05-25T15:00:23Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "o-KDuOY3_se_P3FCHgGWjS1kxgU",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjE2RjgzNThEQkJFRTFDRTQ",
+      "snippet": {
+        "publishedAt": "2021-05-25T15:10:38Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『愛されルート A or B？』Promotion Edit",
+        "description": "2021年6月23日発売のアンジュルム NEWシングル『はっきりしようぜ/泳げないMermaid/愛されルート A or B？』から「愛されルート A or B？」のPromotion Editです。 \n\n作詞 : 山崎あおい　作曲・編曲：山崎真吾\nMV Director：三石直和\n\n●【初回生産限定盤A】\nHKCN-50656　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤B】 \nHKCN-50658　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤C】 \nHKCN-50660　￥1,760 (税抜価格 ￥1,600)\n特典：DVD付 \n\n●【初回生産限定盤SP】 \nHKCN-50662  ￥2,200 (税抜価格 ￥2,000)\n特典：DVD+イベント抽選応募券封入\n\n●【通常盤A】 HKCN-50664　定価 ￥1,100 (税抜価格 ￥1,000)\n●【通常盤B】 HKCN-50665　定価 ￥1,100 (税抜価格 ￥1,000)\n●【通常盤C】 HKCN-50666　定価 ￥1,100 (税抜価格 ￥1,000)\n\n【通常盤】 \n特典：トレーディングカードソロ10種+集合1種よりランダムにて1枚封入\n(通常盤A：はっきりしようぜ Ver.) \n(通常盤B：泳げないMermaid Ver.) \n(通常盤C：愛されルート A or B？Ver.) \n\nAmazon⇒ https://amzn.to/2QzLiUJ\n\n楽曲のダウンロードはこちら⇒\n【iTunes(Apple Digital Master)】http://itunes.apple.com/jp/album/1571440658?app=itunes\n【レコチョク】https://recochoku.jp/album/A2002225120/album\n【mora（ハイレゾ）】https://mora.jp/package/43000030/HKCN-50664-HR/\n\n#アンジュルム #ANGERME #愛されルートAorB？",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fhLy9Vsu7VQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fhLy9Vsu7VQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fhLy9Vsu7VQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fhLy9Vsu7VQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fhLy9Vsu7VQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fhLy9Vsu7VQ"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "fhLy9Vsu7VQ",
+        "videoPublishedAt": "2021-05-25T15:00:17Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "8FkfagmtLBChzk1MdjFcw51e_kM",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjI5ODFENzlFQUI3MzFDMzg",
+      "snippet": {
+        "publishedAt": "2020-11-27T02:25:19Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム「SHAKA SHAKA TO LOVE」",
+        "description": "オーラルビューティケアブランド「オーラツー」とのタイアップソング「SHAKA SHAKA TO LOVE」のMVが完成！\nカラフルでかわいいオーラツーミーのハブラシで、毎日のルーティンをちょっと楽しく、もっと前向きに。自分のオーラをBrush upしていこう！\nメンバーたちが本気すぎる (!?)セルフィに挑戦する姿にも注目です♪\n\n作詞：児玉雨子　作曲：星部ショウ　編曲：鈴木俊介\n\nメンバーのサイン入り音声付きチェキとオーラツーミー ステインクリア ペースト&ハブラシのセットが当たるTwitterキャンペーンも実施！\n詳しくはこちらをCHECK▼（Twitterキャンペーン期間は11/28（土）〜12/25（金）となります。）\n https://twitter.com/Ora2girls_CP\n\nアンジュルム「SHAKA SHAKA TO LOVE」配信スタート！\n\nオーラルビューティケアブランド「オーラツー」タイアップソング「SHAKA SHAKA TO LOVE」\nが本日12月24日(木)より配信スタート！\nカラフルでかわいいオーラツーミーのハブラシで、毎日のルーティンをちょっと楽しく、\nもっと前向きに。自分のオーラをBrush up！\n\n【iTunes Store】\nhttp://music.apple.com/jp/album/1543650358?app=itunes\n【レコチョク】\nhttp://recochoku.jp/song/S1010056811/\n【mora(ハイレゾ)】\nhttps://mora.jp/package/43000030/UFDL-1468-HR/\n\nアンジュルムオフィシャルサイト▼\nhttp://www.helloproject.com/angerme/\n\n#アンジュルム #Ora2 #秘密のカウントダウン",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/e66ExjbIdrk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/e66ExjbIdrk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/e66ExjbIdrk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/e66ExjbIdrk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/e66ExjbIdrk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "e66ExjbIdrk"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "e66ExjbIdrk",
+        "videoPublishedAt": "2020-11-27T01:00:04Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "x-7qpBUdwePAz1Emyy3w4tAHnLE",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjJGM0RBN0FGRkQzNDZDQkU",
+      "snippet": {
+        "publishedAt": "2020-08-07T23:00:05Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『ミラー・ミラー』(ANGERME [Mirror, Mirror])(Promotion Edit)",
+        "description": "2020年8月26日発売のアンジュルム 28thシングル「限りあるＭoment/ミラー・ミラー」から「ミラー・ミラー」のPromotion Editです。\n\nミラー・ミラー\n作詞: 児玉雨子\n作曲: Shusui / Anders Dannvik / Kalle Persson\n編曲: 平田祥一郎\n© by Popbox publishing\n\nMV Director：今村 繁\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50638　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50640　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50642　￥1,700＋税\n特典：イベント抽選応募券封入\n\n● 【通常盤A】HKCN-50644　定価 ￥1,000＋税\n● 【通常盤B】HKCN-50645　定価 ￥1,000＋税　定価 ￥1,000＋税\n【通常盤】特典\n特典：トレーディングカードソロ8種+集合1種よりランダムにて1枚封入\n（通常盤A：限りあるＭoment Ver.）\n（通常盤B：ミラー・ミラー Ver.)\n\nAmazon⇒ https://amzn.to/32nA0qb\n\nアンジュルム8/26発売ニューシングル「限りあるＭoment／ミラー・ミラー」シングル・ハイレゾ・ビデオ配信スタート！\n\n配信サイト「レコチョク」では、8/26～8/30の期間中『限りあるＭoment／ミラー・ミラー』をアルバム購入、または「限りあるＭoment」「ミラー・ミラー」のハイレゾシングルいずれかをご購入いただいた方全員に、【アンジュルム　オリジナル画像（アーティスト写真 別カット）】をプレゼント！\n\n\n【レコチョク】※2020/8/26～8/30特典あり\nhttps://recochoku.jp/album/A2001804279/album\n\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1527354141?app=itunes\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/HKCN-50644-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/b6cdiBR1Y3U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/b6cdiBR1Y3U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/b6cdiBR1Y3U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/b6cdiBR1Y3U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/b6cdiBR1Y3U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "b6cdiBR1Y3U"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "b6cdiBR1Y3U",
+        "videoPublishedAt": "2020-08-07T23:00:04Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "NULInnvc1I5pmr6S-3fK5rOOUgo",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjY4RkNFQUY3RUUwQUJBRDc",
+      "snippet": {
+        "publishedAt": "2020-07-22T13:00:23Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『限りあるＭoment』(ANGERME [A Limited Moment])(Promotion Edit)",
+        "description": "2020年8月26日発売のアンジュルム 28thシングル「限りあるＭoment/ミラー・ミラー」から「限りあるＭoment」のPromotion Editです。\n\n作詞：井筒日美　作曲：オオヤギヒロオ　編曲：オオヤギヒロオ\nMV Director：森田亮\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50638　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50640　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50642　￥1,700＋税\n特典：イベント抽選応募券封入\n\n● 【通常盤A】HKCN-50644　定価 ￥1,000＋税\n● 【通常盤B】HKCN-50645　定価 ￥1,000＋税　定価 ￥1,000＋税\n【通常盤】特典\n特典：トレーディングカードソロ8種+集合1種よりランダムにて1枚封入\n（通常盤A：限りあるＭoment Ver.）\n（通常盤B：ミラー・ミラー Ver.)\n\nAmazon⇒ https://amzn.to/3f7ruyU\n\nアンジュルム8/26発売ニューシングル「限りあるＭoment／ミラー・ミラー」シングル・ハイレゾ・ビデオ配信スタート！\n\n配信サイト「レコチョク」では、8/26～8/30の期間中『限りあるＭoment／ミラー・ミラー』をアルバム購入、または「限りあるＭoment」「ミラー・ミラー」のハイレゾシングルいずれかをご購入いただいた方全員に、【アンジュルム　オリジナル画像（アーティスト写真 別カット）】をプレゼント！\n\n\n【レコチョク】※2020/8/26～8/30特典あり\nhttps://recochoku.jp/album/A2001804279/album\n\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1527354141?app=itunes\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/HKCN-50644-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/p6DPJ2h6VIU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/p6DPJ2h6VIU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/p6DPJ2h6VIU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/p6DPJ2h6VIU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/p6DPJ2h6VIU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "p6DPJ2h6VIU"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "p6DPJ2h6VIU",
+        "videoPublishedAt": "2020-07-22T13:00:21Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "4v1gIOWIWiYb68A8nzCOlOWwnHs",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjNGNTVEMTM5RjUwNjFCOEQ",
+      "snippet": {
+        "publishedAt": "2019-12-09T12:30:31Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "中西香菜「天使の涙」",
+        "description": "中西香菜「天使の涙」\n作詞・作曲:福田花音　編曲:浜田ピエール裕介\n\n\n中西香菜「天使の涙」\n【iTunes Store】https://itunes.apple.com/jp/album/1490540393?app=itunes\n【レコチョク】http://recochoku.jp/song/product/1012942477/\n【mora】https://mora.jp/package/43000030/UFDL-1447/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/08LdzOc_zcg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/08LdzOc_zcg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/08LdzOc_zcg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/08LdzOc_zcg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/08LdzOc_zcg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "08LdzOc_zcg"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "08LdzOc_zcg",
+        "videoPublishedAt": "2019-12-09T12:30:01Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "8tfGWYZiy8BvA8cfUk_ByplBthk",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjYzMkZBODkzNUZBNDZGNjE",
+      "snippet": {
+        "publishedAt": "2019-11-08T08:00:10Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『全然起き上がれないSUNDAY』(ANGERME [The Sunday morning that I can’t get up at all.])(Promotion Edit)",
+        "description": "2019年11月20日発売のアンジュルム 27thシングル「私を創るのは私/全然起き上がれないSUNDAY」から「全然起き上がれないSUNDAY」のPromotion Editです。\n\n作詞：つんく　作曲：つんく　編曲：江上浩太郎\nMV Director：末吉ノブ\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50621　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50623　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50625　￥1,700＋税\n特典：イベント抽選応募券封入\n\n● 【通常盤A】「とっておきのオシャレをして」(勝田里奈)を収録。\nHKCN-50627　定価 ￥1,000＋税\n● 【通常盤B】「明晩、ギャラクシー劇場で」(アンジュルム新曲)を収録。\nHKCN-50628　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ11種+集合1種よりランダムにて1枚封入\n（通常盤A：私を創るのは私 Ver.）\n（通常盤B：全然起き上がれないSUNDAY Ver.)\n\nAmazon⇒ https://amzn.to/2BLAjfW\n\n\n【レコチョク】\nhttps://recochoku.jp/album/A2001617089/\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1484935844?app=itunes\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/HKCN-50628-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wfM1z-lit-g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wfM1z-lit-g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wfM1z-lit-g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wfM1z-lit-g/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wfM1z-lit-g/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "wfM1z-lit-g"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "wfM1z-lit-g",
+        "videoPublishedAt": "2019-11-08T08:00:09Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "bqacGClzT6tCixoOae0Ik8FiqMg",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LkE5MTMzRUVDMTU3QkNCNDQ",
+      "snippet": {
+        "publishedAt": "2019-11-01T08:00:09Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『私を創るのは私』(ANGERME [It is me who constructs myself.])(Promotion Edit)",
+        "description": "2019年11月20日発売のアンジュルム 27thシングル「私を創るのは私/全然起き上がれないSUNDAY」から「私を創るのは私」のPromotion Editです。\n\n作詞：井筒日美　作曲：KOUGA　編曲：KOUGA\nMV Director：末吉ノブ\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50621　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50623　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50625　￥1,700＋税\n特典：イベント抽選応募券封入\n\n● 【通常盤A】「とっておきのオシャレをして」(勝田里奈)を収録。\nHKCN-50627　定価 ￥1,000＋税\n● 【通常盤B】「明晩、ギャラクシー劇場で」(アンジュルム新曲)を収録。\nHKCN-50628　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ11種+集合1種よりランダムにて1枚封入\n（通常盤A：私を創るのは私 Ver.）\n（通常盤B：全然起き上がれないSUNDAY Ver.)\n\nAmazon⇒ https://amzn.to/2JrIrX0\n\n\n【レコチョク】\nhttps://recochoku.jp/album/A2001617089/\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1484935844?app=itunes\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/HKCN-50628-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/f_FibZQq4XA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/f_FibZQq4XA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/f_FibZQq4XA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/f_FibZQq4XA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/f_FibZQq4XA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "f_FibZQq4XA"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "f_FibZQq4XA",
+        "videoPublishedAt": "2019-11-01T08:00:07Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "aHMJmbYhvI2j7LzoTXdTsSZIxf4",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2Ljc2RDBENEM1NzY0RTZGM0M",
+      "snippet": {
+        "publishedAt": "2019-09-24T12:06:55Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "勝田里奈『とっておきのオシャレをして』(Rina Katsuta [Dressing up nicely.])(MV)",
+        "description": "2019年11月20日発売 アンジュルムニューシングル『私を創るのは私/全然起き上がれないSUNDAY』(曲順未定)(通常盤A)に収録される\n勝田里奈（アンジュルム）の「とっておきのオシャレをして」のミュージックビデオです。\n\n作詞：福田花音　作曲：石井浩平　編曲：石井浩平\n\n11/20リリースのアンジュルム ニューシングル「私を創るのは私／全然起き上がれないSUNDAY」(曲順未定)(通常盤A)に収録される、\n勝田里奈のソロ曲「とっておきのオシャレをして」がiTunes Storeで先行配信中！\n\n【iTunes】\nhttps://itunes.apple.com/jp/album/1478598992?app=itunes\n\n\n『私を創るのは私/全然起き上がれないSUNDAY』(曲順未定)\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50621　￥1,600＋税\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50623　￥1,600＋税\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50625　￥1,700＋税\n特典：イベント抽選応募券封入\n● 【通常盤A】\nHKCN-50627　定価 ￥1,000＋税\n● 【通常盤B】\nHKCN-50628　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ11種+集合1種よりランダムにて1枚封入\n\nAmazon⇒https://amzn.to/2mjqKk4",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vN4T7MVWwoI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vN4T7MVWwoI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vN4T7MVWwoI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vN4T7MVWwoI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/vN4T7MVWwoI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 10,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "vN4T7MVWwoI"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "vN4T7MVWwoI",
+        "videoPublishedAt": "2019-09-24T12:00:21Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "toZIfqsI1DK9uzzvDudYkL4U6Nc",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2Ljc0REE3OEY2Nzg4RThEOTM",
+      "snippet": {
+        "publishedAt": "2019-04-01T08:00:17Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『恋はアッチャアッチャ』(ANGERME [Love is Accha Accha])(Promotion Edit)",
+        "description": "2019年4月10日発売のアンジュルム 26thシングル「恋はアッチャアッチャ/夢見た 15年(フィフティーン)」から「恋はアッチャアッチャ」のPromotion Editです。\n\n作詞：児玉雨子　作曲：星部ショウ　編曲：平田祥一郎\nMV Director：ZUMI \n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50591　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50593　￥1,600＋税\n\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50595　￥1,700＋税\n特典：イベント抽選応募券封入\n\n● 【通常盤A】\nHKCN-50597　定価 ￥1,000＋税\n● 【通常盤B】\nHKCN-50598　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ12種+集合1種よりランダムにて1枚封入\n（通常盤A：恋はアッチャアッチャ Ver.）\n（通常盤B：夢見た 15年 Ver.)\n\nAmazon⇒ https://amzn.to/2XY27Yv\n\n#アッチャアッチャ",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/77QezZxgA6s/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/77QezZxgA6s/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/77QezZxgA6s/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/77QezZxgA6s/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/77QezZxgA6s/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 11,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "77QezZxgA6s"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "77QezZxgA6s",
+        "videoPublishedAt": "2019-04-01T08:00:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "FSXOGUmvxMnDEOlSw6tlqoLbzmQ",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2Ljc1RDY2RTIwQ0Q1NzRCNEY",
+      "snippet": {
+        "publishedAt": "2019-03-22T08:00:14Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『夢見た 15年(フィフティーン)』(ANGERME [Dreamed for 15 years])(Promotion Edit)",
+        "description": "2019年4月10日発売のアンジュルム 26thシングル「恋はアッチャアッチャ/夢見た 15年(フィフティーン)」から「夢見た 15年(フィフティーン)」のPromotion Editです。\n\n作詞：福田花音　作曲：イイジマケン　編曲：炭竃智弘\nMV Director：青木亮二\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50591　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50593　￥1,600＋税\n\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50595　￥1,700＋税\n特典：イベント抽選応募券封入\n\n● 【通常盤A】\nHKCN-50597　定価 ￥1,000＋税\n● 【通常盤B】\nHKCN-50598　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ12種+集合1種よりランダムにて1枚封入\n（通常盤A：恋はアッチャアッチャ Ver.）\n（通常盤B：夢見た 15年 Ver.)\n\nAmazon⇒ https://amzn.to/2O3apcR",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BJk0PxPUfb8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BJk0PxPUfb8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BJk0PxPUfb8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BJk0PxPUfb8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BJk0PxPUfb8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 12,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "BJk0PxPUfb8"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "BJk0PxPUfb8",
+        "videoPublishedAt": "2019-03-22T08:00:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "14wGz53sJ1b_NV8qFnIu2joNtMo",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjhDQjUxMjFCRDJFRTREQjk",
+      "snippet": {
+        "publishedAt": "2018-10-12T08:00:26Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『46億年LOVE』(ANGERME [4.6 Billion Years Love])(Promotion Edit)",
+        "description": "2018年10月31日発売の25thシングル「タデ食う虫もLike it!/46億年LOVE」から「46億年LOVE」のPromotion Editです。\n\n作詞：児玉雨子　作曲：林田健司　編曲：鈴木俊介\nMV Director：北島武樹\n\n●【初回生産限定盤A】（CD+DVD）\nHKCN-50569　￥1,600＋税\n\n●【初回生産限定盤B】（CD+DVD）\nHKCN-50571　￥1,600＋税\n\n●【初回生産限定盤SP】（CD+DVD）\nHKCN-50575　￥1,700＋税\n特典：イベント抽選応募券封入\n\n●【通常盤A】\nHKCN-50577　定価 ￥1,000＋税\n●【通常盤B】\nHKCN-50578　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ10種＋集合1種よりランダムにて1枚封入\n（通常盤A：タデ食う虫もLike it! Ver.）\n（通常盤B：46億年LOVE Ver.）\n\nAmazon⇒https://amzn.to/2IzBzpb",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/njCe2i91kWo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/njCe2i91kWo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/njCe2i91kWo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/njCe2i91kWo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/njCe2i91kWo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 13,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "njCe2i91kWo"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "njCe2i91kWo",
+        "videoPublishedAt": "2018-10-12T08:00:08Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ZBhcVk0uJaezyz02Y0dh1q8nWFY",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjU3QjBEM0Q2ODZDRDdFNTk",
+      "snippet": {
+        "publishedAt": "2018-10-05T16:30:14Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『タデ食う虫もLike it!』(ANGERME [Every man to his taste. (Like it!)])(Promotion Edit)",
+        "description": "2018年10月31日発売の25thシングル「タデ食う虫もLike it!/46億年LOVE」から「タデ食う虫もLike it!」のPromotion Editです。\n\nテレビ東京ドラマ「このマンガがすごい！」オープニングテーマ\nアンジュルム「タデ食う虫もLike it!」\n\n作詞：前山田健一　作曲：前山田健一　編曲：鈴木俊介\nMV Director：三石直和\n\n●【初回生産限定盤A】（CD+DVD）\nHKCN-50569　￥1,600＋税\n\n●【初回生産限定盤B】（CD+DVD）\nHKCN-50571　￥1,600＋税\n\n●【初回生産限定盤SP】（CD+DVD）\nHKCN-50575　￥1,700＋税\n特典：イベント抽選応募券封入\n\n●【通常盤A】\nHKCN-50577　定価 ￥1,000＋税\n●【通常盤B】\nHKCN-50578　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ10種＋集合1種よりランダムにて1枚封入\n（通常盤A：タデ食う虫もLike it! Ver.）\n（通常盤B：46億年LOVE Ver.）\n\nAmazon⇒https://amzn.to/2DSCGBF\n\nテレビ東京ドラマ「このマンガがすごい！」オープニングテーマ\n\n【放送局】テレビ東京 テレビ大阪 ほか\n【番組名】ドラマ25「このマンガがすごい！」\n【放送日時】毎週金曜日 深夜0時52分～1時23分\n【番組公式HP】http://www.tv-tokyo.co.jp/konomanga/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6VkIMbCT3SA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6VkIMbCT3SA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6VkIMbCT3SA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6VkIMbCT3SA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6VkIMbCT3SA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 14,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "6VkIMbCT3SA"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "6VkIMbCT3SA",
+        "videoPublishedAt": "2018-10-05T16:30:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "lTZWOeHczk4QV3LE3GlcZLxxv7M",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LkJDNEFGNTc3MjBDNzEyMkY",
+      "snippet": {
+        "publishedAt": "2018-04-27T12:26:17Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『Uraha=Lover』(ANGERME[Uraha=Lover])(Promotion Edit)",
+        "description": "2018年5月9日発売のトリプルA面シングル「泣けないぜ・・・共感詐欺/Uraha=Lover/君だけじゃないさ...friends(2018アコースティックVer.)」から「Uraha=Lover」のPromotion Editです。\n\n作詞：山崎あおい　作曲：山崎あおい　編曲：浜田ピエール裕介\nMV Director：田口 稔大\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50553　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50555　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nHKCN-50557　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50559　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード\n\n● 【通常盤A】\nHKCN-50561　定価 ￥1,000＋税\n● 【通常盤B】\nHKCN-50562　定価 ￥1,000＋税\n● 【通常盤C】\nHKCN-50563　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真ソロ10種＋集合1種よりランダムにて1枚封入\n（通常盤A：泣けないぜ・・・共感詐欺 Ver.）\n（通常盤B：Uraha=Lover Ver.）\n（通常盤C：君だけじゃないさ...friends(2018アコースティックVer.) Ver.）\n\nAmazon⇒https://amzn.to/2GVaeA6\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Y60lZ3EUJns/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Y60lZ3EUJns/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Y60lZ3EUJns/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Y60lZ3EUJns/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Y60lZ3EUJns/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 15,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Y60lZ3EUJns"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "Y60lZ3EUJns",
+        "videoPublishedAt": "2018-04-28T02:30:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "-xDnts91hbPrlQyhfRl4cOjy8Y4",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2Ljg2Nzk3MDA0RjZBQjJDREI",
+      "snippet": {
+        "publishedAt": "2018-04-20T12:11:18Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『泣けないぜ・・・共感詐欺』(ANGERME[I Can't Cry… The Fraud of Empathy])(Promotion Edit)",
+        "description": "2018年5月9日発売のトリプルA面シングル「泣けないぜ・・・共感詐欺/Uraha=Lover/君だけじゃないさ...friends(2018アコースティックVer.)」から「泣けないぜ・・・共感詐欺」のPromotion Editです。\n\n作詞：山崎あおい　作曲：山崎あおい　編曲：平田祥一郎\nMV Director：大河 臣\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50553　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50555　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nHKCN-50557　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50559　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード\n\n● 【通常盤A】\nHKCN-50561　定価 ￥1,000＋税\n● 【通常盤B】\nHKCN-50562　定価 ￥1,000＋税\n● 【通常盤C】\nHKCN-50563　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真ソロ10種＋集合1種よりランダムにて1枚封入\n（通常盤A：泣けないぜ・・・共感詐欺 Ver.）\n（通常盤B：Uraha=Lover Ver.）\n（通常盤C：君だけじゃないさ...friends(2018アコースティックVer.) Ver.）\n\nAmazon⇒https://amzn.to/2GTF1sT\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eAtypTNHe48/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eAtypTNHe48/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eAtypTNHe48/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/eAtypTNHe48/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/eAtypTNHe48/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 16,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "eAtypTNHe48"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "eAtypTNHe48",
+        "videoPublishedAt": "2018-04-21T06:30:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "DzRBVJteWqrm59RGnN2ivmxrbss",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LkMwNUZEOEE4MjdERTM1MUI",
+      "snippet": {
+        "publishedAt": "2018-04-16T08:00:13Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『君だけじゃないさ...friends(2018アコースティックVer.)』(ANGERME[It's not just you…friends])(Promotion Edit)",
+        "description": "2018年5月9日発売のトリプルA面シングル「泣けないぜ・・・共感詐欺/Uraha=Lover/君だけじゃないさ...friends(2018アコースティックVer.)」から「君だけじゃないさ...friends(2018アコースティックVer.)」のPromotion Editです。\n\n作詞：星部ショウ　作曲：星部ショウ　編曲：鈴木俊介\nMV Director：池田圭\n\n● 【初回生産限定盤A】（CD+DVD）\nHKCN-50553　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nHKCN-50555　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nHKCN-50557　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nHKCN-50559　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード\n\n● 【通常盤A】\nHKCN-50561　定価 ￥1,000＋税\n● 【通常盤B】\nHKCN-50562　定価 ￥1,000＋税\n● 【通常盤C】\nHKCN-50563　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真ソロ10種＋集合1種よりランダムにて1枚封入\n（通常盤A：泣けないぜ・・・共感詐欺 Ver.）\n（通常盤B：Uraha=Lover Ver.）\n（通常盤C：君だけじゃないさ...friends(2018アコースティックVer.) Ver.）\n\nAmazon⇒https://amzn.to/2HicXTr\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4BDBEpKH4zI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4BDBEpKH4zI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4BDBEpKH4zI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4BDBEpKH4zI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4BDBEpKH4zI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 17,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "4BDBEpKH4zI"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "4BDBEpKH4zI",
+        "videoPublishedAt": "2018-04-16T08:00:01Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Bo6hNjpX7f7RdvhqQ8nOfyToMjE",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjhGQTQ3MDVGQjVFQ0UwRjU",
+      "snippet": {
+        "publishedAt": "2017-12-13T08:00:28Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『君だけじゃないさ...friends』(ANGERME[It's not just you…friends])(Promotion Edit ショートVer.)",
+        "description": "2017年12月13日発売のBlu-ray/DVDシングル「マナーモード／キソクタダシクウツクシク／君だけじゃないさ...friends」から「君だけじゃないさ...friends」のPromotion Edit ショートVer.です。\n\n作詞・作曲：星部ショウ　編曲：平田祥一郎\nMV Director：ZUMI \n\n\n● 【Blu-ray】\nHKXN-50061　￥3,704＋税\n\n【Blu-ray】特典\n・特典映像として3曲全てのMVのマルチアングル映像収録\n・3曲の音源をダウンロードできるミュージックカード(プレイパス)封入。 ※有効期限：2018年6月11日まで\n・「マナーモード」(MUSIC VIDEO 360度VR Ver.)ダウンロードコード封入。 ※有効期限：2018年12月11日まで\n\n● 【DVD】\nHKBN-50218　￥1,852＋税\n\n【DVD】特典\n・ヴィジュアルブックレット付き\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SoyJ-IGY1zE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SoyJ-IGY1zE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SoyJ-IGY1zE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SoyJ-IGY1zE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SoyJ-IGY1zE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 18,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "SoyJ-IGY1zE"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "SoyJ-IGY1zE",
+        "videoPublishedAt": "2017-12-13T08:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "bgqduo1BjjrGryK3BD-2sXLJdyY",
+      "id": "UEwwRENGN0Y3ODYxNEYzQUU2LjU1ODBGMzIwNzQyNjcyREE",
+      "snippet": {
+        "publishedAt": "2017-12-13T08:00:27Z",
+        "channelId": "UCDwcZ85zjLKD-3-jqlv1wQQ",
+        "title": "アンジュルム『キソクタダシクウツクシク』(ANGERME[Regularly and Beautifully])(Promotion Edit ショートVer.)",
+        "description": "2017年12月13日発売のBlu-ray/DVDシングル「マナーモード／キソクタダシクウツクシク／君だけじゃないさ...friends」から「キソクタダシクウツクシク」のPromotion Edit ショートVer.です。\n\n作詞：亜伊林　作曲：星部ショウ　編曲：板垣祐介\nMV Director：今村 繁\n\n\n● 【Blu-ray】\nHKXN-50061　￥3,704＋税\n\n【Blu-ray】特典\n・特典映像として3曲全てのMVのマルチアングル映像収録\n・3曲の音源をダウンロードできるミュージックカード(プレイパス)封入。 ※有効期限：2018年6月11日まで\n・「マナーモード」(MUSIC VIDEO 360度VR Ver.)ダウンロードコード封入。 ※有効期限：2018年12月11日まで\n\n● 【DVD】\nHKBN-50218　￥1,852＋税\n\n【DVD】特典\n・ヴィジュアルブックレット付き\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QbZfjV-qyyE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QbZfjV-qyyE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QbZfjV-qyyE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QbZfjV-qyyE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QbZfjV-qyyE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "アンジュルム",
+        "playlistId": "PL0DCF7F78614F3AE6",
+        "position": 19,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "QbZfjV-qyyE"
+        },
+        "videoOwnerChannelTitle": "アンジュルム",
+        "videoOwnerChannelId": "UCDwcZ85zjLKD-3-jqlv1wQQ"
+      },
+      "contentDetails": {
+        "videoId": "QbZfjV-qyyE",
+        "videoPublishedAt": "2017-12-13T08:00:01Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 61,
+    "resultsPerPage": 20
+  }
+}

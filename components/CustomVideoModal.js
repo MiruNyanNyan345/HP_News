@@ -10,7 +10,11 @@ const CustomVideoModal = props => {
       animationType={props.modalAnimationType}
       transparent={props.modalTransparent}>
       <View style={props.containerStyle}>
-        <YoutubePlayer height={props.playerHeight} width={props.playerWidth} videoId={props.videoId} />
+        <YoutubePlayer
+          height={props.playerHeight}
+          width={props.playerWidth}
+          videoId={props.videoId}
+        />
         <CustomButton
           title={props.closedButtonTitle}
           onPress={() => props.showVideoModal(false)}

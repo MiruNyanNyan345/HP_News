@@ -41,16 +41,16 @@ const CustomYoutubeVideoFlatList = props => {
               width: '100%',
               opacity: thumbnailPressed[index] === false ? 1 : 0.25,
             }}
-            channelTitle={
-              thumbnailPressed[index] === false
-                ? null
-                : item.snippet.channelTitle
-            }
-            channelTitleStyle={{
-              color: 'rgb(128,20,255)',
-              fontWeight: 'bold',
-              fontSize: 18,
-            }}
+            // channelTitle={
+            //   thumbnailPressed[index] === false
+            //     ? null
+            //     : item.snippet.channelTitle
+            // }
+            // channelTitleStyle={{
+            //   color: 'rgb(128,20,255)',
+            //   fontWeight: 'bold',
+            //   fontSize: 10,
+            // }}
             videoTitleContainerStyle={{
               position: 'absolute',
               top: 0,
@@ -66,7 +66,8 @@ const CustomYoutubeVideoFlatList = props => {
             videoTitleStyle={{
               color: 'rgb(255,20,147)',
               fontWeight: 'bold',
-              fontSize: 22,
+              fontSize: 15,
+              textAlign: 'center'
             }}
           />
         </View>

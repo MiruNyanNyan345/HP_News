@@ -22,11 +22,11 @@ const AmebloScreen = () => {
       value: 'amebaId=tanakareina-blog;blogId=10012650381',
     },
     {
-      label: "モーニング娘。'21 Q期",
+      label: "モーニング娘。'22 Q期",
       value: 'amebaId=morningmusume-9ki;blogId=10034661405',
     },
     {
-      label: "モーニング娘。'21 天気組",
+      label: "モーニング娘。'22 天気組",
       value: 'amebaId=morningmusume-10ki;blogId=10034661412',
     },
     {
@@ -34,15 +34,15 @@ const AmebloScreen = () => {
       value: 'amebaId=kudo--haruka;blogId=10059477425',
     },
     {
-      label: "モーニング娘。'21 12期",
+      label: "モーニング娘。'22 12期",
       value: 'amebaId=mm-12ki;blogId=10049636311',
     },
     {
-      label: 'モーニング娘。’21 13期・14期',
+      label: 'モーニング娘。’22 13期・14期',
       value: 'amebaId=morningm-13ki;blogId=10057252278',
     },
     {
-      label: 'モーニング娘。’21 15期',
+      label: 'モーニング娘。’22 15期',
       value: 'amebaId=morningmusume15ki;blogId=10061739702',
     },
   ];
@@ -89,7 +89,7 @@ const AmebloScreen = () => {
           height={40}
           width={300}
           items={members}
-          labelColor={'#c904e0'}
+          labelColor={'#5f27cd'}
           labelSize={15}
           labelWeight={'bold'}
           backgroundColor={'white'}

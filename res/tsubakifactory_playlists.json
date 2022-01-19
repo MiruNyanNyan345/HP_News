@@ -1,0 +1,1091 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "gnGGOzhiAdKuuJ9tMTDFX46yRN4",
+  "nextPageToken": "EAAaBlBUOkNCUQ",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "4r_SpgDaGHaIMoqohs_6QgbBbJw",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC43MTI1NDIwOTMwQjIxMzNG",
+      "snippet": {
+        "publishedAt": "2021-10-15T07:00:24Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『約束・連絡・記念日』Promotion Edit",
+        "description": "2021年11月17日発売のつばきファクトリー NEWシングル『涙のヒロイン降板劇/ガラクタDIAMOND/約束・連絡・記念日』から「約束・連絡・記念日」のPromotion Editです。 \n\n作詞：児玉雨子　作曲：星部ショウ　編曲：大久保薫\n\nMV Director：三石直和\n\n●【初回生産限定盤A】\nEPCE-7635　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤B】\nEPCE-7637　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤C】\nEPCE-7639　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤SP】\nEPCE-7641　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【通常盤A】 EPCE-7643　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤B】 EPCE-7644　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤C】 EPCE-7645　定価 ￥1,300 (税抜価格 ￥1,182)\n\n【通常盤】 \n特典：トレーディングカードソロ12種+キラ仕様集合1種よりランダムにて1枚封入\n(通常盤A：涙のヒロイン降板劇 Ver.) \n(通常盤B：ガラクタDIAMOND Ver.) \n(通常盤C：約束・連絡・記念日 Ver.) \n\nAmazon⇒ https://amzn.to/3mQAxcF\n\n#つばきファクトリー #約束連絡記念日 #Helloproject #ハロプロ",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1n83PbBLjls/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1n83PbBLjls/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1n83PbBLjls/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1n83PbBLjls/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1n83PbBLjls/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "1n83PbBLjls"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "1n83PbBLjls",
+        "videoPublishedAt": "2021-10-15T07:00:01Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "S86u_xxGpQNk7_PEuhJkSv0B1iQ",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5DNzE1RjZEMUZCMjA0RDBB",
+      "snippet": {
+        "publishedAt": "2021-10-08T13:00:57Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『ガラクタDIAMOND』Promotion Edit",
+        "description": "つばきファクトリー『ガラクタDIAMOND』Promotion Edit\n\n2021年11月17日発売のつばきファクトリー NEWシングル『涙のヒロイン降板劇/ガラクタDIAMOND/約束・連絡・記念日』から「ガラクタDIAMOND」のPromotion Editです。 \n\n作詞：森由里子　作曲：馬飼野康二/鎌田俊哉　編曲：炭竃智弘\n\nMV Director：高谷登来\n\n●【初回生産限定盤A】\nEPCE-7635　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤B】\nEPCE-7637　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤C】\nEPCE-7639　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤SP】\nEPCE-7641　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【通常盤A】 EPCE-7643　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤B】 EPCE-7644　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤C】 EPCE-7645　定価 ￥1,300 (税抜価格 ￥1,182)\n\n【通常盤】 \n特典：トレーディングカードソロ12種+キラ仕様集合1種よりランダムにて1枚封入\n(通常盤A：涙のヒロイン降板劇 Ver.) \n(通常盤B：ガラクタDIAMOND Ver.) \n(通常盤C：約束・連絡・記念日 Ver.) \n\nAmazon⇒ https://amzn.to/3a8whzw\n\n#つばきファクトリー #ガラクタDIAMOND #Helloproject #ハロプロ",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fGCmRBn6-7o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fGCmRBn6-7o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fGCmRBn6-7o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fGCmRBn6-7o/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fGCmRBn6-7o/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fGCmRBn6-7o"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "fGCmRBn6-7o",
+        "videoPublishedAt": "2021-10-08T13:00:16Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "cogFrQf5BQVQlKpAGJw76VGas_Y",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC45NzUwQkI1M0UxNThBMkU0",
+      "snippet": {
+        "publishedAt": "2021-10-01T12:02:10Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『涙のヒロイン降板劇』Promotion Edit",
+        "description": "2021年11月17日発売のつばきファクトリー NEWシングル『涙のヒロイン降板劇/ガラクタDIAMOND/約束・連絡・記念日』から「涙のヒロイン降板劇」のPromotion Editです。 \n\n作詞：山崎あおい　作曲：Shusui/Josef Melin　編曲：Josef Melin\n©by Melle Music\n\nMV Director：杉山弘樹\n\n●【初回生産限定盤A】\nEPCE-7635　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤B】\nEPCE-7637　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤C】\nEPCE-7639　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【初回生産限定盤SP】\nEPCE-7641　￥2,200 (税抜価格 ￥2,000)\n特典：BD付\n\n●【通常盤A】 EPCE-7643　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤B】 EPCE-7644　定価 ￥1,300 (税抜価格 ￥1,182)\n●【通常盤C】 EPCE-7645　定価 ￥1,300 (税抜価格 ￥1,182)\n\n【通常盤】 \n特典：トレーディングカードソロ12種+キラ仕様集合1種よりランダムにて1枚封入\n(通常盤A：涙のヒロイン降板劇 Ver.) \n(通常盤B：ガラクタDIAMOND Ver.) \n(通常盤C：約束・連絡・記念日 Ver.) \n\nAmazon⇒ https://amzn.to/3kTzKYX\n\n#つばきファクトリー #涙のヒロイン降板劇 #Helloproject #ハロプロ",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Dokn5iGzjwU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Dokn5iGzjwU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Dokn5iGzjwU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Dokn5iGzjwU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Dokn5iGzjwU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Dokn5iGzjwU"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "Dokn5iGzjwU",
+        "videoPublishedAt": "2021-10-01T12:00:13Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "HtyOB0MNttkbED684nt07yfFZ7Q",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC4zRjM0MkVCRTg0MkYyQTM0",
+      "snippet": {
+        "publishedAt": "2020-09-28T03:35:59Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『断捨ISM』(Camellia Factory [Dansha-ISM])(Promotion Edit)",
+        "description": "2020年9月30日発売のつばきファクトリー７thシングル「断捨ISM/イマナンジ？」から「断捨ISM」のPromotion Editです。\n\n作詞：SHOCK EYE 作曲：SHOCK EYE 編曲：草野将史\nMV Director：瀬里義治\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7590　￥1,700＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7592　￥1,700＋税\n\n● 【通常盤A】EPCE-7594　定価 ￥1,000＋税\n　My Darling ～Do you love me?～【Additional Track】\n● 【通常盤B】EPCE-7595　定価 ￥1,000＋税\n　恋のUFOキャッチャー【Additional Track】\n\n【通常盤】特典\n特典：トレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n\nAmazon⇒https://amzn.to/31xVj7v\n\n\nつばきファクトリー「断捨ISM／イマナンジ？」9/30配信スタート！\n\nつばきファクトリーニューシングル「断捨ISM／イマナンジ？」9/30よりシングル・\nハイレゾ・ビデオ配信スタート！\n\n配信サイト「レコチョク」では、9/30～10/4の期間中『断捨ISM／イマナンジ？（通\n常盤A）』『断捨ISM／イマナンジ？（通常盤B）』をアルバム購入、\nまたは「断捨ISM」「イマナンジ？」「My Darling ～Do you love me?～」「恋のUFO\nキャッチャー」のハイレゾシングルいずれかを\nご購入いただいた方に、【つばきファクトリー オリジナル画像】をプレゼント！\n\n\n【レコチョク】※特典あり\nhttps://recochoku.jp/album/A2001836475/　（通常盤A）　\nhttps://recochoku.jp/album/A2001836486/　（通常盤B）\n\n【iTunes(Mastered for iTunes)】\nhttps://itunes.apple.com/jp/album/1531968922?app=itunes （通常盤A）\nhttps://itunes.apple.com/jp/album/1531968853?app=itunes （通常盤B）\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/EPCE-7594-HR/　（通常盤A）\nhttps://mora.jp/package/43000030/EPCE-7595-HR/　（通常盤B）",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/F_YsbciI1cE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/F_YsbciI1cE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/F_YsbciI1cE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/F_YsbciI1cE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/F_YsbciI1cE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "F_YsbciI1cE"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "F_YsbciI1cE",
+        "videoPublishedAt": "2020-09-28T00:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "s6Q-gA7YJZlvLcvKTBOP3n0nq9w",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5GM0Q3M0MzMzY5NTJFNTdE",
+      "snippet": {
+        "publishedAt": "2020-08-30T05:12:44Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『イマナンジ？』(Camellia Factory [What time is it?])(Promotion Edit)",
+        "description": "2020年9月30日発売のつばきファクトリー７thシングル「断捨ISM/イマナンジ？」から「イマナンジ？」のPromotion Editです。\n\n作詞：Soflan Daichi 　作曲：玉木千尋　編曲：玉木千尋\nMV Director：森本一平\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7590　￥1,700＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7592　￥1,700＋税\n\n● 【通常盤A】EPCE-7594　定価 ￥1,000＋税\n● 【通常盤B】EPCE-7595　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n\nAmazon⇒https://amzn.to/31uPMP7\n\n\nつばきファクトリー「断捨ISM／イマナンジ？」9/30配信スタート！\n\nつばきファクトリーニューシングル「断捨ISM／イマナンジ？」9/30よりシングル・\nハイレゾ・ビデオ配信スタート！\n\n配信サイト「レコチョク」では、9/30～10/4の期間中『断捨ISM／イマナンジ？（通\n常盤A）』『断捨ISM／イマナンジ？（通常盤B）』をアルバム購入、\nまたは「断捨ISM」「イマナンジ？」「My Darling ～Do you love me?～」「恋のUFO\nキャッチャー」のハイレゾシングルいずれかを\nご購入いただいた方に、【つばきファクトリー オリジナル画像】をプレゼント！\n\n\n【レコチョク】※特典あり\nhttps://recochoku.jp/album/A2001836475/　（通常盤A）　\nhttps://recochoku.jp/album/A2001836486/　（通常盤B）\n\n【iTunes(Mastered for iTunes)】\nhttps://itunes.apple.com/jp/album/1531968922?app=itunes （通常盤A）\nhttps://itunes.apple.com/jp/album/1531968853?app=itunes （通常盤B）\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/EPCE-7594-HR/　（通常盤A）\nhttps://mora.jp/package/43000030/EPCE-7595-HR/　（通常盤B）",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Lyf54tX8wy0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Lyf54tX8wy0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Lyf54tX8wy0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Lyf54tX8wy0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Lyf54tX8wy0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Lyf54tX8wy0"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "Lyf54tX8wy0",
+        "videoPublishedAt": "2020-08-30T00:00:05Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "RFmGfAHxT2LFQgsPnlc8Es0GbWs",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC4yMDhBMkNBNjRDMjQxQTg1",
+      "snippet": {
+        "publishedAt": "2019-12-20T09:03:08Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『意識高い乙女のジレンマ』(Camellia Factory [The dilemma of a girl who’s self-aware.])(Promotion Edit)",
+        "description": "2020年1月15日発売のつばきファクトリー ６thシングル「意識高い乙女のジレンマ/抱きしめられてみたい」から「意識高い乙女のジレンマ」のPromotion Editです。（撮影協力：ダイヤと花の大観覧車）\n\n作詞：西野蒟蒻　作曲：KOUGA　編曲：大久保薫\nMV Director：瀬里義治\n\n\n● 【初回生産限定盤A】（CD+DVD）イベント抽選応募券封入\nEPCE-7559　￥1,700＋税\n\n● 【初回生産限定盤B】（CD+DVD）イベント抽選応募券封入\nEPCE-7561　￥1,700＋税\n\n● 【通常盤A】「ナインティーンの蜃気楼」を収録【Additional Track】\nEPCE-7563　定価 ￥1,000＋税\n● 【通常盤B】「Hair up 空へ！」を収録【Additional Track】\nEPCE-7564　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n（通常盤A：意識高い乙女のジレンマ Ver.）\n（通常盤B：抱きしめられてみたい Ver.)\n\nAmazon⇒https://amzn.to/2PQqAf2\n\nつばきファクトリー「意識高い乙女のジレンマ／抱きしめられてみたい」配信スタート！\n\nつばきファクトリー本日1/15発売ニューシングル「意識高い乙女のジレンマ／抱きしめられてみたい」シングル・ハイレゾ・ビデオ配信スタート！\n\n配信サイト「レコチョク」では、1/15～1/19の期間中「意識高い乙女のジレンマ／抱きしめられてみたい」（通常盤A）もしくは「意識高い乙女のジレンマ／抱きしめられてみたい」（通常盤B）をアルバム購入、または「意識高い乙女のジレンマ」「抱きしめられてみたい」「ナインティーンの蜃気楼」「Hair up 空へ！ 」のハイレゾシングルいずれかをご購入いただいた方に、【つばきファクトリーオリジナル画像（アーティスト写真　別カット）】をプレゼント！\n\n\n【レコチョク】\nhttps://recochoku.jp/album/A2001642456/　（通常盤A）　※特典あり\nhttps://recochoku.jp/album/A2001642478/　（通常盤B）　※特典あり\n\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1492241072?app=itunes　（通常盤A）　\nhttps://itunes.apple.com/jp/album/1492240710?app=itunes　（通常盤B）　\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/EPCE-7563-HR/　（通常盤A）\nhttps://mora.jp/package/43000030/EPCE-7564-HR/　（通常盤B）",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eUgU09siffs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eUgU09siffs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eUgU09siffs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/eUgU09siffs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/eUgU09siffs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "eUgU09siffs"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "eUgU09siffs",
+        "videoPublishedAt": "2019-12-20T08:00:07Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "8vyogwWWldAqaHqUtW5gGnL9clM",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5ENDU4Q0M4RDExNzM1Mjcy",
+      "snippet": {
+        "publishedAt": "2019-12-13T11:55:14Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『抱きしめられてみたい』(Camellia Factory [“I want to be hugged.”])(Promotion Edit)",
+        "description": "2020年1月15日発売のつばきファクトリー ６thシングル「意識高い乙女のジレンマ/抱きしめられてみたい」から「抱きしめられてみたい」のPromotion Editです。\n\n作詞：児玉雨子　作曲：大橋莉子　編曲：平田祥一郎\nMV Director：瀬里義治\n\n● 【初回生産限定盤A】（CD+DVD）イベント抽選応募券封入\nEPCE-7559　￥1,700＋税\n\n● 【初回生産限定盤B】（CD+DVD）イベント抽選応募券封入\nEPCE-7561　￥1,700＋税\n\n● 【通常盤A】「ナインティーンの蜃気楼」を収録【Additional Track】\nEPCE-7563　定価 ￥1,000＋税\n● 【通常盤B】「Hair up 空へ！」を収録【Additional Track】\nEPCE-7564　定価 ￥1,000＋税\n\n【通常盤】特典\n特典：トレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n（通常盤A：意識高い乙女のジレンマ Ver.）\n（通常盤B：抱きしめられてみたい Ver.)\n\nAmazon⇒ https://amzn.to/38ulLR5\n\nつばきファクトリー「意識高い乙女のジレンマ／抱きしめられてみたい」配信スタート！\n\nつばきファクトリー本日1/15発売ニューシングル「意識高い乙女のジレンマ／抱きしめられてみたい」シングル・ハイレゾ・ビデオ配信スタート！\n\n配信サイト「レコチョク」では、1/15～1/19の期間中「意識高い乙女のジレンマ／抱きしめられてみたい」（通常盤A）もしくは「意識高い乙女のジレンマ／抱きしめられてみたい」（通常盤B）をアルバム購入、または「意識高い乙女のジレンマ」「抱きしめられてみたい」「ナインティーンの蜃気楼」「Hair up 空へ！ 」のハイレゾシングルいずれかをご購入いただいた方に、【つばきファクトリーオリジナル画像（アーティスト写真　別カット）】をプレゼント！\n\n\n【レコチョク】\nhttps://recochoku.jp/album/A2001642456/　（通常盤A）　※特典あり\nhttps://recochoku.jp/album/A2001642478/　（通常盤B）　※特典あり\n\n【iTunes(Apple Digital Masters)】\nhttps://itunes.apple.com/jp/album/1492241072?app=itunes　（通常盤A）　\nhttps://itunes.apple.com/jp/album/1492240710?app=itunes　（通常盤B）　\n\n【mora（ハイレゾ）】\nhttps://mora.jp/package/43000030/EPCE-7563-HR/　（通常盤A）\nhttps://mora.jp/package/43000030/EPCE-7564-HR/　（通常盤B）",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wJqZLPB9Jlg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wJqZLPB9Jlg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wJqZLPB9Jlg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wJqZLPB9Jlg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wJqZLPB9Jlg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "wJqZLPB9Jlg"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "wJqZLPB9Jlg",
+        "videoPublishedAt": "2019-12-13T08:00:12Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "K_quIJTZ8t0cOWHKb_riukhKOYk",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC45RTgxNDRBMzUwRjQ0MDhC",
+      "snippet": {
+        "publishedAt": "2019-02-15T08:01:01Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『ふわり、恋時計』(Camellia Factory[Softly, the clock of love.])(Promotion Edit)",
+        "description": "2019年2月27日発売のつばきファクトリー5thシングル「三回目のデート神話/ふわり、恋時計」から「ふわり、恋時計」のPromotion Editです。\n\n作詞：井筒日美　作曲：星部ショウ　編曲：中西亮輔\nMV Director：大東修治\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7471　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7473　￥1,600＋税\n\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7475　￥1,700＋税\n特典：SP盤特典握手会参加券封入\n\n● 【通常盤A】\nEPCE-7477　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7478　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n（通常盤A：三回目のデート神話 Ver.）\n（通常盤B：ふわり恋時計 Ver.)\n\nAmazon⇒https://amzn.to/2TaI867\n\n【レコチョク】http://recochoku.jp/album/A2001419034/\n【iTunes(Mastered for iTunes)】https://itunes.apple.com/jp/album/1452812089?app=itunes\n【mora（ハイレゾ）】https://mora.jp/package/43000030/EPCE-7477-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WbQdpVPT-VQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WbQdpVPT-VQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WbQdpVPT-VQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WbQdpVPT-VQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WbQdpVPT-VQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "WbQdpVPT-VQ"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "WbQdpVPT-VQ",
+        "videoPublishedAt": "2019-02-15T08:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "DymhSuzomL3s63DTti_RWAGRAr0",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC4yMUQyQTQzMjRDNzMyQTMy",
+      "snippet": {
+        "publishedAt": "2019-02-08T08:10:58Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『三回目のデート神話』(Camellia Factory[“The myth of 3rd date”])(Promotion Edit)",
+        "description": "2019年2月27日発売のつばきファクトリー5thシングル「三回目のデート神話/ふわり、恋時計」から「三回目のデート神話」のPromotion Editです。\n\n作詞：児玉雨子　作曲：中島卓偉　編曲：炭竃智弘\nMV Director：多田卓也\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7471　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7473　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7475　￥1,700＋税\n特典：SP盤特典握手会参加券封入\n\n● 【通常盤A】\nEPCE-7477　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7478　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n（通常盤A：三回目のデート神話 Ver.）\n（通常盤B：ふわり恋時計 Ver.)\n\nAmazon⇒https://amzn.to/2CEvaXd\n\n【レコチョク】http://recochoku.jp/album/A2001419034/\n【iTunes(Mastered for iTunes)】https://itunes.apple.com/jp/album/1452812089?app=itunes\n【mora（ハイレゾ）】https://mora.jp/package/43000030/EPCE-7477-HR/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/P--IjSQfhlE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/P--IjSQfhlE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/P--IjSQfhlE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/P--IjSQfhlE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/P--IjSQfhlE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "P--IjSQfhlE"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "P--IjSQfhlE",
+        "videoPublishedAt": "2019-02-08T08:00:08Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "ndSHkYDwfkT4Gq-so0_ZUBRVx10",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC41QTY1Q0UxMTVCODczNThE",
+      "snippet": {
+        "publishedAt": "2018-09-27T12:41:32Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "”もうサイコー！”ミュージックビデオ by つばきファクトリー |「トロールズ： シング・ダンス・ハグ！」エンディングソング",
+        "description": "TVアニメーション・シリーズ、ドリームワークス「トロールズ： シング・ダンス・ハグ！」ではトロールたちのまったく新しい、驚きの冒険が始まります！ \n\nとっても元気で歌と踊りが大好きなヒロイン・ポピーが、堅実でちょっと内気なブランチ、そしてトロール村の愉快な仲間たちと、日々巻き起こるさまざまなできごとを歌って、踊って、ハグして、前向きに乗り越えていく、新たな冒険が始まります！　敵対していたベルゲン達と手を取りあって幸せなトロール村での生活が始まろうとしていたが、新たな問題が発生！？エピソード毎に登場するポップで楽しくノリのいい音楽とカラフルでキラキラな映像に自然と体が動いてしまうこと間違いなし！トロールたちがとってもハッピーなダンスパーティーへとお誘いします！ \n\n\nTVアニメーション・シリーズ｢トロールズ： シング・ダンス・ハグ！｣\n10月3日(水)夕方5時55分からテレビ東京系で放送スタート！\n\n最新情報はコチラ\nhttp://www.trolls.jp\n\n公式SNSはコチラ\n▼Facebook：　https://www.facebook.com/Trolls.jp/\n▼Twitter：　https://twitter.com/Trolls_jp\n▼Instagram：　https://www.instagram.com/trolls.jp/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/n4Y6n7HIwqw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/n4Y6n7HIwqw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/n4Y6n7HIwqw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/n4Y6n7HIwqw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/n4Y6n7HIwqw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "n4Y6n7HIwqw"
+        },
+        "videoOwnerChannelTitle": "ドリームワークス",
+        "videoOwnerChannelId": "UCH0BWD8_8BIRydS-waD4O8A"
+      },
+      "contentDetails": {
+        "videoId": "n4Y6n7HIwqw",
+        "videoPublishedAt": "2018-09-27T03:17:02Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "wJmNT52QETQJ1BBeQU8KzL0QJb4",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5EQUE1NTFDRjcwMDg0NEMz",
+      "snippet": {
+        "publishedAt": "2018-07-06T15:08:31Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『今夜だけ浮かれたかった』(Camellia Factory[Only for tonight, I wanted to be playful])(Promotion Edit)",
+        "description": "2018年7月18日発売のトリプルA面シングル「デートの日は二度くらいシャワーして出かけたい/純情cm(センチメートル)/今夜だけ浮かれたかった」から「今夜だけ浮かれたかった」のPromotion Editです。\n\n作詞：児玉雨子　作曲：中島卓偉　編曲：炭竃智弘\nMV Director：森田 亮\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7409　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7411　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7413　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7415　￥1,800＋税\n特典：SP盤特典握手会参加券orプレゼント引換券\n\n● 【通常盤A】\nEPCE-7417　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7418　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7419　定価 ￥1,000＋税\n\n\n【通常盤】特典\nトレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n（通常盤A： デートの日は二度くらいシャワーして出かけたい Ver.）\n（通常盤B： 純情cm(センチメートル) Ver.）\n（通常盤C： 今夜だけ浮かれたかった Ver.）\n\nAmazon⇒https://amzn.to/2tbe3HQ\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/E8Y7QBhU6Co/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/E8Y7QBhU6Co/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/E8Y7QBhU6Co/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/E8Y7QBhU6Co/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/E8Y7QBhU6Co/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 10,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "E8Y7QBhU6Co"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "E8Y7QBhU6Co",
+        "videoPublishedAt": "2018-07-06T15:00:00Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "y2Kd2C9G0LdeaC0X1X-rA2_kn2I",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC41Mzk2QTAxMTkzNDk4MDhF",
+      "snippet": {
+        "publishedAt": "2018-07-02T08:06:15Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『デートの日は二度くらいシャワーして出かけたい』[Onadate, I’dliketoshoweratleasttwiceandgo](Promotion Edit)",
+        "description": "2018年7月18日発売のトリプルA面シングル「デートの日は二度くらいシャワーして出かけたい/純情cm(センチメートル)/今夜だけ浮かれたかった」から「デートの日は二度くらいシャワーして出かけたい」のPromotion Editです。\n\n作詞：つんく　作曲：つんく　編曲：江上浩太郎\nMV Director：青木亮二\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7409　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7411　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7413　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7415　￥1,800＋税\n特典：SP盤特典握手会参加券orプレゼント引換券\n\n● 【通常盤A】\nEPCE-7417　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7418　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7419　定価 ￥1,000＋税\n\n\n【通常盤】特典\nトレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n（通常盤A： デートの日は二度くらいシャワーして出かけたい Ver.）\n（通常盤B： 純情cm(センチメートル) Ver.）\n（通常盤C： 今夜だけ浮かれたかった Ver.）\n\nAmazon⇒https://amzn.to/2JAT2RK\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/64evz2g7SWo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/64evz2g7SWo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/64evz2g7SWo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/64evz2g7SWo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/64evz2g7SWo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 11,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "64evz2g7SWo"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "64evz2g7SWo",
+        "videoPublishedAt": "2018-07-02T08:00:01Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "P_nQTDKveD8aeWQcSZzltul1Tew",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC4zMDg5MkQ5MEVDMEM1NTg2",
+      "snippet": {
+        "publishedAt": "2018-06-25T08:43:16Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『純情cm(センチメートル)』(Camellia Factory[Junjou cm])(Promotion Edit)",
+        "description": "2018年7月18日発売のトリプルA面シングル「デートの日は二度くらいシャワーして出かけたい/純情cm(センチメートル)/今夜だけ浮かれたかった」から「純情cm(センチメートル)」のPromotion Editです。\n\n作詞・作曲:大橋莉子  編曲:hisakuni\nMV Director：野田智雄\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7409　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7411　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7413　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7415　￥1,800＋税\n特典：SP盤特典握手会参加券orプレゼント引換券\n\n● 【通常盤A】\nEPCE-7417　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7418　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7419　定価 ￥1,000＋税\n\n【通常盤】特典\nトレーディングカードソロ9種+集合1種よりランダムにて1枚封入\n\n\nAmazon⇒https://amzn.to/2HNQTMN\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/v4SCOUBKuOc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/v4SCOUBKuOc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/v4SCOUBKuOc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/v4SCOUBKuOc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/v4SCOUBKuOc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 12,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "v4SCOUBKuOc"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "v4SCOUBKuOc",
+        "videoPublishedAt": "2018-06-25T08:00:04Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "jyBLhe1QOwAQEE9F6_me5IzmSH8",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC45ODRDNTg0QjA4NkFBNkQy",
+      "snippet": {
+        "publishedAt": "2018-02-09T08:01:18Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『春恋歌』(Camellia Factory[A Spring Love Song])(Promotion Edit)",
+        "description": "2018年2月21日発売のトリプルA面シングル「低温火傷/春恋歌/I Need You ～夜空の観覧車～」から「春恋歌」のPromotion Editです。\n\n作詞：大森祥子　作曲：鈴木秋則　編曲：鈴木俊介\nMV Director：福居英晃\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7376　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7378　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7380　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7382　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード\n\n● 【通常盤A】\nEPCE-7384　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7385　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7386　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真9種＋集合1種よりランダムにて1枚封入\n（通常盤A：低温火傷 Ver.）\n（通常盤B：春恋歌 Ver.）\n（通常盤C：I Need You ～夜空の観覧車～ Ver.）\n\nAmazon⇒http://amzn.to/2G5M8ym\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kTCgEAmrmh4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kTCgEAmrmh4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kTCgEAmrmh4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kTCgEAmrmh4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kTCgEAmrmh4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 13,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "kTCgEAmrmh4"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "kTCgEAmrmh4",
+        "videoPublishedAt": "2018-02-09T08:00:05Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "EC03umGFFGKyuynW_zZZ8kZKf_Y",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5EMEEwRUY5M0RDRTU3NDJC",
+      "snippet": {
+        "publishedAt": "2018-02-05T08:00:44Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『I Need You ～夜空の観覧車～』(I Need You ~The Ferris Wheel in the Night Sky~)(Promotion Edit)",
+        "description": "2018年2月21日発売のトリプルA面シングル「低温火傷/春恋歌/I Need You ～夜空の観覧車～」から「I Need You ～夜空の観覧車～」のPromotion Editです。\n\n作詞：星部ショウ　作曲：星部ショウ　編曲：浜田ピエール裕介\nMV Director：森田 亮\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7376　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7378　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7380　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7382　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード\n\n● 【通常盤A】\nEPCE-7384　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7385　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7386　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真9種＋集合1種よりランダムにて1枚封入\n（通常盤A：低温火傷 Ver.）\n（通常盤B：春恋歌 Ver.）\n（通常盤C：I Need You ～夜空の観覧車～ Ver.）\n\nAmazon⇒http://amzn.to/2DBSJCl\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yP9adC2yB5U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yP9adC2yB5U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yP9adC2yB5U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/yP9adC2yB5U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/yP9adC2yB5U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 14,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "yP9adC2yB5U"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "yP9adC2yB5U",
+        "videoPublishedAt": "2018-02-05T08:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "4fVpn7znuHEfPCRM4w8WA2QTlbM",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC40NzZCMERDMjVEN0RFRThB",
+      "snippet": {
+        "publishedAt": "2018-01-29T08:00:52Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『低温火傷』(Camellia Factory [Low-Temperature Burn])(Promotion Edit)",
+        "description": "2018年2月21日発売のトリプルA面シングル「低温火傷/春恋歌/I Need You ～夜空の観覧車～」から「低温火傷」のPromotion Editです。\n\n作詞：児玉雨子　作曲：大橋莉子　編曲：近藤圭一\nMV Director：野田智雄\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7376　￥1,600＋税\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7378　￥1,600＋税\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7380　￥1,600＋税\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7382　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード\n\n● 【通常盤A】\nEPCE-7384　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7385　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7386　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真9種＋集合1種よりランダムにて1枚封入\n（通常盤A：低温火傷 Ver.）\n（通常盤B：春恋歌 Ver.）\n（通常盤C：I Need You ～夜空の観覧車～ Ver.）\n\nAmazon⇒http://amzn.to/2BiGRQu\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KYRnRFD3EY8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KYRnRFD3EY8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KYRnRFD3EY8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KYRnRFD3EY8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/KYRnRFD3EY8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 15,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "KYRnRFD3EY8"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "KYRnRFD3EY8",
+        "videoPublishedAt": "2018-01-29T08:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "E1AIHOIk9aqz2aUzZy01RuaK-o0",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5GNjNDRDREMDQxOThCMDQ2",
+      "snippet": {
+        "publishedAt": "2017-07-16T14:42:18Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『ハナモヨウ』(Camellia Factory[The Flower Pattern])(Promotion Edit)",
+        "description": "2017年7月26日発売のトリプルA面シングル「就活センセーション／笑って／ハナモヨウ」から「ハナモヨウ」のPromotion Editです。\n\n作詞：MEG.ME　作曲：KOUGA　編曲：KOUGA\nMV Director：青木亮二\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7347　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7349　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7351　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7353　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【通常盤A】\nEPCE-7355　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7356　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7357　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真(ソロ9種＋集合1種より)ランダム封入\n（通常盤A：就活センセーション Ver.）\n（通常盤B：笑って Ver.）\n（通常盤C：ハナモヨウ Ver.）\n\nAmazon⇒http://amzn.to/2s4x7FE\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_jAi4vCmFR8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_jAi4vCmFR8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_jAi4vCmFR8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/_jAi4vCmFR8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/_jAi4vCmFR8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 16,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "_jAi4vCmFR8"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "_jAi4vCmFR8",
+        "videoPublishedAt": "2017-07-16T12:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "eH4rI-iSmHV9A_45YRwEf2HG1Fg",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC45NDk1REZENzhEMzU5MDQz",
+      "snippet": {
+        "publishedAt": "2017-07-15T12:30:03Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『笑って』(Camellia Factory[Smile])(Promotion Edit)",
+        "description": "2017年7月26日発売のトリプルA面シングル「就活センセーション／笑って／ハナモヨウ」から「笑って」のPromotion Editです。\n\n作詞・作曲：津野米咲　編曲：平田祥一郎\nMV Director：野村 徹\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7347　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7349　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7351　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7353　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【通常盤A】\nEPCE-7355　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7356　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7357　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真(ソロ9種＋集合1種より)ランダム封入\n（通常盤A：就活センセーション Ver.）\n（通常盤B：笑って Ver.）\n（通常盤C：ハナモヨウ Ver.）\n\nAmazon⇒http://amzn.to/2tmZL8U\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EtlNSncRMjk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EtlNSncRMjk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EtlNSncRMjk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/EtlNSncRMjk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/EtlNSncRMjk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 17,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "EtlNSncRMjk"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "EtlNSncRMjk",
+        "videoPublishedAt": "2017-07-15T12:00:01Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "y_UgoUmN_gjcO22wTwuvPFdR32U",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC5DQUNERDQ2NkIzRUQxNTY1",
+      "snippet": {
+        "publishedAt": "2017-07-10T08:02:01Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『就活センセーション』(Camellia Factory[Job hunting sensation])(Promotion Edit)",
+        "description": "2017年7月26日発売のトリプルA面シングル「就活センセーション／笑って／ハナモヨウ」から「就活センセーション」のPromotion Editです。\n\n作詞・作曲：中島卓偉　編曲：ダンス☆マン\nMV Director：福居英晃\n\n● 【初回生産限定盤A】（CD+DVD）\nEPCE-7347　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤B】（CD+DVD）\nEPCE-7349　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤C】（CD+DVD）\nEPCE-7351　￥1,600＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【初回生産限定盤SP】（CD+DVD）\nEPCE-7353　￥1,800＋税\n特典：イベント抽選シリアルナンバーカード封入\n\n● 【通常盤A】\nEPCE-7355　定価 ￥1,000＋税\n● 【通常盤B】\nEPCE-7356　定価 ￥1,000＋税\n● 【通常盤C】\nEPCE-7357　定価 ￥1,000＋税\n\n【通常盤】特典\nトレカサイズ生写真(ソロ9種＋集合1種より)ランダム封入\n（通常盤A：就活センセーション Ver.）\n（通常盤B：笑って Ver.）\n（通常盤C：ハナモヨウ Ver.）\n\nAmazon⇒http://amzn.to/2sU7awi\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zLpHLcsSIik/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zLpHLcsSIik/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zLpHLcsSIik/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zLpHLcsSIik/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zLpHLcsSIik/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 18,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "zLpHLcsSIik"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "zLpHLcsSIik",
+        "videoPublishedAt": "2017-07-10T08:00:02Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "fyCIdJXde346Z7XdwxMQuXKOvLs",
+      "id": "UEwwWExlajN5NExEbUxPMEZIdThIQmtsZGlnZ1R0MUVzNC41MzJCQjBCNDIyRkJDN0VD",
+      "snippet": {
+        "publishedAt": "2017-02-13T08:00:58Z",
+        "channelId": "UCXTsCXNGHmePgo3a47hnsAA",
+        "title": "つばきファクトリー『Just Try!』(Camellia Factory[Just Try!])(Promotion Edit)",
+        "description": "2017年2月22日発売のメジャーデビューシングル「初恋サンライズ／Just Try!／うるわしのカメリア」から「Just Try!」のPromotion Editです。\n\n作詞・作曲：つんく　編曲：大久保薫\n\nAmazon⇒http://ur0.link/B7PC\n\nPlease note: this is a literal translation, the translation may not be perfect.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fuX3wt_JyHg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fuX3wt_JyHg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fuX3wt_JyHg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fuX3wt_JyHg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fuX3wt_JyHg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "つばきファクトリー",
+        "playlistId": "PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4",
+        "position": 19,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fuX3wt_JyHg"
+        },
+        "videoOwnerChannelTitle": "つばきファクトリー",
+        "videoOwnerChannelId": "UCXTsCXNGHmePgo3a47hnsAA"
+      },
+      "contentDetails": {
+        "videoId": "fuX3wt_JyHg",
+        "videoPublishedAt": "2017-02-13T08:00:03Z"
+      },
+      "status": {
+        "privacyStatus": "public"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 26,
+    "resultsPerPage": 20
+  }
+}

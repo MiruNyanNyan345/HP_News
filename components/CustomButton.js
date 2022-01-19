@@ -7,6 +7,7 @@ import {
   ImageBackground,
   Image,
 } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const CustomButton = props => {
   if (props.isImageBG == true) {
@@ -25,6 +26,24 @@ const CustomButton = props => {
               <Text style={props.buttonTextStyle}>{props.title}</Text>
             </View>
           </ImageBackground>
+        </TouchableOpacity>
+      </View>
+    );
+  } else if (props.isIconBG == true) {
+    return (
+      <View style={props.buttonContainerStyle}>
+        <TouchableOpacity
+          style={props.buttonStyle}
+          onPress={() => {
+            props.onPress();
+          }}>
+          <View style={props.buttonTextContainer}>
+            <Ionicons
+              name={props.buttonIconName}
+              size={props.buttonIconSize}
+              color={props.buttonIconColor}
+            />
+          </View>
         </TouchableOpacity>
       </View>
     );

@@ -85,17 +85,20 @@ const AmebloScreen = () => {
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={styles.container}>
-        <CustomDropDownPicker
-          height={40}
-          width={300}
-          items={members}
-          labelColor={'#5f27cd'}
-          labelSize={15}
-          labelWeight={'bold'}
-          backgroundColor={'white'}
-          loadBlogItems={loadBlogItems}
-          placeholder={'Pick a blog'}
-        />
+        <View style={styles.dropdownContainer}>
+          <CustomDropDownPicker
+            containerStyle={{height: 40, width: 300}}
+            items={members}
+            labelColor={'#5f27cd'}
+            labelSize={15}
+            labelWeight={'bold'}
+            dropdownStyle={{
+              backgroundColor: 'white',
+            }}
+            loadBlogItems={loadBlogItems}
+            placeholder={'Pick a blog'}
+          />
+        </View>
         <CustomAmebloFlatList
           items={blogItems}
           onEndLoadMore={loadMore}
@@ -113,7 +116,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    padding: 5,
+  },
+  dropdownContainer: {
+    margin: 10,
+    zIndex: 999,
   },
 });
 

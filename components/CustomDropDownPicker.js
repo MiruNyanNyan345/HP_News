@@ -7,12 +7,13 @@ const CustomDropDownPicker = props => {
     <DropDownPicker
       placeholder={props.placeholder}
       items={props.items}
-      containerStyle={{height: props.height, width: props.width}}
-      style={{backgroundColor: props.backgroundColor}}
+      // containerStyle={{height: props.height, width: props.width}}
+      // style={{backgroundColor: props.backgroundColor}}
+      containerStyle={props.containerStyle}
       itemStyle={{
         justifyContent: 'flex-start',
       }}
-      dropDownStyle={{backgroundColor: props.backgroundColor}}
+      dropDownStyle={props.dropDownStyle}
       onChangeItem={val => {
         props.loadBlogItems(val);
       }}

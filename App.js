@@ -15,8 +15,7 @@ import ChannelNavigator from './navigators/ChannelNavigator';
 import AmebloNavigators from './navigators/AmebloNavigator';
 import NewsNavigator from './navigators/NewsNavigator';
 import TwitterNavigator from './navigators/TwitterNavigator';
-import ForumScreen from './screens/ForumScreen.js';
-import {TouchableOpacity, View} from 'react-native';
+import ForumNavigator from './navigators/ForumNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -38,7 +37,7 @@ const App = () => {
                 iconName = focused ? 'chatbubbles' : 'chatbubbles-outline';
               } else if (route.name === 'Twitter') {
                 iconName = focused ? 'logo-twitter' : 'logo-twitter';
-              } else if (route.name === 'Channels') {
+              } else if (route.name === 'Channel') {
                 iconName = focused ? 'logo-youtube' : 'logo-youtube';
               }
               // You can return any component that you like here!
@@ -47,10 +46,10 @@ const App = () => {
             headerShown: false,
           };
         }}
-        initialRouteName={'Channels'}>
-        <Tab.Screen name="Channels" component={ChannelNavigator} />
+        initialRouteName={'Forum'}>
+        <Tab.Screen name="Channel" component={ChannelNavigator} />
         <Tab.Screen name="News" component={NewsNavigator} />
-        <Tab.Screen name="Forum" component={ForumScreen} />
+        <Tab.Screen name="Forum" component={ForumNavigator} />
         <Tab.Screen name="Ameblo" component={AmebloNavigators} />
         <Tab.Screen name="Twitter" component={TwitterNavigator} />
       </Tab.Navigator>

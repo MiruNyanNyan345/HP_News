@@ -46,12 +46,82 @@ const App = () => {
             headerShown: false,
           };
         }}
-        initialRouteName={'Forum'}>
-        <Tab.Screen name="Channel" component={ChannelNavigator} />
-        <Tab.Screen name="News" component={NewsNavigator} />
-        <Tab.Screen name="Forum" component={ForumNavigator} />
-        <Tab.Screen name="Ameblo" component={AmebloNavigators} />
-        <Tab.Screen name="Twitter" component={TwitterNavigator} />
+        initialRouteName={'Channel'}>
+        <Tab.Screen
+          name="Channel"
+          children={() => (
+            <ChannelNavigator
+              options={{
+                headerStyle: {backgroundColor: '#ff6b6b'},
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: '800',
+                  fontSize: 20,
+                },
+              }}
+            />
+          )}
+        />
+        <Tab.Screen
+          name="News"
+          children={() => (
+            <NewsNavigator
+              options={{
+                headerStyle: {backgroundColor: '#ff6b6b'},
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: '800',
+                  fontSize: 20,
+                },
+              }}
+            />
+          )}
+        />
+        <Tab.Screen
+          name="Forum"
+          children={() => (
+            <ForumNavigator
+              options={{
+                headerStyle: {backgroundColor: '#ff6b6b'},
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: '800',
+                  fontSize: 20,
+                },
+              }}
+            />
+          )}
+        />
+        <Tab.Screen
+          name="Ameblo"
+          children={() => (
+            <AmebloNavigators
+              options={{
+                headerStyle: {backgroundColor: '#ff6b6b'},
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: '800',
+                  fontSize: 20,
+                },
+              }}
+            />
+          )}
+        />
+        <Tab.Screen
+          name="Twitter"
+          children={() => (
+            <TwitterNavigator
+              options={{
+                headerStyle: {backgroundColor: '#ff6b6b'},
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                  fontWeight: '800',
+                  fontSize: 20,
+                },
+              }}
+            />
+          )}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );

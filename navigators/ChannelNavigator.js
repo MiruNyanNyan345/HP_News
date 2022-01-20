@@ -7,31 +7,9 @@ const channelStack = createStackNavigator();
 
 const ChannelNavigator = props => {
   return (
-    <channelStack.Navigator>
-      <channelStack.Screen
-        name="Channels"
-        component={ChannelScreen}
-        options={{
-          headerStyle: {backgroundColor: '#ff6b6b'},
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: '800',
-            fontSize: 20,
-          },
-        }}
-      />
-      <channelStack.Screen
-        name={'Videos'}
-        component={VideosScreen}
-        options={{
-          headerStyle: {backgroundColor: '#ff6b6b'},
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: '800',
-            fontSize: 20,
-          },
-        }}
-      />
+    <channelStack.Navigator screenOptions={props.options}>
+      <channelStack.Screen name="Channels" component={ChannelScreen} />
+      <channelStack.Screen name={'Videos'} component={VideosScreen} />
     </channelStack.Navigator>
   );
 };

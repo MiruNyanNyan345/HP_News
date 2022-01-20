@@ -1,15 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
-  Button,
   FlatList,
   SafeAreaView,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {ListItem, Avatar} from 'react-native-elements';
+import CustomPostItem from '../components/CustomPostItem';
+import {useNavigation} from '@react-navigation/native';
 
 const data = [
   {
@@ -42,6 +44,8 @@ const data = [
 ];
 
 const ForumScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.safeView}>
       <CustomButton
@@ -51,12 +55,13 @@ const ForumScreen = () => {
           position: 'absolute',
           bottom: 10,
           right: 10,
+          zIndex: 999,
         }}
         buttonIconName={'add-circle-outline'}
         buttonIconSize={50}
         buttonIconColor={'#ff6b6b'}
         onPress={() => {
-          console.log('Post');
+          console.log('Added Post');
         }}
       />
 
@@ -64,8 +69,9 @@ const ForumScreen = () => {
         data={data}
         keyExtractor={item => item.id}
         renderItem={({index, item}) => (
-          <View
-            style={{
+          <CustomPostItem
+            item={item}
+            postItemStyle={{
               flex: 1,
               borderColor: '#ff6b6b',
               borderWidth: 1.5,
@@ -73,96 +79,34 @@ const ForumScreen = () => {
               marginVertical: 10,
               marginHorizontal: 5,
               padding: 10,
-            }}>
-            <View style={{alignContent: 'center'}}>
-              <View style={{flexDirection: 'row', marginLeft: 5}}>
-                <Text style={{fontWeight: '500', fontSize: 20}}>
-                  {item.title}
-                </Text>
-              </View>
-              <View style={{flexDirection: 'row', marginLeft: 5}}>
-                <Text style={{fontSize: 12, alignSelf: 'center'}}>
-                  {item.postUser}
-                </Text>
-                <Text
-                  style={{
-                    fontSize: 15,
-                    alignSelf: 'center',
-                    marginHorizontal: 1,
-                  }}>
-                  &#8226;
-                </Text>
-                <Text style={{fontSize: 12, alignSelf: 'center'}}>
-                  {item.postTimeInterval}
-                </Text>
-              </View>
-            </View>
-            <Text style={{fontWeight: '200', fontSize: 12, margin: 5}}>
-              {item.content}
-            </Text>
-            <View
-              style={{
-                flexDirection: 'row',
-                // justifyContent: 'center',
-                paddingTop: 5,
-                borderTopWidth: 0.5,
-              }}>
-              <View style={{flexDirection: 'row'}}>
-                <Ionicons
-                  name={'bookmarks-outline'}
-                  color={'#54a0ff'}
-                  size={20}
-                />
-                <Text
-                  style={{
-                    alignSelf: 'center',
-                    marginLeft: 5,
-                    fontWeight: '500',
-                    color: '#54a0ff',
-                  }}>
-                  Save
-                </Text>
-              </View>
-              <View style={{flexDirection: 'row', marginHorizontal: 20}}>
-                <Ionicons
-                  name={'chatbubble-outline'}
-                  color={'#10ac84'}
-                  size={20}
-                />
-                <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-                  <Text style={{color: '#10ac84', fontSize: 15}}>Comments</Text>
-                </View>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  marginHorizontal: 20,
-                  justifyContent: 'flex-end',
-                  flex: 1,
-                }}>
-                <View style={{flexDirection: 'row'}}>
-                  <Ionicons
-                    name={'thumbs-up-outline'}
-                    color={'#ee5253'}
-                    size={20}
-                  />
-                  <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-                    <Text style={{color: '#ee5253', fontSize: 15}}>10</Text>
-                  </View>
-                </View>
-                <View style={{flexDirection: 'row'}}>
-                  <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-                    <Text style={{color: '#8395a7', fontSize: 15}}>20</Text>
-                  </View>
-                  <Ionicons
-                    name={'thumbs-down-outline'}
-                    color={'#8395a7'}
-                    size={20}
-                  />
-                </View>
-              </View>
-            </View>
-          </View>
+            }}
+            postHeaderContainer={{alignContent: 'center'}}
+            postHeaderTextContainer={{flexDirection: 'row', marginLeft: 5}}
+            postTitle={{fontWeight: '500', fontSize: 20}}
+            postInfoText={{fontSize: 12, alignSelf: 'center'}}
+            postInfoBullet={{
+              fontSize: 15,
+              alignSelf: 'center',
+              marginHorizontal: 1,
+            }}
+            postContentPreview={{fontWeight: '200', fontSize: 12, margin: 5}}
+            postActionContainer={{
+              flexDirection: 'row',
+              paddingTop: 5,
+              borderTopWidth: 0.5,
+            }}
+            postBookmarkContainer={{flexDirection: 'row'}}
+            postCommentContainer={{flexDirection: 'row', marginHorizontal: 20}}
+            postVoteContainer={{
+              flexDirection: 'row',
+              marginHorizontal: 20,
+              justifyContent: 'flex-end',
+              flex: 1,
+            }}
+            onPress={() => {
+              navigation.navigate('Title');
+            }}
+          />
         )}
       />
     </SafeAreaView>

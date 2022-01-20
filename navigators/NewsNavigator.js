@@ -4,33 +4,13 @@ import WebViewScreen from '../screens/WebViewScreen';
 import NewsScreen from '../screens/NewsScreen';
 
 const newsStack = createStackNavigator();
-const NewsStack = () => {
+const NewsStack = props => {
   return (
-    <newsStack.Navigator initialRouteName={'News'}>
-      <newsStack.Screen
-        name="Latest News"
-        component={NewsScreen}
-        options={{
-          headerStyle: {backgroundColor: '#ff6b6b'},
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: '800',
-            fontSize: 20,
-          },
-        }}
-      />
-      <newsStack.Screen
-        name="Website"
-        component={WebViewScreen}
-        options={{
-          headerStyle: {backgroundColor: '#ff6b6b'},
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: '800',
-            fontSize: 20,
-          },
-        }}
-      />
+    <newsStack.Navigator
+      initialRouteName={'News'}
+      screenOptions={props.options}>
+      <newsStack.Screen name="Latest News" component={NewsScreen} />
+      <newsStack.Screen name="Website" component={WebViewScreen} />
     </newsStack.Navigator>
   );
 };

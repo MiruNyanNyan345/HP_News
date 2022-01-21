@@ -46,7 +46,7 @@ const App = () => {
             headerShown: false,
           };
         }}
-        initialRouteName={'Channel'}>
+        initialRouteName={'Forum'}>
         <Tab.Screen
           name="Channel"
           children={() => (

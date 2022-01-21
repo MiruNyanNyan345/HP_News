@@ -95,8 +95,8 @@ const ForumScreen = () => {
               paddingTop: 5,
               borderTopWidth: 0.5,
             }}
-            postBookmarkContainer={{flexDirection: 'row'}}
-            postCommentContainer={{flexDirection: 'row', marginHorizontal: 20}}
+            postBookmarkButton={{flexDirection: 'row'}}
+            postCommentButton={{flexDirection: 'row', marginHorizontal: 20}}
             postVoteContainer={{
               flexDirection: 'row',
               marginHorizontal: 20,

@@ -9,7 +9,7 @@ const NewsStack = props => {
     <newsStack.Navigator
       initialRouteName={'News'}
       screenOptions={props.options}>
-      <newsStack.Screen name="Latest News" component={NewsScreen} />
+      <newsStack.Screen name="Latest News" component={NewsScreen} options={{headerLeft: props.stackHeaderLeftButton}}/>
       <newsStack.Screen name="Website" component={WebViewScreen} />
     </newsStack.Navigator>
   );

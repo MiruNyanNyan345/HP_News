@@ -8,8 +8,12 @@ const channelStack = createStackNavigator();
 const ChannelNavigator = props => {
   return (
     <channelStack.Navigator screenOptions={props.options}>
-      <channelStack.Screen name="Channels" component={ChannelScreen} />
-      <channelStack.Screen name={'Videos'} component={VideosScreen} />
+      <channelStack.Screen
+        name="Channels"
+        component={ChannelScreen}
+        options={{headerLeft: props.stackHeaderLeftButton}}
+      />
+      <channelStack.Screen name="Videos" component={VideosScreen} />
     </channelStack.Navigator>
   );
 };

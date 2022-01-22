@@ -12,8 +12,10 @@ import {
 } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {useNavigation} from '@react-navigation/native';
 
 const SignUpScreen = props => {
+  const navigate = useNavigation();
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={{flex: 1, overflow: 'visible'}}>
@@ -47,24 +49,6 @@ const SignUpScreen = props => {
             <Text style={{fontWeight: '400', fontSize: 30, color: '#ee5253'}}>
               Welcome!
             </Text>
-            <View style={{flexDirection: 'row', paddingTop: 10}}>
-              <Text style={{fontSize: 15, textAlign: 'center'}}>
-                Already have an account?
-              </Text>
-              <CustomButton
-                buttonTextStyle={{
-                  fontSize: 15,
-                  fontWeight: 'bold',
-                  color: '#ee5253',
-                  textAlign: 'center',
-                  marginLeft: 5,
-                }}
-                title="Sign-in now!"
-                onPress={() => {
-                  console.log('Go to sign-in');
-                }}
-              />
-            </View>
           </View>
           <View style={styles.signUpFormContainer}>
             <View style={styles.signUpFormItem}>
@@ -128,6 +112,30 @@ const SignUpScreen = props => {
                 console.log('Register');
               }}
             />
+            <Text style={{alignSelf: 'center', color: '#576574'}}>Or</Text>
+            <View
+              style={{
+                flexDirection: 'row',
+                paddingTop: 10,
+                justifyContent: 'center',
+              }}>
+              <Text style={{fontSize: 15, textAlign: 'center'}}>
+                Already have an account?
+              </Text>
+              <CustomButton
+                buttonTextStyle={{
+                  fontSize: 15,
+                  fontWeight: 'bold',
+                  color: '#ee5253',
+                  textAlign: 'center',
+                  marginLeft: 5,
+                }}
+                title="Sign-in now!"
+                onPress={() => {
+                  navigate.navigate('Sign In');
+                }}
+              />
+            </View>
           </View>
         </View>
       </View>

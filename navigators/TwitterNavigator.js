@@ -7,7 +7,7 @@ const twitterStack = createStackNavigator();
 const TwitterStack = (props) => {
   return (
     <twitterStack.Navigator screenOptions={props.options}>
-      <twitterStack.Screen name="Members Twitter" component={TwitterScreen} />
+      <twitterStack.Screen name="Members Twitter" component={TwitterScreen} options={{headerLeft: props.stackHeaderLeftButton}}/>
       <twitterStack.Screen name="Website" component={WebVieHTMLScreen} />
     </twitterStack.Navigator>
   );

@@ -1,14 +1,11 @@
 import {SafeAreaView, StyleSheet, View} from 'react-native';
 import React, {useState} from 'react';
-import CustomDropDownPicker from '../components/CustomDropDownPicker';
 import CustomYoutubeVideoFlatList from '../components/CustomYoutubeVideoFlatList';
 import CustomVideoModal from '../components/CustomVideoModal';
-import json from '../res/mm_playlists.json';
-import ChannelScreen from './ChannelScreen';
 
 const VideosScreen = props => {
   // const [videoItems, setVideoItems] = useState(require());
-  const videoItems = props.route.params.data
+  const videoItems = props.route.params.data;
   const [videoModalVisible, showVideoModal] = useState(false);
   const [videoId, setVideoId] = useState('');
 
@@ -16,7 +13,6 @@ const VideosScreen = props => {
   //   const json = require('../mm_playlists.json');
   //   setVideoItems(json);
   // };
-
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={styles.container}>

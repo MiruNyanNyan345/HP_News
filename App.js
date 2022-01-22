@@ -7,8 +7,9 @@
  */
 
 import React, {useState} from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ChannelNavigator from './navigators/ChannelNavigator';
@@ -16,8 +17,33 @@ import AmebloNavigators from './navigators/AmebloNavigator';
 import NewsNavigator from './navigators/NewsNavigator';
 import TwitterNavigator from './navigators/TwitterNavigator';
 import ForumNavigator from './navigators/ForumNavigator';
+import CustomButton from './components/CustomButton';
+import {createStackNavigator} from '@react-navigation/stack';
+
+let navigatorOption = {
+  headerStyle: {backgroundColor: '#ff6b6b'},
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: '800',
+    fontSize: 20,
+  },
+};
+
+let stackHeaderLeftButton = props => {
+  return (
+    <CustomButton
+      isIconBG={true}
+      buttonContainerStyle={{paddingLeft: 10}}
+      buttonIconName={'menu'}
+      buttonIconSize={30}
+      buttonIconColor={'#fff'}
+      onPress={() => console.log('Drawer')}
+    />
+  );
+};
 
 const Tab = createBottomTabNavigator();
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
@@ -51,14 +77,8 @@ const App = () => {
           name="Channel"
           children={() => (
             <ChannelNavigator
-              options={{
-                headerStyle: {backgroundColor: '#ff6b6b'},
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: '800',
-                  fontSize: 20,
-                },
-              }}
+              options={navigatorOption}
+              stackHeaderLeftButton={stackHeaderLeftButton}
             />
           )}
         />
@@ -66,14 +86,8 @@ const App = () => {
           name="News"
           children={() => (
             <NewsNavigator
-              options={{
-                headerStyle: {backgroundColor: '#ff6b6b'},
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: '800',
-                  fontSize: 20,
-                },
-              }}
+              options={navigatorOption}
+              stackHeaderLeftButton={stackHeaderLeftButton}
             />
           )}
         />
@@ -81,14 +95,8 @@ const App = () => {
           name="Forum"
           children={() => (
             <ForumNavigator
-              options={{
-                headerStyle: {backgroundColor: '#ff6b6b'},
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: '800',
-                  fontSize: 20,
-                },
-              }}
+              options={navigatorOption}
+              stackHeaderLeftButton={stackHeaderLeftButton}
             />
           )}
         />
@@ -96,14 +104,8 @@ const App = () => {
           name="Ameblo"
           children={() => (
             <AmebloNavigators
-              options={{
-                headerStyle: {backgroundColor: '#ff6b6b'},
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: '800',
-                  fontSize: 20,
-                },
-              }}
+              options={navigatorOption}
+              stackHeaderLeftButton={stackHeaderLeftButton}
             />
           )}
         />
@@ -111,14 +113,8 @@ const App = () => {
           name="Twitter"
           children={() => (
             <TwitterNavigator
-              options={{
-                headerStyle: {backgroundColor: '#ff6b6b'},
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: '800',
-                  fontSize: 20,
-                },
-              }}
+              options={navigatorOption}
+              stackHeaderLeftButton={stackHeaderLeftButton}
             />
           )}
         />

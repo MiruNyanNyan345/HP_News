@@ -43,9 +43,8 @@ const data = [
   },
 ];
 
-const ForumScreen = () => {
+const ForumScreen = props => {
   const navigation = useNavigation();
-
   return (
     <SafeAreaView style={styles.safeView}>
       <CustomButton
@@ -104,7 +103,7 @@ const ForumScreen = () => {
               flex: 1,
             }}
             onPress={() => {
-              navigation.navigate('Title');
+              navigation.navigate('PostCommentsScreen');
             }}
           />
         )}

@@ -1,24 +1,23 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import ForumScreen from '../screens/ForumScreen';
-import PostScreen from '../screens/PostScreen';
-
+import PostCommentsScreen from '../screens/PostCommentsScreen';
 
 const forumStack = createStackNavigator();
 
-const ForumNavigator = props => {
+const ForumStack = props => {
   return (
     <forumStack.Navigator
       screenOptions={props.options}
-      initialRouteName="Posts">
+      initialRouteName="PostsScreen">
       <forumStack.Screen
-        name="Posts"
+        name="PostsScreen"
         component={ForumScreen}
-        options={{headerLeft: props.stackHeaderLeftButton}}
+        options={{headerShown: false}}
       />
-      <forumStack.Screen name="Title" component={PostScreen} />
+      <forumStack.Screen name="PostCommentsScreen" component={PostCommentsScreen} />
     </forumStack.Navigator>
   );
 };
 
-export default ForumNavigator;
+export default ForumStack;

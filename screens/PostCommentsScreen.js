@@ -34,7 +34,9 @@ const data = [
   },
 ];
 
-const PostScreen = props => {
+const PostCommentsScreen = props => {
+    // Used to change the header title
+  // props.navigation.setOptions({headerTitle: 'PostCommentsScreen'});
   return (
     <SafeAreaView style={styles.safeView}>
       <CustomButton
@@ -108,4 +110,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PostScreen;
+export default PostCommentsScreen;

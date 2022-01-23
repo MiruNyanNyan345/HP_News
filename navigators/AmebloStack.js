@@ -7,8 +7,8 @@ const amebloStack = createStackNavigator();
 const AmebloStack = props => {
   return (
     <amebloStack.Navigator screenOptions={props.options}>
-      <amebloStack.Screen name="Blog" component={AmebloScreen} options={{headerLeft: props.stackHeaderLeftButton}}/>
-      <amebloStack.Screen name="Website" component={WebViewScreen} />
+      <amebloStack.Screen name="Blog" component={AmebloScreen}  options={{headerShown: false}}/>
+      <amebloStack.Screen name="Website" component={WebViewScreen} options={{headerShown: false}}/>
     </amebloStack.Navigator>
   );
 };

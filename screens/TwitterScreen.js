@@ -52,7 +52,7 @@ const TwitterScreen = () => {
   ];
 
   const loadTwitterTimeline = item => {
-    navigation.navigate('Website', {url: item.url});
+    navigation.navigate('WebsiteScreen', {url: item.url});
   };
 
   return (
@@ -97,7 +97,7 @@ const TwitterScreen = () => {
                 fontSize: 25,
               }}
               title={item.label}
-              onPress={() =>
+              onPress={() => {
                 loadTwitterTimeline({
                   url:
                     '<a class="twitter-timeline" href="' +
@@ -106,8 +106,8 @@ const TwitterScreen = () => {
                     'Tweets by ' +
                     item.username +
                     '</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
-                })
-              }
+                });
+              }}
             />
           )}
         />

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Toast from 'react-native-toast-message';
 import {
+  Alert,
   Dimensions,
   ImageBackground,
   SafeAreaView,
@@ -16,6 +18,37 @@ import {useNavigation} from '@react-navigation/native';
 
 const SignUpScreen = props => {
   const navigate = useNavigation();
+  const [signUpInfo, setSignUpInfo] = useState({
+    email: '',
+    username: '',
+    password: '',
+    confirm_password: '',
+  });
+  const signUp = () => {
+    fetch('http://127.0.0.1:8000/user/register/', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(signUpInfo),
+    })
+      .then(async response => {
+        const res_msg = JSON.stringify(await response.json());
+        const status = response.status;
+        if (response.ok) {
+          console.log('Status Code: ' + status + '\tResponse: ' + res_msg);
+          Toast.show('Thank you for joining us!');
+        } else {
+          console.log('Status Code: ' + status + '\tIssue: ' + res_msg);
+          Alert.alert(res_msg);
+        }
+      })
+      .catch(error => {
+        const err_msg = error.message;
+        console.log('Error: ' + err_msg);
+      });
+  };
   return (
     <SafeAreaView style={styles.safeView}>
       <View style={{flex: 1, overflow: 'visible'}}>
@@ -57,6 +90,9 @@ const SignUpScreen = props => {
                 placeholder={'Enter your username ...'}
                 style={styles.signUpFormInput}
                 autoCapitalize="none"
+                onChangeText={username => {
+                  setSignUpInfo({...signUpInfo, username: username});
+                }}
               />
             </View>
             <View style={styles.signUpFormItem}>
@@ -65,6 +101,9 @@ const SignUpScreen = props => {
                 placeholder={'Enter your email ...'}
                 style={styles.signUpFormInput}
                 autoCapitalize="none"
+                onChangeText={email => {
+                  setSignUpInfo({...signUpInfo, email: email});
+                }}
               />
             </View>
             <View style={styles.signUpFormItem}>
@@ -78,6 +117,9 @@ const SignUpScreen = props => {
                 style={styles.signUpFormInput}
                 secureTextEntry={true}
                 autoCapitalize="none"
+                onChangeText={password => {
+                  setSignUpInfo({...signUpInfo, password: password});
+                }}
               />
             </View>
             <View style={styles.signUpFormItem}>
@@ -91,6 +133,12 @@ const SignUpScreen = props => {
                 style={styles.signUpFormInput}
                 secureTextEntry={true}
                 autoCapitalize="none"
+                onChangeText={confirm_password => {
+                  setSignUpInfo({
+                    ...signUpInfo,
+                    confirm_password: confirm_password,
+                  });
+                }}
               />
             </View>
             <CustomButton
@@ -110,6 +158,7 @@ const SignUpScreen = props => {
               buttonStyle={{backgroundColor: '#5f27cd'}}
               onPress={() => {
                 console.log('Register');
+                signUp();
               }}
             />
             <Text style={{alignSelf: 'center', color: '#576574'}}>Or</Text>

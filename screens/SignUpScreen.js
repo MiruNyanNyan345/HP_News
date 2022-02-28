@@ -1,15 +1,13 @@
 import React, {useState} from 'react';
-import Toast from 'react-native-toast-message';
+
 import {
   Alert,
   Dimensions,
   ImageBackground,
   SafeAreaView,
-  ScrollView,
   StyleSheet,
   Text,
   TextInput,
-  TouchableOpacity,
   View,
 } from 'react-native';
 import CustomButton from '../components/CustomButton';
@@ -24,6 +22,7 @@ const SignUpScreen = props => {
     password: '',
     confirm_password: '',
   });
+
   const signUp = () => {
     fetch('http://127.0.0.1:8000/user/register/', {
       method: 'POST',
@@ -34,14 +33,17 @@ const SignUpScreen = props => {
       body: JSON.stringify(signUpInfo),
     })
       .then(async response => {
-        const res_msg = JSON.stringify(await response.json());
-        const status = response.status;
+        // const res_msg = JSON.stringify(await response.json());
+        const res_msg = await response.json();
+        // const status = response.status;
         if (response.ok) {
-          console.log('Status Code: ' + status + '\tResponse: ' + res_msg);
-          Toast.show('Thank you for joining us!');
+          Alert.alert('Thank you for joining us!', '', [
+            {text: 'Sign In', onPress: navigate.navigate('Sign In')},
+          ]);
         } else {
-          console.log('Status Code: ' + status + '\tIssue: ' + res_msg);
-          Alert.alert(res_msg);
+          Object.keys(res_msg).forEach(key => {
+            Alert.alert(key, res_msg[key].toString());
+          });
         }
       })
       .catch(error => {

@@ -15,7 +15,10 @@ const ForumStack = props => {
         component={ForumScreen}
         options={{headerShown: false}}
       />
-      <forumStack.Screen name="PostCommentsScreen" component={PostCommentsScreen} />
+      <forumStack.Screen
+        name="PostCommentsScreen"
+        component={PostCommentsScreen}
+      />
     </forumStack.Navigator>
   );
 };

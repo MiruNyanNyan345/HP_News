@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Alert,
   Dimensions,
@@ -9,7 +9,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import * as Keychain from 'react-native-keychain';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useNavigation} from '@react-navigation/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import CustomButton from '../components/CustomButton';
@@ -33,8 +33,10 @@ const SignInScreen = props => {
       .then(async response => {
         const auth = await response.json();
         if (response.ok) {
-          await Keychain.setGenericPassword(auth.username, auth.access);
-          Alert.alert('LOGIN SUCCESSFUL!', 'WELCOME ' + auth.username);
+          await AsyncStorage.setItem('auth', JSON.stringify(auth));
+          Alert.alert('LOGIN SUCCESSFUL!', 'WELCOME ' + auth.username, () => {
+            navigate.navigate('PostsScreen');
+          });
         } else {
           Object.keys(auth).forEach(key => {
             Alert.alert(key, auth[key].toString());

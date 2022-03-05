@@ -58,10 +58,7 @@ const TabNavigator = props => {
       initialRouteName={'Forum'}>
       <Tab.Screen name="Channel" component={ChannelStack} />
       <Tab.Screen name="News" component={NewsNavigator} />
-      <Tab.Screen
-        name="Forum"
-        component={ForumStack}
-      />
+      <Tab.Screen name="Forum" component={ForumStack} />
       <Tab.Screen name="Ameblo" component={AmebloStack} />
       <Tab.Screen name="Twitter" component={TwitterNavigator} />
     </Tab.Navigator>

@@ -13,8 +13,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useNavigation} from '@react-navigation/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import CustomButton from '../components/CustomButton';
+import {useDispatch} from 'react-redux';
+import {setSignIn} from '../redux/slices/authSlice';
 
 const SignInScreen = props => {
+  const dispatch = useDispatch();
   const navigate = useNavigation();
   const [signInInfo, setSignInInfo] = useState({
     email: '',
@@ -34,6 +37,13 @@ const SignInScreen = props => {
         const auth = await response.json();
         if (response.ok) {
           await AsyncStorage.setItem('auth', JSON.stringify(auth));
+
+          const user = {
+            isLoggedIn: true,
+            username: auth.username,
+          };
+          dispatch(setSignIn(user));
+
           Alert.alert('LOGIN SUCCESSFUL!', 'WELCOME ' + auth.username, () => {
             navigate.navigate('PostsScreen');
           });
@@ -125,7 +135,9 @@ const SignInScreen = props => {
               }}
               buttonStyle={{backgroundColor: '#5f27cd'}}
               onPress={() => {
-                signIn();
+                // loginUser();
+                // signIn();
+                signIn(signInInfo);
               }}
             />
             <Text style={{alignSelf: 'center', color: '#576574'}}>Or</Text>

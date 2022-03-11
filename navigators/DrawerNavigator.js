@@ -1,50 +1,21 @@
 import TabNavigator from './TabNavigator';
 import SignInStack from './SignInStack';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
   DrawerItem,
   DrawerItemList,
 } from '@react-navigation/drawer';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Alert} from 'react-native';
+import {useSelector} from 'react-redux';
+import {selectIsLoggedIn, setSignOut} from '../redux/slices/authSlice';
+import {useDispatch} from 'react-redux';
 
 const drawerNavigator = createDrawerNavigator();
 const DrawerNavigator = () => {
-  const initialUserState = {access: '', username: ''};
-  const [user, setUser] = useState(initialUserState);
-  const [isLoggedIn, setLoggedIn] = useState(false);
-
-  const getAuth = async () => {
-    try {
-      await AsyncStorage.getItem('auth').then(value => {
-        if (value !== null) {
-          const auth = JSON.parse(value);
-          setLoggedIn(true);
-          setUser({access: auth.access, username: auth.username});
-        }
-      });
-    } catch (err) {
-      setLoggedIn(false);
-    }
-  };
-
-  useEffect(() => {
-    console.log(isLoggedIn);
-    getAuth();
-  }, []);
-
-  const removeAuth = async () => {
-    try {
-      await AsyncStorage.removeItem('auth');
-      setLoggedIn(false);
-      setUser({...initialUserState});
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
+  const dispatch = useDispatch();
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   if (isLoggedIn) {
     return (
       <drawerNavigator.Navigator
@@ -61,7 +32,7 @@ const DrawerNavigator = () => {
                     {
                       text: 'Leave',
                       onPress: () => {
-                        removeAuth();
+                        dispatch(setSignOut());
                         props.navigation.navigate('Home');
                       },
                     },

@@ -1,6 +1,6 @@
 import TabNavigator from './TabNavigator';
 import SignInStack from './SignInStack';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
@@ -11,10 +11,25 @@ import {Alert} from 'react-native';
 import {useSelector} from 'react-redux';
 import {selectIsLoggedIn, setSignOut} from '../redux/slices/authSlice';
 import {useDispatch} from 'react-redux';
+import {setSignIn} from '../redux/slices/authSlice';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const drawerNavigator = createDrawerNavigator();
 const DrawerNavigator = () => {
   const dispatch = useDispatch();
+  useEffect(() => {
+    AsyncStorage.getItem('auth').then(auth => {
+      const authObj = JSON.parse(auth);
+      if (authObj) {
+        const user = {
+          isLoggedIn: true,
+          username: authObj.username,
+        };
+        dispatch(setSignIn(user));
+      }
+    });
+  });
+
   const isLoggedIn = useSelector(selectIsLoggedIn);
   if (isLoggedIn) {
     return (
@@ -31,9 +46,10 @@ const DrawerNavigator = () => {
                   Alert.alert('Sign Out?', '', [
                     {
                       text: 'Leave',
-                      onPress: () => {
+                      onPress: async () => {
+                        await AsyncStorage.removeItem('auth');
                         dispatch(setSignOut());
-                        props.navigation.navigate('Home');
+                        props.navigation.navigate('Sign-In');
                       },
                     },
                   ])

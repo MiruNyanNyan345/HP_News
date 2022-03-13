@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   FlatList,
   SafeAreaView,
@@ -45,6 +45,19 @@ const data = [
 
 const ForumScreen = props => {
   const navigation = useNavigation();
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('http://127.0.0.1:8000/forum/post/get_posts/')
+      .then(r => {
+        return r.json();
+      })
+      .then(data => {
+        setPosts(data);
+      })
+      .catch(e => console.log(e));
+  }, []);
+
   return (
     <SafeAreaView style={styles.safeView}>
       <CustomButton
@@ -65,10 +78,11 @@ const ForumScreen = props => {
       />
 
       <FlatList
-        data={data}
+        data={posts}
         keyExtractor={item => item.id}
         renderItem={({index, item}) => (
           <CustomPostItem
+            navigation={props.navigation}
             item={item}
             postItemStyle={{
               flex: 1,

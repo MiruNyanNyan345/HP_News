@@ -16,7 +16,7 @@ const TwitterStack = props => {
         name="WebsiteScreen"
         component={WebViewHTMLScreen}
         options={{
-          // headerShown: false,
+          headerShown: false,
           title: null,
         }}
       />

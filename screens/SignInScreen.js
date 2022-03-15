@@ -37,7 +37,6 @@ const SignInScreen = props => {
         const auth = await response.json();
         if (response.ok) {
           await AsyncStorage.setItem('auth', JSON.stringify(auth));
-
           const user = {
             isLoggedIn: true,
             username: auth.username,
@@ -45,7 +44,7 @@ const SignInScreen = props => {
           dispatch(setSignIn(user));
 
           Alert.alert('LOGIN SUCCESSFUL!', 'WELCOME ' + auth.username, () => {
-            navigate.navigate('PostsScreen');
+            navigate.navigate('Posts');
           });
         } else {
           Object.keys(auth).forEach(key => {

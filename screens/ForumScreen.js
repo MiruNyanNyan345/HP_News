@@ -1,63 +1,75 @@
 import React, {useEffect, useState} from 'react';
-import {
-  FlatList,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
 import CustomButton from '../components/CustomButton';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {ListItem, Avatar} from 'react-native-elements';
 import CustomPostItem from '../components/CustomPostItem';
 import {useNavigation} from '@react-navigation/native';
+import {useSelector} from 'react-redux';
+import {selectIsLoggedIn} from '../redux/slices/authSlice';
+import customAlertUserLogin from '../components/customAlertUserLogin';
 
-const data = [
-  {
-    id: 0,
-    title: 'Testing',
-    content:
-      'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
-    postUser: 'Tommy',
-    postTimeInterval: '5m ago',
-    commentCounts: '19',
-  },
-  {
-    id: 1,
-    title: 'Testing2',
-    content:
-      'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
-    postUser: 'Judy',
-    postTimeInterval: '1h ago',
-    commentCounts: '250',
-  },
-  {
-    id: 2,
-    title: 'Testing3',
-    content:
-      'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
-    postUser: 'Judy',
-    postTimeInterval: '2d ago',
-    commentCounts: '0',
-  },
-];
+// const data = [
+//   {
+//     id: 0,
+//     title: 'Testing',
+//     content:
+//       'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
+//     postUser: 'Tommy',
+//     postTimeInterval: '5m ago',
+//     commentCounts: '19',
+//   },
+//   {
+//     id: 1,
+//     title: 'Testing2',
+//     content:
+//       'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
+//     postUser: 'Judy',
+//     postTimeInterval: '1h ago',
+//     commentCounts: '250',
+//   },
+//   {
+//     id: 2,
+//     title: 'Testing3',
+//     content:
+//       'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
+//     postUser: 'Judy',
+//     postTimeInterval: '2d ago',
+//     commentCounts: '0',
+//   },
+// ];
 
 const ForumScreen = props => {
   const navigation = useNavigation();
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   const [posts, setPosts] = useState([]);
+  const [isFetching, setIsFetching] = useState(false);
 
   useEffect(() => {
+    fetchPosts();
+  }, []);
+
+  const fetchPosts = () => {
     fetch('http://127.0.0.1:8000/forum/post/get_posts/')
       .then(r => {
         return r.json();
       })
       .then(data => {
         setPosts(data);
+        setIsFetching(false);
       })
       .catch(e => console.log(e));
-  }, []);
+  };
 
+  const onRefresh = () => {
+    setIsFetching(true);
+    fetchPosts();
+  };
+  const makePost = () => {
+    if (isLoggedIn) {
+      props.navigation.navigate('MakePost');
+    } else {
+      customAlertUserLogin({navigation: navigation});
+    }
+  };
   return (
     <SafeAreaView style={styles.safeView}>
       <CustomButton
@@ -73,13 +85,17 @@ const ForumScreen = props => {
         buttonIconSize={50}
         buttonIconColor={'#ff6b6b'}
         onPress={() => {
-          console.log('Added Post');
+          makePost();
         }}
       />
 
       <FlatList
         data={posts}
         keyExtractor={item => item.id}
+        onRefresh={() => {
+          onRefresh();
+        }}
+        refreshing={isFetching}
         renderItem={({index, item}) => (
           <CustomPostItem
             navigation={props.navigation}

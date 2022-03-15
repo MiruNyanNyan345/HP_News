@@ -1,7 +1,11 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+import {
+  CardStyleInterpolators,
+  createStackNavigator,
+} from '@react-navigation/stack';
 import ForumScreen from '../screens/ForumScreen';
 import PostCommentsScreen from '../screens/PostCommentsScreen';
+import AddPostScreen from '../screens/AddPostScreen';
 
 const forumStack = createStackNavigator();
 
@@ -9,15 +13,25 @@ const ForumStack = props => {
   return (
     <forumStack.Navigator
       screenOptions={props.options}
-      initialRouteName="PostsScreen">
+      initialRouteName="Posts">
       <forumStack.Screen
-        name="PostsScreen"
+        name="Posts"
         component={ForumScreen}
         options={{headerShown: false}}
       />
+
       <forumStack.Screen
-        name="PostCommentsScreen"
+        name={'MakePost'}
+        component={AddPostScreen}
+        options={{
+          headerShown: false,
+          cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
+        }}
+      />
+      <forumStack.Screen
+        name="Comments"
         component={PostCommentsScreen}
+        options={{headerShown: false}}
       />
     </forumStack.Navigator>
   );

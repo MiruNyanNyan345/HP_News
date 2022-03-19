@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import customAlertUserLogin from './customAlertUserLogin';
 import {useNavigation} from '@react-navigation/native';
 
-const CustomPostItem = props => {
+const CustomCommentItem = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const [upVoteCnt, setUpVoteCnt] = useState(0);
   const [downVoteCnt, setDownVoteCnt] = useState(0);
@@ -16,7 +16,7 @@ const CustomPostItem = props => {
   useEffect(() => {
     let upCnt = 0;
     let downCnt = 0;
-    props.item.post_votes.map(item => {
+    props.item.reply_votes.map(item => {
       if (item.vote) {
         upCnt += 1;
       } else {
@@ -25,7 +25,7 @@ const CustomPostItem = props => {
       setUpVoteCnt(upCnt);
       setDownVoteCnt(downCnt);
     });
-  }, [props.item.post_votes]);
+  }, [props.item.reply_votes]);
 
   const getDateDiff = () => {
     const postTime = new Date(props.item.datetime).getTime();
@@ -76,51 +76,26 @@ const CustomPostItem = props => {
   };
 
   return (
-    <View style={props.postItemStyle}>
+    <View style={props.replyItemStyle}>
       <TouchableOpacity
         onPress={() => {
           props.onPress();
         }}>
-        <View style={props.postHeaderContainer}>
-          <View style={props.postHeaderTextContainer}>
-            <Text style={props.postTitle}>{props.item.title}</Text>
+        <View style={props.replyHeaderContainer}>
+          <View style={props.replyHeaderTextContainer}>
+            <Text style={props.replyBody}>{props.item.body}</Text>
           </View>
-          <View style={props.postHeaderTextContainer}>
-            <Text style={props.postInfoText}>{props.item.author.username}</Text>
-            <Text style={props.postInfoBullet}>&#8226;</Text>
-            <Text style={props.postInfoText}>{getDateDiff()}</Text>
+          <View style={props.replyHeaderTextContainer}>
+            <Text style={props.replyInfoText}>
+              {props.item.author.username}
+            </Text>
+            <Text style={props.replyInfoBullet}>&#8226;</Text>
+            <Text style={props.replyInfoText}>{getDateDiff()}</Text>
           </View>
         </View>
-        <Text style={props.postContentPreview}>{props.item.body}</Text>
       </TouchableOpacity>
-      <View style={props.postActionContainer}>
-        <TouchableOpacity
-          style={props.postBookmarkButton}
-          onPress={() => {
-            console.log('save');
-          }}>
-          <Ionicons name={'bookmarks-outline'} size={20} color={'#54a0ff'} />
-          <Text
-            style={{
-              alignSelf: 'center',
-              marginLeft: 5,
-              fontWeight: '500',
-              color: '#54a0ff',
-            }}>
-            Save
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={props.postCommentButton}
-          onPress={() => {
-            navigation.navigate('Comments', {postID: props.item.id});
-          }}>
-          <Ionicons name={'chatbubble-outline'} size={20} color={'#10ac84'} />
-          <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-            <Text style={{color: '#10ac84', fontSize: 15}}>Comments</Text>
-          </View>
-        </TouchableOpacity>
-        <View style={props.postVoteContainer}>
+      <View style={props.replyActionContainer}>
+        <View style={props.replyVoteContainer}>
           <TouchableOpacity
             style={{flexDirection: 'row'}}
             onPress={() => {
@@ -153,4 +128,4 @@ const CustomPostItem = props => {
   );
 };
 
-export default CustomPostItem;
+export default CustomCommentItem;

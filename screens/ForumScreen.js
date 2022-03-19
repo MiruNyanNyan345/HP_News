@@ -7,36 +7,6 @@ import {useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import customAlertUserLogin from '../components/customAlertUserLogin';
 
-// const data = [
-//   {
-//     id: 0,
-//     title: 'Testing',
-//     content:
-//       'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
-//     postUser: 'Tommy',
-//     postTimeInterval: '5m ago',
-//     commentCounts: '19',
-//   },
-//   {
-//     id: 1,
-//     title: 'Testing2',
-//     content:
-//       'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
-//     postUser: 'Judy',
-//     postTimeInterval: '1h ago',
-//     commentCounts: '250',
-//   },
-//   {
-//     id: 2,
-//     title: 'Testing3',
-//     content:
-//       'The website needs to be in English (accessible for everyone), German (main market) & Dutch (2de biggest market/fanbase). With Wordpress I face some difficulties. E.g. people need to upload in English and cannot do this in German or Dutch with the current theme on Wordpress.',
-//     postUser: 'Judy',
-//     postTimeInterval: '2d ago',
-//     commentCounts: '0',
-//   },
-// ];
-
 const ForumScreen = props => {
   const navigation = useNavigation();
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -98,6 +68,7 @@ const ForumScreen = props => {
         refreshing={isFetching}
         renderItem={({index, item}) => (
           <CustomPostItem
+            itemType={'post'}
             navigation={props.navigation}
             item={item}
             postItemStyle={{
@@ -133,7 +104,7 @@ const ForumScreen = props => {
               flex: 1,
             }}
             onPress={() => {
-              navigation.navigate('PostCommentsScreen');
+              navigation.navigate('Comments', {post_id: item.id});
             }}
           />
         )}

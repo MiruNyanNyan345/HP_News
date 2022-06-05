@@ -4,7 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import customAlertUserLogin from './customAlertUserLogin';
+import customAlertUserLogin from './CustomAlertUserLogin';
 import {useNavigation} from '@react-navigation/native';
 
 const CustomPostItem = props => {
@@ -113,7 +113,7 @@ const CustomPostItem = props => {
         <TouchableOpacity
           style={props.postCommentButton}
           onPress={() => {
-            navigation.navigate('Comments', {postID: props.item.id});
+            navigation.navigate('Comments', {post_id: props.item.id});
           }}>
           <Ionicons name={'chatbubble-outline'} size={20} color={'#10ac84'} />
           <View style={{justifyContent: 'center', marginHorizontal: 5}}>

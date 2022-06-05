@@ -11,7 +11,7 @@ const TwitterScreen = () => {
       label: "モーニング娘。'22",
       url: 'https://twitter.com/MorningMusumeMg',
       username: 'MorningMusumeMg',
-      icon: 'https://pbs.twimg.com/profile_images/1476931378965286919/Lx6GKjS0_400x400.jpg',
+      icon: 'https://pbs.twimg.com/profile_images/1512747206377603073/U4CevP87_400x400.jpg',
       color: '#ff9ff3',
     },
     {
@@ -25,14 +25,14 @@ const TwitterScreen = () => {
       label: '飯窪春菜',
       url: 'https://twitter.com/haruna__iikubo',
       username: 'haruna__iikubo',
-      icon: 'https://pbs.twimg.com/profile_images/1074474767963439107/mxEGJ4FG_400x400.jpg',
+      icon: 'https://pbs.twimg.com/profile_images/1502116032659755009/qyNkvjV1_400x400.jpg',
       color: '#feca57',
     },
     {
       label: '工藤遥',
       url: 'https://twitter.com/Haruka_Kudo1027',
       username: 'Haruka_Kudo1027',
-      icon: 'https://pbs.twimg.com/profile_images/1295374001817055235/G_cOtVth_400x400.jpg',
+      icon: 'https://pbs.twimg.com/profile_images/1502110278070435849/RjSEL0-p_400x400.jpg',
       color: '#ff9f43',
     },
     {

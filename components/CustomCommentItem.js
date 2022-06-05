@@ -4,7 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import customAlertUserLogin from './customAlertUserLogin';
+import customAlertUserLogin from './CustomAlertUserLogin';
 import {useNavigation} from '@react-navigation/native';
 
 const CustomCommentItem = props => {
@@ -79,22 +79,22 @@ const CustomCommentItem = props => {
     <View style={props.replyItemStyle}>
       <TouchableOpacity
         onPress={() => {
-          props.onPress();
+          console.log('Press Comment Item');
         }}>
         <View style={props.replyHeaderContainer}>
           <View style={props.replyHeaderTextContainer}>
             <Text style={props.replyBody}>{props.item.body}</Text>
           </View>
-          <View style={props.replyHeaderTextContainer}>
-            <Text style={props.replyInfoText}>
-              {props.item.author.username}
-            </Text>
-            <Text style={props.replyInfoBullet}>&#8226;</Text>
-            <Text style={props.replyInfoText}>{getDateDiff()}</Text>
-          </View>
         </View>
       </TouchableOpacity>
       <View style={props.replyActionContainer}>
+        <View style={props.replyInfoContainer}>
+          <Text style={props.replierNameText}>
+            {props.item.author.username}
+          </Text>
+          <Text style={props.replyDateTimeText}>{getDateDiff()}</Text>
+        </View>
+
         <View style={props.replyVoteContainer}>
           <TouchableOpacity
             style={{flexDirection: 'row'}}
@@ -107,7 +107,7 @@ const CustomCommentItem = props => {
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{flexDirection: 'row'}}
+              style={{flexDirection: 'row'}}
             onPress={() => {
               vote(props.item.id, false);
             }}>

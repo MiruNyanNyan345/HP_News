@@ -7,6 +7,7 @@ import CustomCommentItem from '../components/CustomCommentItem';
 
 const PostCommentsScreen = ({route, navigation}) => {
   const post_id = route.params.post_id;
+
   const [replies, setReplies] = useState(null);
   useEffect(() => {
     fetchComments();
@@ -50,30 +51,38 @@ const PostCommentsScreen = ({route, navigation}) => {
             itemType={'reply'}
             item={item}
             replyItemStyle={{
+              backgroundColor: '#f5f2f5',
               flex: 1,
-              borderColor: '#ff6b6b',
-              borderWidth: 1.5,
               borderRadius: 10,
               marginVertical: 10,
-              marginHorizontal: 5,
+              marginHorizontal: 15,
               padding: 10,
             }}
             replyHeaderContainer={{alignContent: 'center'}}
             replyHeaderTextContainer={{flexDirection: 'row', marginLeft: 5}}
-            replyBody={{fontWeight: '500', fontSize: 20}}
-            replyInfoText={{fontSize: 12, alignSelf: 'center'}}
-            replyInfoBullet={{
-              fontSize: 15,
-              alignSelf: 'center',
-              marginHorizontal: 1,
+            replyBody={{fontWeight: '500', fontSize: 25}}
+            replyInfoContainer={{flexDirection: 'column', marginLeft: 5}}
+            replierNameText={{
+              fontSize: 14,
+              fontWeight: 'bold',
+              alignSelf: 'flex-start',
+            }}
+            replyDateTimeText={{
+              fontSize: 12,
+              alignSelf: 'flex-start',
+              fontWeight: '200',
             }}
             replyActionContainer={{
+              marginLeft: 5,
               flexDirection: 'row',
+              alignItems: 'center',
               paddingTop: 5,
-              borderTopWidth: 0.5,
+              borderTopWidth: 1,
+              borderColor: '#ffffff',
             }}
             replyVoteContainer={{
               flexDirection: 'row',
+              flexWrap: 'wrap',
               marginHorizontal: 20,
               justifyContent: 'flex-end',
               flex: 1,
@@ -87,6 +96,7 @@ const PostCommentsScreen = ({route, navigation}) => {
 const styles = StyleSheet.create({
   safeView: {
     flex: 1,
+    backgroundColor: '#ffffff',
   },
 });
 

@@ -5,7 +5,7 @@ import CustomPostItem from '../components/CustomPostItem';
 import {useNavigation} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
-import customAlertUserLogin from '../components/customAlertUserLogin';
+import customAlertUserLogin from '../components/CustomAlertUserLogin';
 
 const ForumScreen = props => {
   const navigation = useNavigation();

@@ -12,8 +12,6 @@ import React from 'react';
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = props => {
-  const stackHeaderOption = () => {};
-
   return (
     <Tab.Navigator
       screenOptions={({route, navigation}) => {
@@ -22,45 +20,65 @@ const TabNavigator = props => {
           tabBarInactiveTintColor: '#576574',
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
-            if (route.name === 'News') {
+            if (route.name === 'TabNavNews') {
               iconName = focused ? 'newspaper' : 'newspaper-outline';
-            } else if (route.name === 'Ameblo') {
+            } else if (route.name === 'TabNavAmeblo') {
               iconName = focused ? 'logo-rss' : 'logo-rss';
-            } else if (route.name === 'Forum') {
+            } else if (route.name === 'TabNavForum') {
               iconName = focused ? 'chatbubbles' : 'chatbubbles-outline';
-            } else if (route.name === 'Twitter') {
+            } else if (route.name === 'TabNavTwitter') {
               iconName = focused ? 'logo-twitter' : 'logo-twitter';
-            } else if (route.name === 'Channel') {
+            } else if (route.name === 'TabNavChannel') {
               iconName = focused ? 'logo-youtube' : 'logo-youtube';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          headerStyle: {backgroundColor: '#ff6b6b'},
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: '800',
-            fontSize: 20,
-          },
-          headerLeft: () => {
-            return (
-              <CustomButton
-                isIconBG={true}
-                buttonContainerStyle={{paddingLeft: 10}}
-                buttonIconName={'menu'}
-                buttonIconSize={30}
-                buttonIconColor={'#fff'}
-                onPress={() => navigation.openDrawer()}
-              />
-            );
-          },
+          // headerStyle: {backgroundColor: '#ff6b6b'},
+          // headerTintColor: '#fff',
+          // headerTitleStyle: {
+          //   fontWeight: '800',
+          //   fontSize: 20,
+          // },
+          // headerLeft: () => {
+          //   return (
+          //     <CustomButton
+          //       isIconBG={true}
+          //       buttonContainerStyle={{paddingLeft: 10}}
+          //       buttonIconName={'menu'}
+          //       buttonIconSize={30}
+          //       buttonIconColor={'#fff'}
+          //       onPress={() => navigation.openDrawer()}
+          //     />
+          //   );
+          // },
         };
       }}
       initialRouteName={'Forum'}>
-      <Tab.Screen name="Channel" component={ChannelStack}/>
-      <Tab.Screen name="News" component={NewsNavigator} />
-      <Tab.Screen name="Forum" component={ForumStack} />
-      <Tab.Screen name="Ameblo" component={AmebloStack} />
-      <Tab.Screen name="Twitter" component={TwitterNavigator} />
+      <Tab.Screen
+        name="TabNavChannel"
+        component={ChannelStack}
+        options={{headerShown: false, title: 'Channel'}}
+      />
+      <Tab.Screen
+        name="TabNavNews"
+        component={NewsNavigator}
+        options={{headerShown: false, title: 'News'}}
+      />
+      <Tab.Screen
+        name="TabNavForum"
+        component={ForumStack}
+        options={{headerShown: false, title: 'Forum'}}
+      />
+      <Tab.Screen
+        name="TabNavAmeblo"
+        component={AmebloStack}
+        options={{headerShown: false, title: 'Ameblo'}}
+      />
+      <Tab.Screen
+        name="TabNavTwitter"
+        component={TwitterNavigator}
+        options={{headerShown: false, title: 'Twitter'}}
+      />
     </Tab.Navigator>
   );
 };

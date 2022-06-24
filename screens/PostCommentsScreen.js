@@ -1,20 +1,31 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, SafeAreaView, StyleSheet, Text} from 'react-native';
+import {
+  FlatList,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
 import CustomButton from '../components/CustomButton';
 import CustomPostItem from '../components/CustomPostItem';
 import {NavigationActions as navigation} from 'react-navigation';
 import CustomCommentItem from '../components/CustomCommentItem';
+import {HP_News_API_ADDRESS} from '../Constants';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const PostCommentsScreen = ({route, navigation}) => {
   const post_id = route.params.post_id;
 
-  const [replies, setReplies] = useState(null);
-  useEffect(() => {
-    fetchComments();
-  }, []);
+  const [replies, setReplies] = useState([]);
 
   const fetchComments = () => {
-    fetch('http://127.0.0.1:8000/forum/post/get_replies/?post_id=' + post_id)
+    fetch(
+      'http://' +
+        HP_News_API_ADDRESS +
+        '/forum/post/get_replies/?post_id=' +
+        post_id,
+    )
       .then(r => {
         return r.json();
       })
@@ -24,25 +35,74 @@ const PostCommentsScreen = ({route, navigation}) => {
       .catch(e => console.log('Error:', e));
   };
 
-  // Used to change the header title
-  return (
+  useEffect(() => {
+    fetchComments();
+  }, []);
+
+  return replies.length < 1 ? (
     <SafeAreaView style={styles.safeView}>
-      <CustomButton
-        isIconBG={true}
-        buttonContainerStyle={{
+      <View
+        style={{
+          alignItems: 'center',
+          justifyContent: 'center',
           flex: 1,
-          position: 'absolute',
-          bottom: 10,
-          right: 10,
-          zIndex: 999,
-        }}
-        buttonIconName={'chatbox-outline'}
-        buttonIconSize={50}
-        buttonIconColor={'#ff6b6b'}
-        onPress={() => {
-          console.log('Added Reply');
-        }}
-      />
+        }}>
+        <Ionicons name={'chatbox-outline'} size={70} color={'#ff6b6b'} />
+        <Text>No comment yet.</Text>
+      </View>
+      <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <View
+          style={{
+            paddingTop: 15,
+            paddingLeft: 10,
+            backgroundColor: '#ffffff',
+            margin: 10,
+            borderRadius: 10,
+            height: 50,
+            alignItems: 'flex-start',
+            flex: 1,
+            shadowColor: '#000000',
+            shadowOpacity: 0.8,
+            shadowRadius: 2,
+            shadowOffset: {
+              height: 1,
+              width: 1,
+            },
+          }}>
+          <TextInput
+            style={{fontSize: 16, fontWeight: '300', color: '#8395a7'}}
+            placeholder={'Leave comment here.'}
+            placeholderTextColor={'#8395a7'}
+          />
+        </View>
+        <CustomButton
+          buttonContainerStyle={{
+            marginRight: 5,
+            height: 50,
+            borderRadius: 15,
+            borderColor: 'black',
+            overflow: 'hidden',
+          }}
+          buttonStyle={{
+            flex: 1,
+            backgroundColor: '#2e86de',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingHorizontal: 20,
+          }}
+          buttonTextStyle={{
+            color: '#ffffff',
+            fontWeight: '600',
+          }}
+          title={'Send'}
+          onPress={() => {
+            console.log('send');
+          }}
+        />
+      </View>
+    </SafeAreaView>
+  ) : (
+    <SafeAreaView style={styles.safeView}>
       <FlatList
         data={replies}
         keyExtractor={item => item.id}
@@ -59,7 +119,10 @@ const PostCommentsScreen = ({route, navigation}) => {
               padding: 10,
             }}
             replyHeaderContainer={{alignContent: 'center'}}
-            replyHeaderTextContainer={{flexDirection: 'row', marginLeft: 5}}
+            replyHeaderTextContainer={{
+              flexDirection: 'row',
+              marginLeft: 5,
+            }}
             replyBody={{fontWeight: '500', fontSize: 25}}
             replyInfoContainer={{flexDirection: 'column', marginLeft: 5}}
             replierNameText={{
@@ -90,8 +153,59 @@ const PostCommentsScreen = ({route, navigation}) => {
           />
         )}
       />
+      <View style={{flexDirection: 'row', alignItems: 'center'}}>
+        <View
+          style={{
+            paddingTop: 15,
+            paddingLeft: 10,
+            backgroundColor: '#ffffff',
+            margin: 10,
+            borderRadius: 10,
+            height: 50,
+            alignItems: 'flex-start',
+            flex: 1,
+            shadowColor: '#000000',
+            shadowOpacity: 0.8,
+            shadowRadius: 2,
+            shadowOffset: {
+              height: 1,
+              width: 1,
+            },
+          }}>
+          <TextInput
+            style={{fontSize: 16, fontWeight: '300', color: '#8395a7'}}
+            placeholder={'Leave comment here.'}
+            placeholderTextColor={'#8395a7'}
+          />
+        </View>
+        <CustomButton
+          buttonContainerStyle={{
+            marginRight: 5,
+            height: 50,
+            borderRadius: 15,
+            borderColor: 'black',
+            overflow: 'hidden',
+          }}
+          buttonStyle={{
+            flex: 1,
+            backgroundColor: '#2e86de',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingHorizontal: 20,
+          }}
+          buttonTextStyle={{
+            color: '#ffffff',
+            fontWeight: '600',
+          }}
+          title={'Send'}
+          onPress={() => {
+            console.log('send');
+          }}
+        />
+      </View>
     </SafeAreaView>
   );
+
 };
 const styles = StyleSheet.create({
   safeView: {

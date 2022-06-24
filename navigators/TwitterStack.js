@@ -39,7 +39,7 @@ const TwitterStack = props => {
         name="Website"
         component={WebViewHTMLScreen}
         options={{
-          title: null,
+          headerShown: false,
         }}
       />
     </twitterStack.Navigator>

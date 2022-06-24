@@ -15,6 +15,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import CustomButton from '../components/CustomButton';
 import {useDispatch} from 'react-redux';
 import {setSignIn} from '../redux/slices/authSlice';
+import {HP_News_API_ADDRESS} from '../Constants';
 
 const SignInScreen = props => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const SignInScreen = props => {
   });
 
   const signIn = () => {
-    fetch('http://127.0.0.1:8000/user/token/obtain/', {
+    fetch('http://'+HP_News_API_ADDRESS+'/user/token/obtain/', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

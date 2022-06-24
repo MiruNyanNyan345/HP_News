@@ -52,7 +52,7 @@ const TwitterScreen = () => {
   ];
 
   const loadTwitterTimeline = item => {
-    navigation.navigate('WebsiteScreen', {url: item.url});
+    navigation.navigate('Website', {url: item.url});
   };
 
   return (

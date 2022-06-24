@@ -38,7 +38,7 @@ const NewsScreen = props => {
     }
     updatePages(++pages);
     setLoadingMore(true);
-    fetch('https://hellopro.antenam.info/categories/all/page:' + pages + '.rss')
+    fetch('http://hellopro.antenam.info/categories/all/page:' + pages + '.rss')
       .then(response => response.text())
       .then(responseData => rssParser.parse(responseData))
       .then(res => {

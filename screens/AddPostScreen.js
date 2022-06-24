@@ -10,6 +10,7 @@ import {
 import CustomButton from '../components/CustomButton';
 import {useNavigation} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {HP_News_API_ADDRESS} from '../Constants';
 
 const MakePostScreen = props => {
   const navigation = useNavigation();
@@ -18,7 +19,7 @@ const MakePostScreen = props => {
 
   const post = async () => {
     const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-    fetch('http://127.0.0.1:8000/forum/post/make/', {
+    fetch('http://'+HP_News_API_ADDRESS+'/forum/post/make/', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

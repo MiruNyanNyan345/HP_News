@@ -31,12 +31,7 @@ const CustomAmebloMenu = props => {
             onPress={() => {
               props.loadBlogItems(item);
             }}>
-            <Avatar
-              size={120}
-              source={{
-                uri: item.profile_images,
-              }}
-            />
+            <Avatar size={120} source={item.profile_image} />
             <Text style={{fontWeight: '200'}}>{item.label}</Text>
           </TouchableOpacity>
         </View>

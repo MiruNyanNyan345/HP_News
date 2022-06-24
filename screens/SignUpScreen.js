@@ -13,6 +13,7 @@ import {
 import CustomButton from '../components/CustomButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/native';
+import {HP_News_API_ADDRESS} from '../Constants';
 
 const SignUpScreen = props => {
   const navigate = useNavigation();
@@ -24,7 +25,7 @@ const SignUpScreen = props => {
   });
 
   const signUp = () => {
-    fetch('http://127.0.0.1:8000/user/register/', {
+    fetch('http://' + HP_News_API_ADDRESS + '/user/register/', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

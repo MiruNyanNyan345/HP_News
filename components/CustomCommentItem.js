@@ -6,6 +6,7 @@ import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import customAlertUserLogin from './CustomAlertUserLogin';
 import {useNavigation} from '@react-navigation/native';
+import {HP_News_API_ADDRESS} from '../Constants';
 
 const CustomCommentItem = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -49,7 +50,7 @@ const CustomCommentItem = props => {
       customAlertUserLogin({navigation: navigation});
     } else {
       const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http://127.0.0.1:8000/forum/post/vote/', {
+      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote/', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -107,7 +108,7 @@ const CustomCommentItem = props => {
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-              style={{flexDirection: 'row'}}
+            style={{flexDirection: 'row'}}
             onPress={() => {
               vote(props.item.id, false);
             }}>

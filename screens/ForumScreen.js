@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native';
 import {useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import customAlertUserLogin from '../components/CustomAlertUserLogin';
+import {HP_News_API_ADDRESS} from '../Constants';
 
 const ForumScreen = props => {
   const navigation = useNavigation();
@@ -18,7 +19,7 @@ const ForumScreen = props => {
   }, []);
 
   const fetchPosts = () => {
-    fetch('http://127.0.0.1:8000/forum/post/get_posts/')
+    fetch('http://'+HP_News_API_ADDRESS+'/forum/post/get_posts/')
       .then(r => {
         return r.json();
       })

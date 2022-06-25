@@ -19,7 +19,7 @@ const ForumScreen = props => {
   }, []);
 
   const fetchPosts = () => {
-    fetch('http://'+HP_News_API_ADDRESS+'/forum/post/get_posts/')
+    fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_posts/')
       .then(r => {
         return r.json();
       })
@@ -69,43 +69,22 @@ const ForumScreen = props => {
         refreshing={isFetching}
         renderItem={({index, item}) => (
           <CustomPostItem
+            isPostScreen={true}
             itemType={'post'}
             navigation={props.navigation}
             item={item}
-            postItemStyle={{
-              flex: 1,
-              borderColor: '#ff6b6b',
-              borderWidth: 1.5,
-              borderRadius: 10,
-              marginVertical: 10,
-              marginHorizontal: 5,
-              padding: 10,
-            }}
-            postHeaderContainer={{alignContent: 'center'}}
-            postHeaderTextContainer={{flexDirection: 'row', marginLeft: 5}}
-            postTitle={{fontWeight: '500', fontSize: 20}}
-            postInfoText={{fontSize: 12, alignSelf: 'center'}}
-            postInfoBullet={{
-              fontSize: 15,
-              alignSelf: 'center',
-              marginHorizontal: 1,
-            }}
-            postContentPreview={{fontWeight: '200', fontSize: 12, margin: 5}}
-            postActionContainer={{
-              flexDirection: 'row',
-              paddingTop: 5,
-              borderTopWidth: 0.5,
-            }}
-            postBookmarkButton={{flexDirection: 'row'}}
-            postCommentButton={{flexDirection: 'row', marginHorizontal: 20}}
-            postVoteContainer={{
-              flexDirection: 'row',
-              marginHorizontal: 20,
-              justifyContent: 'flex-end',
-              flex: 1,
-            }}
+            postItemStyle={styles.postItem}
+            postHeaderContainer={styles.postHeaderContainer}
+            postHeaderTextContainer={styles.postHeaderTextContainer}
+            postTitle={styles.postTitle}
+            postInfoText={styles.postInfoText}
+            postUserNameText={styles.postUserNameText}
+            postBookmarkButton={styles.postBookmarkButton}
+            postCommentButton={styles.postCommentButton}
             onPress={() => {
-              navigation.navigate('Comments', {post_id: item.id});
+              navigation.navigate('Comments', {
+                postItem: item,
+              });
             }}
           />
         )}
@@ -117,7 +96,36 @@ const ForumScreen = props => {
 const styles = StyleSheet.create({
   safeView: {
     flex: 1,
+    backgroundColor: '#ffffff',
   },
+  postItem: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
+    borderRadius: 10,
+    marginVertical: 10,
+    marginHorizontal: 5,
+    padding: 10,
+  },
+  postHeaderContainer: {alignContent: 'center', marginBottom: 10},
+  postHeaderTextContainer: {flexDirection: 'row', marginLeft: 5},
+  postTitle: {fontWeight: '400', fontSize: 18},
+  postInfoText: {
+    fontWeight: '200',
+    fontSize: 13,
+  },
+  postUserNameText: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: '#ff6b6b',
+  },
+
+
 });
 
 export default ForumScreen;

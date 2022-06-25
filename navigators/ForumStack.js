@@ -4,7 +4,7 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 import ForumScreen from '../screens/ForumScreen';
-import PostCommentsScreen from '../screens/PostCommentsScreen';
+import CommentsScreen from '../screens/CommentsScreen';
 import AddPostScreen from '../screens/AddPostScreen';
 import CustomButton from '../components/CustomButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -47,7 +47,7 @@ const ForumStack = props => {
       />
       <forumStack.Screen
         name="Comments"
-        component={PostCommentsScreen}
+        component={CommentsScreen}
         options={({route, navigation}) => {
           return {
             headerStyle: {backgroundColor: '#ff6b6b'},

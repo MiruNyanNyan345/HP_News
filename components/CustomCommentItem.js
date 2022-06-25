@@ -7,6 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import customAlertUserLogin from './CustomAlertUserLogin';
 import {useNavigation} from '@react-navigation/native';
 import {HP_News_API_ADDRESS} from '../Constants';
+import {getDateDiff} from '../utils/util';
 
 const CustomCommentItem = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
@@ -27,23 +28,6 @@ const CustomCommentItem = props => {
       setDownVoteCnt(downCnt);
     });
   }, [props.item.reply_votes]);
-
-  const getDateDiff = () => {
-    const postTime = new Date(props.item.datetime).getTime();
-    const currTime = new Date().getTime();
-    const diff = new Date(currTime - postTime);
-    const diff_days = Math.floor(diff / 1000 / 60 / (60 * 24));
-    switch (true) {
-      case diff_days > 0:
-        return diff_days + ' Day(s) ago';
-      case diff.getUTCHours() > 0:
-        return diff.getHours() + ' Hour(s) ago';
-      case diff.getUTCMinutes() > 0:
-        return diff.getUTCMinutes() + ' Minute(s) ago';
-      default:
-        return diff.getUTCSeconds() + ' Seconds ago';
-    }
-  };
 
   const vote = async (postID, voteType) => {
     if (!isLoggedIn) {
@@ -77,53 +61,53 @@ const CustomCommentItem = props => {
   };
 
   return (
-    <View style={props.replyItemStyle}>
-      <TouchableOpacity
-        onPress={() => {
-          console.log('Press Comment Item');
-        }}>
-        <View style={props.replyHeaderContainer}>
-          <View style={props.replyHeaderTextContainer}>
-            <Text style={props.replyBody}>{props.item.body}</Text>
-          </View>
-        </View>
-      </TouchableOpacity>
-      <View style={props.replyActionContainer}>
-        <View style={props.replyInfoContainer}>
-          <Text style={props.replierNameText}>
+    <View style={props.commentContainer}>
+      <View style={props.commentBodyContainer}>
+        <Text style={props.commentBody}>{props.item.body}</Text>
+        <View style={props.commentInfoContainer}>
+          <Text style={props.commentText}> by </Text>
+          <Text style={props.commentUserNameText}>
             {props.item.author.username}
           </Text>
-          <Text style={props.replyDateTimeText}>{getDateDiff()}</Text>
+          <Text style={props.commentText}> posted </Text>
+          <Text style={props.commentText}>
+            {getDateDiff(props.item.datetime)}
+          </Text>
         </View>
+      </View>
+      <View
+        style={{
+          marginTop: 10,
+          flex: 1,
+          flexDirection: 'row',
+        }}>
+        <TouchableOpacity
+          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
+          onPress={() => {
+            vote(props.item.id, true);
+          }}>
+          <View style={{flexDirection: 'row'}}>
+            <View>
+              <Ionicons name={'caret-up-outline'} size={20} color={'#f368e0'} />
+            </View>
+            <View style={{marginHorizontal: 5}}>
+              <Text style={{color: '#f368e0', fontSize: 15}}>{upVoteCnt}</Text>
+            </View>
+          </View>
+        </TouchableOpacity>
 
-        <View style={props.replyVoteContainer}>
-          <TouchableOpacity
-            style={{flexDirection: 'row'}}
-            onPress={() => {
-              vote(props.item.id, true);
-            }}>
-            <Ionicons name={'thumbs-up-outline'} size={20} color={'#ee5253'} />
+        <TouchableOpacity
+          style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
+          onPress={() => {
+            vote(props.item.id, true);
+          }}>
+          <View style={{flexDirection: 'row'}}>
+            <Ionicons name={'caret-down-outline'} size={20} color={'#0abde3'} />
             <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-              <Text style={{color: '#ee5253', fontSize: 15}}>{upVoteCnt}</Text>
+              <Text style={{color: '#0abde3', fontSize: 15}}>{upVoteCnt}</Text>
             </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{flexDirection: 'row'}}
-            onPress={() => {
-              vote(props.item.id, false);
-            }}>
-            <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-              <Text style={{color: '#8395a7', fontSize: 15}}>
-                {downVoteCnt}
-              </Text>
-            </View>
-            <Ionicons
-              name={'thumbs-down-outline'}
-              size={20}
-              color={'#8395a7'}
-            />
-          </TouchableOpacity>
-        </View>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

@@ -29,19 +29,19 @@ const CustomCommentItem = props => {
     });
   }, [props.item.reply_votes]);
 
-  const vote = async (postID, voteType) => {
+  const vote = async (replyID, voteType) => {
     if (!isLoggedIn) {
       customAlertUserLogin({navigation: navigation});
     } else {
       const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote/', {
+      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote_reply/', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
           Authorization: 'JWT ' + access,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({post: postID, vote: voteType}),
+        body: JSON.stringify({reply: replyID, vote: voteType}),
       })
         .then(async r => {
           if (r.ok) {
@@ -104,7 +104,7 @@ const CustomCommentItem = props => {
           <View style={{flexDirection: 'row'}}>
             <Ionicons name={'caret-down-outline'} size={20} color={'#0abde3'} />
             <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-              <Text style={{color: '#0abde3', fontSize: 15}}>{upVoteCnt}</Text>
+              <Text style={{color: '#0abde3', fontSize: 15}}>{downVoteCnt}</Text>
             </View>
           </View>
         </TouchableOpacity>

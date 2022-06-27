@@ -5,7 +5,7 @@ import {
 } from '@react-navigation/stack';
 import ForumScreen from '../screens/ForumScreen';
 import CommentsScreen from '../screens/CommentsScreen';
-import AddPostScreen from '../screens/AddPostScreen';
+import MakePostScreen from '../screens/MakePostScreen';
 import CustomButton from '../components/CustomButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -40,7 +40,7 @@ const ForumStack = props => {
       <forumStack.Screen name="Posts" component={ForumScreen} />
       <forumStack.Screen
         name={'MakePost'}
-        component={AddPostScreen}
+        component={MakePostScreen}
         options={{
           headerShown: false,
         }}

@@ -19,7 +19,7 @@ const MakePostScreen = props => {
 
   const post = async () => {
     const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-    fetch('http://'+HP_News_API_ADDRESS+'/forum/post/make/', {
+    fetch('http://' + HP_News_API_ADDRESS + '/forum/post/make/', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

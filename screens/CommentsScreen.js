@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {
+  Alert,
   FlatList,
   SafeAreaView,
   StyleSheet,
@@ -15,10 +16,18 @@ import {HP_News_API_ADDRESS} from '../Constants';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {getDateDiff} from '../utils/util';
 import {CustomPostAction} from '../components/CustomPostAction';
+import customAlertUserLogin from '../components/CustomAlertUserLogin';
+import {useSelector} from 'react-redux';
+import {selectIsLoggedIn} from '../redux/slices/authSlice';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const CommentsScreen = ({route, navigation}) => {
   const post_id = route.params.postItem.id;
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   const [replies, setReplies] = useState([]);
+  const [replyBody, setReplyBody] = useState('');
+  const [isFetching, setIsFetching] = useState(false);
+
   const fetchComments = () => {
     fetch(
       'http://' +
@@ -31,16 +40,56 @@ const CommentsScreen = ({route, navigation}) => {
       })
       .then(data => {
         setReplies(data);
+        setIsFetching(false);
       })
       .catch(e => console.log('Error:', e));
   };
 
   useEffect(() => {
+    console.log('Test');
     navigation.setOptions({
       title: route.params.postItem.title,
     });
     fetchComments();
   }, []);
+
+  const replyPost = async () => {
+    if (isLoggedIn) {
+      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/reply/', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          Authorization: 'JWT ' + access,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({post: route.params.postItem.id, body: replyBody}),
+      })
+        .then(async r => {
+          const resText = await r.json();
+          Alert.alert(resText, '', [
+            {
+              text: 'Ok',
+              onPress: () => {
+                fetchComments();
+              },
+            },
+          ]);
+        })
+        .catch(error => {
+          const err_msg = error.message;
+          Alert.alert(err_msg);
+          console.log('Error: ' + err_msg);
+        });
+    } else {
+      customAlertUserLogin({navigation: navigation});
+    }
+  };
+
+  const onRefresh = () => {
+    setIsFetching(true);
+    fetchComments();
+  };
 
   const postItem = (
     <View style={styles.postContainer}>
@@ -108,6 +157,10 @@ const CommentsScreen = ({route, navigation}) => {
       <FlatList
         data={replies}
         keyExtractor={item => item.id}
+        onRefresh={() => {
+          onRefresh();
+        }}
+        refreshing={isFetching}
         renderItem={({index, item}) => (
           <CustomCommentItem
             itemType={'reply'}
@@ -128,6 +181,9 @@ const CommentsScreen = ({route, navigation}) => {
             style={styles.inputField}
             placeholder={'Leave comment here.'}
             placeholderTextColor={'#8395a7'}
+            onChangeText={body => {
+              setReplyBody(body);
+            }}
           />
         </View>
         <CustomButton
@@ -136,7 +192,7 @@ const CommentsScreen = ({route, navigation}) => {
           buttonTextStyle={styles.buttonText}
           title={'Send'}
           onPress={() => {
-            console.log('send');
+            replyPost();
           }}
         />
       </View>
@@ -159,13 +215,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   inputFieldContainer: {
-    paddingTop: 15,
-    paddingLeft: 10,
     backgroundColor: '#ffffff',
     margin: 10,
+    paddingLeft: 5,
     borderRadius: 10,
     height: 50,
-    alignItems: 'flex-start',
     flex: 1,
     shadowColor: '#000000',
     shadowOpacity: 0.8,
@@ -176,6 +230,7 @@ const styles = StyleSheet.create({
     },
   },
   inputField: {
+    flex: 1,
     fontSize: 16,
     fontWeight: '300',
     color: '#8395a7',
@@ -281,8 +336,8 @@ const styles = StyleSheet.create({
     color: '#ff6b6b',
   },
   postActionContainer: {
-    padding: 10
-  }
+    padding: 10,
+  },
 });
 
 export default CommentsScreen;

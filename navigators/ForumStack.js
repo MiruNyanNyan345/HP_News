@@ -1,13 +1,11 @@
 import React from 'react';
 import {
-  CardStyleInterpolators,
   createStackNavigator,
 } from '@react-navigation/stack';
 import ForumScreen from '../screens/ForumScreen';
 import CommentsScreen from '../screens/CommentsScreen';
 import MakePostScreen from '../screens/MakePostScreen';
 import CustomButton from '../components/CustomButton';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const forumStack = createStackNavigator();
 

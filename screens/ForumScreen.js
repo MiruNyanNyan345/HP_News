@@ -1,5 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
+import {
+  FlatList,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import CustomButton from '../components/CustomButton';
 import CustomPostItem from '../components/CustomPostItem';
 import {useNavigation} from '@react-navigation/native';
@@ -7,16 +14,53 @@ import {useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import customAlertUserLogin from '../components/CustomAlertUserLogin';
 import {HP_News_API_ADDRESS} from '../Constants';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const ForumScreen = props => {
   const navigation = useNavigation();
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const [posts, setPosts] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
+  const [headerTitle, setHeaderTitle] = useState('Posts');
 
   useEffect(() => {
-    fetchPosts();
-  }, []);
+    navigation.setOptions({
+      headerTitle: () => {
+        return (
+          <TouchableOpacity
+            style={{justifyContent: 'center'}}
+            onPress={() => {
+              headerTitle === 'Posts'
+                ? setHeaderTitle('Saved Posts')
+                : setHeaderTitle('Posts');
+            }}>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <Text
+                style={{
+                  fontWeight: '800',
+                  fontSize: 20,
+                  color: '#fff',
+                }}>
+                {headerTitle}
+              </Text>
+              <Ionicons
+                style={{paddingLeft: 5}}
+                name={'chevron-down-outline'}
+                size={20}
+                color={'#fff'}
+              />
+            </View>
+          </TouchableOpacity>
+        );
+      },
+    });
+    if (headerTitle === 'Posts') {
+      fetchPosts();
+      console.log('Fetch Posts.');
+    } else {
+      console.log('Fetch Saved Posts.');
+    }
+  }, [headerTitle, navigation]);
 
   const fetchPosts = () => {
     fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_posts/')
@@ -124,8 +168,6 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#ff6b6b',
   },
-
-
 });
 
 export default ForumScreen;

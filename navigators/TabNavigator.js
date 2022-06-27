@@ -1,5 +1,4 @@
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import CustomButton from '../components/CustomButton';
 import ChannelStack from './ChannelStack';
 import NewsNavigator from './NewsStack';
 import ForumStack from './ForumStack';
@@ -33,27 +32,9 @@ const TabNavigator = props => {
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          // headerStyle: {backgroundColor: '#ff6b6b'},
-          // headerTintColor: '#fff',
-          // headerTitleStyle: {
-          //   fontWeight: '800',
-          //   fontSize: 20,
-          // },
-          // headerLeft: () => {
-          //   return (
-          //     <CustomButton
-          //       isIconBG={true}
-          //       buttonContainerStyle={{paddingLeft: 10}}
-          //       buttonIconName={'menu'}
-          //       buttonIconSize={30}
-          //       buttonIconColor={'#fff'}
-          //       onPress={() => navigation.openDrawer()}
-          //     />
-          //   );
-          // },
         };
       }}
-      initialRouteName={'Forum'}>
+      initialRouteName={'TabNavForum'}>
       <Tab.Screen
         name="TabNavChannel"
         component={ChannelStack}

@@ -9,8 +9,6 @@ import {
   View,
 } from 'react-native';
 import CustomButton from '../components/CustomButton';
-import CustomPostItem from '../components/CustomPostItem';
-import {NavigationActions as navigation} from 'react-navigation';
 import CustomCommentItem from '../components/CustomCommentItem';
 import {HP_News_API_ADDRESS} from '../Constants';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -69,7 +67,7 @@ const CommentsScreen = ({route, navigation}) => {
           const resText = await r.json();
           Alert.alert(resText, '', [
             {
-              text: 'Ok',
+              text: 'OK',
               onPress: () => {
                 fetchComments();
               },

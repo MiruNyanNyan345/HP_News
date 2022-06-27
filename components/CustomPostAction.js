@@ -29,10 +29,17 @@ export const CustomPostAction = (props, navigation) => {
 
   const [upVoteCnt, setUpVoteCnt] = useState(0);
   const [downVoteCnt, setDownVoteCnt] = useState(0);
+  const [isSaved, setIsSaved] = useState(false);
+
   useEffect(() => {
+    checkPostIsSaved({itemID: props.itemID, setIsSaved: setIsSaved()});
+    setVoteCnt(props.post_votes);
+  }, [props.post_votes]);
+
+  const setVoteCnt = post_votes => {
     let upCnt = 0;
     let downCnt = 0;
-    props.post_votes.map(item => {
+    post_votes.map(item => {
       if (item.vote) {
         upCnt += 1;
       } else {
@@ -41,14 +48,41 @@ export const CustomPostAction = (props, navigation) => {
       setUpVoteCnt(upCnt);
       setDownVoteCnt(downCnt);
     });
-  }, [props.post_votes]);
+  };
+
+  const checkPostIsSaved = async () => {
+    const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+    fetch(
+      'http://' +
+        HP_News_API_ADDRESS +
+        '/forum/post/post_is_saved/?post_id=' +
+        props.itemID,
+      {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+          Authorization: 'JWT ' + access,
+          'Content-Type': 'application/json',
+        },
+      },
+    )
+      .then(r => {
+        return r.json();
+      })
+      .then(isSave => {
+        setIsSaved(isSave);
+      })
+      .catch(error => {
+        Alert.alert(error);
+      });
+  };
 
   const vote = async (postID, voteType) => {
     if (!isLoggedIn) {
       customAlertUserLogin({navigation: navigation});
     } else {
       const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http:// ' + HP_News_API_ADDRESS + ' /forum/post/vote/', {
+      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote/', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -66,19 +100,45 @@ export const CustomPostAction = (props, navigation) => {
             }
             Alert.alert('Vote Successfully', '');
           } else {
-            const prob = await r.json();
-            Alert.alert('Warning', prob.vote_error[0]);
+            const issue = await r.json();
+            Alert.alert('Warning', issue.vote_error[0]);
           }
         })
         .catch(e => console.log(e));
     }
   };
 
-  const savePost = postID => {
+  const savePost = async () => {
     if (!isLoggedIn) {
       customAlertUserLogin({navigation: navigation});
     } else {
-      console.log('save ' + postID + ' post');
+      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/save_post/', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          Authorization: 'JWT ' + access,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({post: props.itemID}),
+      })
+        .then(async r => {
+          return r.json();
+        })
+        .then(msg => {
+          Alert.alert(msg, '', [
+            {
+              text: 'OK',
+              onPress: () => {
+                checkPostIsSaved();
+              },
+            },
+          ]);
+        })
+        .catch(error => {
+          console.log('Error: ' + error);
+          Alert.alert('Error', error);
+        });
     }
   };
 
@@ -87,9 +147,13 @@ export const CustomPostAction = (props, navigation) => {
       <TouchableOpacity
         style={styles.postBookmarkButton}
         onPress={() => {
-          savePost(props.itemID);
+          savePost();
         }}>
-        <Ionicons name={'bookmarks-outline'} size={20} color={'#54a0ff'} />
+        {isSaved ? (
+          <Ionicons name={'bookmarks'} size={20} color={'#54a0ff'} />
+        ) : (
+          <Ionicons name={'bookmarks-outline'} size={20} color={'#54a0ff'} />
+        )}
         <Text
           style={{
             alignSelf: 'center',
@@ -97,7 +161,7 @@ export const CustomPostAction = (props, navigation) => {
             fontWeight: '500',
             color: '#54a0ff',
           }}>
-          Save
+          {isSaved ? 'Unsave' : 'Save'}
         </Text>
       </TouchableOpacity>
       {props.isPostScreen ? (

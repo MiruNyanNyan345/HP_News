@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {
+  Alert,
   FlatList,
   SafeAreaView,
   StyleSheet,
@@ -15,6 +16,8 @@ import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import customAlertUserLogin from '../components/CustomAlertUserLogin';
 import {HP_News_API_ADDRESS} from '../Constants';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {fetchSavedPost} from '../utils/util';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ForumScreen = props => {
   const navigation = useNavigation();
@@ -56,9 +59,8 @@ const ForumScreen = props => {
     });
     if (headerTitle === 'Posts') {
       fetchPosts();
-      console.log('Fetch Posts.');
     } else {
-      console.log('Fetch Saved Posts.');
+      fetchSavedPost();
     }
   }, [headerTitle, navigation]);
 
@@ -74,10 +76,33 @@ const ForumScreen = props => {
       .catch(e => console.log(e));
   };
 
+  const fetchSavedPost = async () => {
+    const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+    fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_saved_posts/', {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        Authorization: 'JWT ' + access,
+        'Content-Type': 'application/json',
+      },
+    })
+      .then(r => {
+        return r.json();
+      })
+      .then(data => {
+        setPosts(data);
+        setIsFetching(false);
+      })
+      .catch(error => {
+        Alert.alert(error);
+      });
+  };
+
   const onRefresh = () => {
     setIsFetching(true);
-    fetchPosts();
+    headerTitle === 'Posts' ? fetchPosts() : fetchSavedPost();
   };
+
   const makePost = () => {
     if (isLoggedIn) {
       props.navigation.navigate('MakePost');
@@ -125,6 +150,7 @@ const ForumScreen = props => {
             postUserNameText={styles.postUserNameText}
             postBookmarkButton={styles.postBookmarkButton}
             postCommentButton={styles.postCommentButton}
+            fetchSavedPost={fetchSavedPost}
             onPress={() => {
               navigation.navigate('Comments', {
                 postItem: item,

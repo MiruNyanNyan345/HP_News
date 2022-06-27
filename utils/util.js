@@ -1,3 +1,7 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {HP_News_API_ADDRESS} from '../Constants';
+import {Alert} from 'react-native';
+
 export const getDateDiff = curr_dt => {
   const postTime = new Date(curr_dt).getTime();
   const currTime = new Date().getTime();

@@ -45,11 +45,11 @@ const CustomCommentItem = props => {
       })
         .then(async r => {
           if (r.ok) {
-            if (voteType) {
-              setUpVoteCnt(upVoteCnt + 1);
-            } else {
-              setDownVoteCnt(downVoteCnt + 1);
-            }
+            // if (voteType) {
+            //   setUpVoteCnt(upVoteCnt + 1);
+            // } else {
+            //   setDownVoteCnt(downVoteCnt + 1);
+            // }
             Alert.alert('Vote Successfully', '');
           } else {
             const prob = await r.json();
@@ -99,12 +99,14 @@ const CustomCommentItem = props => {
         <TouchableOpacity
           style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
           onPress={() => {
-            vote(props.item.id, true);
+            vote(props.item.id, false);
           }}>
           <View style={{flexDirection: 'row'}}>
             <Ionicons name={'caret-down-outline'} size={20} color={'#0abde3'} />
             <View style={{justifyContent: 'center', marginHorizontal: 5}}>
-              <Text style={{color: '#0abde3', fontSize: 15}}>{downVoteCnt}</Text>
+              <Text style={{color: '#0abde3', fontSize: 15}}>
+                {downVoteCnt}
+              </Text>
             </View>
           </View>
         </TouchableOpacity>

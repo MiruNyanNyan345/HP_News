@@ -1,12 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import {Alert, Text, TouchableOpacity, View} from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSelector} from 'react-redux';
-import {selectIsLoggedIn} from '../redux/slices/authSlice';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import customAlertUserLogin from './CustomAlertUserLogin';
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {HP_News_API_ADDRESS} from '../Constants';
 import {getDateDiff} from '../utils/util';
 import {CustomPostAction} from './CustomPostAction';
 
@@ -41,6 +35,7 @@ const CustomPostItem = props => {
           isPostScreen: props.isPostScreen,
           postItem: props.item,
           itemID: props.item.id,
+          fetchSavedPost: props.fetchSavedPost,
         },
         navigation,
       )}

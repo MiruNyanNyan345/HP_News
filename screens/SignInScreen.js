@@ -41,6 +41,7 @@ const SignInScreen = props => {
           const user = {
             isLoggedIn: true,
             username: auth.username,
+            email: auth.email,
           };
           dispatch(setSignIn(user));
 

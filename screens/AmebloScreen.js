@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, SafeAreaView, StyleSheet, View} from 'react-native';
-import CustomAmebloMenu from '../components/CustomAmebloMenu';
+import CustomMenu from '../components/CustomMenu';
 import CustomAmebloFlatList from '../components/CustomAmebloFlatList';
 import {useNavigation} from '@react-navigation/native';
 import {AmebloMemberInfo} from '../Constants';
@@ -52,9 +52,9 @@ const AmebloScreen = () => {
     <SafeAreaView style={styles.safeView}>
       <View style={styles.container}>
         <View style={styles.amebloMenuContainer}>
-          <CustomAmebloMenu
+          <CustomMenu
             items={AmebloMemberInfo}
-            loadBlogItems={loadBlogItems}
+            loadItems={loadBlogItems}
           />
         </View>
         <View style={styles.amebloFlatListContainer}>
@@ -75,16 +75,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
   container: {
-    flex: 1,
     flexDirection: 'column',
   },
   amebloMenuContainer: {
-    flexDirection: 'row',
-    marginVertical: 20,
-    marginHorizontal: 10,
+    margin: 10
   },
   amebloFlatListContainer: {
-    flexDirection: 'row',
   },
 });
 

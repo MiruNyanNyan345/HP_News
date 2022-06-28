@@ -13,6 +13,7 @@ import {selectIsLoggedIn, setSignOut} from '../redux/slices/authSlice';
 import {useDispatch} from 'react-redux';
 import {setSignIn} from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import ProfileStack from './ProfileStack';
 
 const drawerNavigator = createDrawerNavigator();
 const DrawerNavigator = () => {
@@ -24,6 +25,7 @@ const DrawerNavigator = () => {
         const user = {
           isLoggedIn: true,
           username: authObj.username,
+          email: authObj.email,
         };
         dispatch(setSignIn(user));
       }
@@ -58,6 +60,7 @@ const DrawerNavigator = () => {
             </DrawerContentScrollView>
           );
         }}>
+        <drawerNavigator.Screen name="Profile" component={ProfileStack} />
         <drawerNavigator.Screen name="Home" component={TabNavigator} />
       </drawerNavigator.Navigator>
     );

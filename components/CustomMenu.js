@@ -11,7 +11,7 @@ import {
 import {BackgroundImage} from 'react-native-elements/dist/config';
 import {Avatar} from 'react-native-elements';
 
-const CustomAmebloMenu = props => {
+const CustomMenu = props => {
   return (
     <FlatList
       data={props.items}
@@ -39,7 +39,7 @@ const CustomAmebloMenu = props => {
               backgroundColor: '#ffffe4',
             }}
             onPress={() => {
-              props.loadBlogItems(item);
+              props.loadItems(item);
             }}>
             <Avatar size={120} source={item.profile_image} />
             <Text style={{fontWeight: '200'}}>{item.label}</Text>
@@ -52,4 +52,4 @@ const CustomAmebloMenu = props => {
 
 const styles = StyleSheet.create();
 
-export default CustomAmebloMenu;
+export default CustomMenu;

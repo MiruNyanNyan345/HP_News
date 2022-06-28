@@ -16,7 +16,6 @@ import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import customAlertUserLogin from '../components/CustomAlertUserLogin';
 import {HP_News_API_ADDRESS} from '../Constants';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {fetchSavedPost} from '../utils/util';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ForumScreen = props => {

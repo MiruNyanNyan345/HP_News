@@ -52,10 +52,7 @@ const AmebloScreen = () => {
     <SafeAreaView style={styles.safeView}>
       <View style={styles.container}>
         <View style={styles.amebloMenuContainer}>
-          <CustomMenu
-            items={AmebloMemberInfo}
-            loadItems={loadBlogItems}
-          />
+          <CustomMenu items={AmebloMemberInfo} loadItems={loadBlogItems} />
         </View>
         <View style={styles.amebloFlatListContainer}>
           <CustomAmebloFlatList
@@ -78,10 +75,9 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   amebloMenuContainer: {
-    margin: 10
+    margin: 10,
   },
-  amebloFlatListContainer: {
-  },
+  amebloFlatListContainer: {},
 });
 
 export default AmebloScreen;

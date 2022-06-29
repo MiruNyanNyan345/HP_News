@@ -51,8 +51,11 @@ const DrawerNavigator = () => {
                       onPress: async () => {
                         await AsyncStorage.removeItem('auth');
                         dispatch(setSignOut());
-                        props.navigation.navigate('Sign-In');
+                        props.navigation.navigate('DrawerNavSignIn');
                       },
+                    },
+                    {
+                      text: 'Cancel',
                     },
                   ])
                 }
@@ -60,15 +63,31 @@ const DrawerNavigator = () => {
             </DrawerContentScrollView>
           );
         }}>
-        <drawerNavigator.Screen name="Profile" component={ProfileStack} />
-        <drawerNavigator.Screen name="Home" component={TabNavigator} />
+        <drawerNavigator.Screen
+          name="DrawerNavProfile"
+          component={ProfileStack}
+          options={{title: 'Profile'}}
+        />
+        <drawerNavigator.Screen
+          name="DrawerNavTabHome"
+          component={TabNavigator}
+          options={{title: 'Home'}}
+        />
       </drawerNavigator.Navigator>
     );
   } else {
     return (
       <drawerNavigator.Navigator screenOptions={{headerShown: false}}>
-        <drawerNavigator.Screen name="Home" component={TabNavigator} />
-        <drawerNavigator.Screen name="Sign-In" component={SignInStack} />
+        <drawerNavigator.Screen
+          name="DrawerNavTabHome"
+          component={TabNavigator}
+          options={{title: 'Home'}}
+        />
+        <drawerNavigator.Screen
+          name="DrawerNavSignIn"
+          component={SignInStack}
+          options={{title: 'Sign In'}}
+        />
       </drawerNavigator.Navigator>
     );
   }

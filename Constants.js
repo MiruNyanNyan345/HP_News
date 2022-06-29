@@ -51,27 +51,27 @@ export const AmebloMemberInfo = [
 export const YoutubeChannels = [
   {
     label: 'Morning Musume 22',
-    imageURL: require('./res/playlistIMG/morningmusume.jpeg'),
+    profile_image: require('./res/playlistIMG/morningmusume.jpeg'),
     playlistData: require('./res/mm_playlists.json'),
   },
   {
     label: 'ANGERME',
-    imageURL: require('./res/playlistIMG/ANGERME.jpeg'),
+    profile_image: require('./res/playlistIMG/ANGERME.jpeg'),
     playlistData: require('./res/angerme_playlists.json'),
   },
   {
     label: 'Juice=Juice',
-    imageURL: require('./res/playlistIMG/JuiceJuice.jpeg'),
+    profile_image: require('./res/playlistIMG/JuiceJuice.jpeg'),
     playlistData: require('./res/juicejuice_playlists.json'),
   },
   {
     label: 'Tsubaki Factory',
-    imageURL: require('./res/playlistIMG/TsubakiFactory.jpeg'),
+    profile_image: require('./res/playlistIMG/TsubakiFactory.jpeg'),
     playlistData: require('./res/tsubakifactory_playlists.json'),
   },
   {
     label: 'BEYOOOOONDS',
-    imageURL: require('./res/playlistIMG/BEYOOOOONDS.jpeg'),
+    profile_image: require('./res/playlistIMG/BEYOOOOONDS.jpeg'),
     playlistData: require('./res/BEYOOOOONDS_playlists.json'),
   },
 ];

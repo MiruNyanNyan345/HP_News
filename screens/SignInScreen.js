@@ -26,7 +26,7 @@ const SignInScreen = props => {
   });
 
   const signIn = () => {
-    fetch('http://'+HP_News_API_ADDRESS+'/user/token/obtain/', {
+    fetch('http://' + HP_News_API_ADDRESS + '/user/token/obtain/', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -46,7 +46,7 @@ const SignInScreen = props => {
           dispatch(setSignIn(user));
 
           Alert.alert('LOGIN SUCCESSFUL!', 'WELCOME ' + auth.username, () => {
-            navigate.navigate('Posts');
+            navigate.navigate('DrawerNavTabHome');
           });
         } else {
           Object.keys(auth).forEach(key => {

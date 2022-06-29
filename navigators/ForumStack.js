@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  createStackNavigator,
-} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import ForumScreen from '../screens/ForumScreen';
 import CommentsScreen from '../screens/CommentsScreen';
 import MakePostScreen from '../screens/MakePostScreen';

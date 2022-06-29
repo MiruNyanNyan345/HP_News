@@ -33,6 +33,7 @@ const CustomButton = props => {
     return (
       <View style={props.buttonContainerStyle}>
         <TouchableOpacity
+          disabled={props.disabled}
           style={props.buttonStyle}
           onPress={() => {
             props.onPress();

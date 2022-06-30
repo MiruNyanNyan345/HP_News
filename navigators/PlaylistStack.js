@@ -1,14 +1,13 @@
 import React from 'react';
 import ChannelScreen from '../screens/ChannelScreen';
 import {createStackNavigator} from '@react-navigation/stack';
-import VideosScreen from '../screens/VideosScreen';
 import CustomButton from '../components/CustomButton';
 
-const channelStack = createStackNavigator();
+const stack = createStackNavigator();
 
-const ChannelStack = props => {
+const PlaylistStack = props => {
   return (
-    <channelStack.Navigator
+    <stack.Navigator
       screenOptions={({route, navigation}) => {
         return {
           headerStyle: {backgroundColor: '#ff6b6b'},
@@ -31,14 +30,13 @@ const ChannelStack = props => {
           },
         };
       }}>
-      <channelStack.Screen
+      <stack.Screen
         name="Channels"
         component={ChannelScreen}
         options={{title: 'Channel'}}
       />
-      <channelStack.Screen name="Videos" component={VideosScreen} />
-    </channelStack.Navigator>
+    </stack.Navigator>
   );
 };
 
-export default ChannelStack;
+export default PlaylistStack;

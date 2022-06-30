@@ -9,18 +9,19 @@ import {
 } from 'react-native';
 
 const CustomYoutubeVideoInfoItem = props => {
-  let title, channelTitle;
+  // let title, channelTitle;
 
-  if (props.videoType === 'mv') {
-    let regExp = /\『(.+?)\』/g;
-    // if (props.channelTitle) {
-    //   channelTitle = props.channelTitle;
-    // }
-    if (props.videoTitle) {
-      // title = regExp.exec(props.videoTitle)[1];
-      title = props.videoTitle;
-    }
-  }
+  // if (props.videoType === 'mv') {
+  //   let regExp = /\『(.+?)\』/g;
+  //   // if (props.channelTitle) {
+  //   //   channelTitle = props.channelTitle;
+  //   // }
+  //   if (props.videoTitle) {
+  //     // title = regExp.exec(props.videoTitle)[1];
+  //     title = props.videoTitle;
+  //     console.log(title)
+  //   }
+  // }
 
   return (
     <TouchableOpacity
@@ -35,7 +36,7 @@ const CustomYoutubeVideoInfoItem = props => {
       />
       <View style={props.videoTitleContainerStyle}>
         {/*<Text style={props.channelTitleStyle}>{channelTitle}</Text>*/}
-        <Text style={props.videoTitleStyle}>{title}</Text>
+        <Text style={props.videoTitleStyle}>{props.videoTitle}</Text>
       </View>
     </TouchableOpacity>
   );

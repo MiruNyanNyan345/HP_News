@@ -1,22 +1,17 @@
-import React, {useState} from 'react';
-import {
-  FlatList,
-  ImageBackground,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
-import CustomButton from '../components/CustomButton';
 import {useNavigation} from '@react-navigation/native';
 import {YoutubeChannels} from '../Constants';
-import {Avatar} from 'react-native-elements';
 import CustomMenu from '../components/CustomMenu';
+import CustomYoutubeVideoFlatList from '../components/CustomYoutubeVideoFlatList';
+import CustomYoutubeVideoInfoItem from '../components/CustomYoutubeVideoInfoItem';
+import CustomVideoModal from '../components/CustomVideoModal';
 
 const ChannelScreen = props => {
-  const navigation = useNavigation();
+  const [yoututbeItems, setYoutubeItems] = useState({});
+  const [modalVisible, setModalVisible] = useState(false);
+  const [videoId, setVideoId] = useState('');
 
   return (
     <SafeAreaView style={styles.safeView}>
@@ -24,11 +19,30 @@ const ChannelScreen = props => {
         <View style={styles.channelMenuContainer}>
           <CustomMenu
             items={YoutubeChannels}
-            loadItems={() => console.log('test')}
-            // loadBlogItems={loadBlogItems}
+            loadItems={setYoutubeItems}
+            isPlaylist={true}
           />
         </View>
+        <CustomYoutubeVideoFlatList
+          items={yoututbeItems}
+          videoModalVisable={() => setModalVisible(true)}
+          setVideoIdForVideoModal={id => setVideoId(id)}
+        />
       </View>
+      <CustomVideoModal
+        videoModalVisible={modalVisible}
+        videoId={videoId}
+        showVideoModal={setModalVisible}
+        containerStyle={styles.videoModalContainer}
+        playerHeight={200}
+        playerWidth={350}
+        modalAnimationType="slide"
+        modalTransparent={true}
+        closedButtonTitle={'Close'}
+        closeButtonContainerStyle={styles.modalCloseButtonContainer}
+        closeButtonStyle={styles.modalCloseButton}
+        closeButtonTextStyle={styles.modalCloseButtonText}
+      />
     </SafeAreaView>
   );
 };
@@ -40,6 +54,30 @@ const styles = StyleSheet.create({
   },
   channelMenuContainer: {
     margin: 10,
+  },
+  videoModalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  modalCloseButtonContainer: {
+    backgroundColor: 'rgb(128,20,255)',
+    borderRadius: 10,
+    height: 40,
+    width: 100,
+    overflow: 'hidden',
+    margin: 5,
+  },
+  modalCloseButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  },
+  modalCloseButtonText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
   },
 });
 

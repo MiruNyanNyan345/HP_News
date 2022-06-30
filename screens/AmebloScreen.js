@@ -54,7 +54,7 @@ const AmebloScreen = () => {
         <View style={styles.amebloMenuContainer}>
           <CustomMenu items={AmebloMemberInfo} loadItems={loadBlogItems} />
         </View>
-        <View style={styles.amebloFlatListContainer}>
+        <View>
           <CustomAmebloFlatList
             items={blogItems}
             onEndLoadMore={loadMore}
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
   amebloMenuContainer: {
     margin: 10,
   },
-  amebloFlatListContainer: {},
 });
 
 export default AmebloScreen;

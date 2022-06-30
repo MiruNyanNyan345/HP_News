@@ -1,5 +1,4 @@
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import ChannelStack from './ChannelStack';
 import NewsNavigator from './NewsStack';
 import ForumStack from './ForumStack';
 import AmebloStack from './AmebloStack';
@@ -7,6 +6,7 @@ import TwitterNavigator from './TwitterStack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import React from 'react';
+import PlaylistStack from './PlaylistStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,18 +27,18 @@ const TabNavigator = props => {
               iconName = focused ? 'chatbubbles' : 'chatbubbles-outline';
             } else if (route.name === 'TabNavTwitter') {
               iconName = focused ? 'logo-twitter' : 'logo-twitter';
-            } else if (route.name === 'TabNavChannel') {
+            } else if (route.name === 'TabNavPlaylist') {
               iconName = focused ? 'logo-youtube' : 'logo-youtube';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
         };
       }}
-      initialRouteName={'TabNavChannel'}>
+      initialRouteName={'TabNavPlaylist'}>
       <Tab.Screen
-        name="TabNavChannel"
-        component={ChannelStack}
-        options={{headerShown: false, title: 'Channel'}}
+        name="TabNavPlaylist"
+        component={PlaylistStack}
+        options={{headerShown: false, title: 'Playlist'}}
       />
       <Tab.Screen
         name="TabNavNews"

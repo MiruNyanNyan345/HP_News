@@ -36,7 +36,7 @@ const DrawerNavigator = () => {
   if (isLoggedIn) {
     return (
       <drawerNavigator.Navigator
-        initialRouteName={'Home'}
+        initialRouteName={'DrawerNavTabHome'}
         screenOptions={{headerShown: false}}
         drawerContent={props => {
           return (

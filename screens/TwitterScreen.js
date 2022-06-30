@@ -8,10 +8,10 @@ const TwitterScreen = () => {
 
   const twitterAccounts = [
     {
-      label: "モーニング娘。'22",
+      label: 'モーニング娘。',
       url: 'https://twitter.com/MorningMusumeMg',
       username: 'MorningMusumeMg',
-      icon: 'https://pbs.twimg.com/profile_images/1512747206377603073/U4CevP87_400x400.jpg',
+      icon: 'https://pbs.twimg.com/profile_images/1539050753058566144/mfXE8Fuh_400x400.jpg',
       color: '#ff9ff3',
     },
     {

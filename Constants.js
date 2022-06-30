@@ -53,25 +53,32 @@ export const YoutubeChannels = [
     label: 'Morning Musume 22',
     profile_image: require('./res/playlistIMG/morningmusume.jpeg'),
     playlistData: require('./res/mm_playlists.json'),
+    playlistId: 'PLAAEA82D2950BC77D',
   },
   {
     label: 'ANGERME',
     profile_image: require('./res/playlistIMG/ANGERME.jpeg'),
     playlistData: require('./res/angerme_playlists.json'),
+    playlistId: 'PL0DCF7F78614F3AE6',
   },
   {
     label: 'Juice=Juice',
     profile_image: require('./res/playlistIMG/JuiceJuice.jpeg'),
     playlistData: require('./res/juicejuice_playlists.json'),
+    playlistId: 'PLs8AlpdTjgwdSDETD55q0i3W98tC9SAur',
   },
   {
     label: 'Tsubaki Factory',
     profile_image: require('./res/playlistIMG/TsubakiFactory.jpeg'),
     playlistData: require('./res/tsubakifactory_playlists.json'),
+    playlistId: 'PL0XLej3y4LDmLO0FHu8HBkldiggTt1Es4',
   },
   {
     label: 'BEYOOOOONDS',
     profile_image: require('./res/playlistIMG/BEYOOOOONDS.jpeg'),
     playlistData: require('./res/BEYOOOOONDS_playlists.json'),
+    playlistId: 'PL8m86iV3p-nRdW2cckAwqruBKuzrxoVvW',
   },
 ];
+
+export const YOUTUBE_API_KEY = 'AIzaSyAJ7xP9SfUisfv60auxOtwxoMBW524giGo';

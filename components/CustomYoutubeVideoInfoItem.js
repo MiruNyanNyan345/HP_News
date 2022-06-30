@@ -9,25 +9,12 @@ import {
 } from 'react-native';
 
 const CustomYoutubeVideoInfoItem = props => {
-  // let title, channelTitle;
-
-  // if (props.videoType === 'mv') {
-  //   let regExp = /\『(.+?)\』/g;
-  //   // if (props.channelTitle) {
-  //   //   channelTitle = props.channelTitle;
-  //   // }
-  //   if (props.videoTitle) {
-  //     // title = regExp.exec(props.videoTitle)[1];
-  //     title = props.videoTitle;
-  //     console.log(title)
-  //   }
-  // }
+    console.log(props.videoThumbnail)
 
   return (
     <TouchableOpacity
       onPress={() => props.disableOpacity()}
       onLongPress={() => {
-        // props.enableModalVideoPlayer();
         props.enableModalVideoPlayer();
       }}>
       <ImageBackground
@@ -35,7 +22,6 @@ const CustomYoutubeVideoInfoItem = props => {
         source={{uri: props.videoThumbnail}}
       />
       <View style={props.videoTitleContainerStyle}>
-        {/*<Text style={props.channelTitleStyle}>{channelTitle}</Text>*/}
         <Text style={props.videoTitleStyle}>{props.videoTitle}</Text>
       </View>
     </TouchableOpacity>

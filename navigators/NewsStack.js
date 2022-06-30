@@ -35,7 +35,7 @@ const NewsStack = props => {
       <newsStack.Screen
         name="Website"
         component={WebViewScreen}
-        options={{title: null}}
+        options={{headerShown: false}}
       />
     </newsStack.Navigator>
   );

@@ -5,6 +5,7 @@ import {View, StyleSheet} from 'react-native';
 const WebViewScreen = props => {
   const url = props.route.params.url;
   return (
+    // <SafeAreaView style={styles.safeView}>
     <WebView
       source={{url: url}}
       javaScriptEnabled={false}
@@ -12,9 +13,14 @@ const WebViewScreen = props => {
       originWhitelist={['*']}
       allowsLinkPreview={true}
     />
+    // </SafeAreaView>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  safeView: {
+    flex: 1,
+  },
+});
 
 export default WebViewScreen;

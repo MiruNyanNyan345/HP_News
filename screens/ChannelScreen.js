@@ -1,15 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 
-import {useNavigation} from '@react-navigation/native';
 import {YoutubeChannels} from '../Constants';
 import CustomMenu from '../components/CustomMenu';
 import CustomYoutubeVideoFlatList from '../components/CustomYoutubeVideoFlatList';
-import CustomYoutubeVideoInfoItem from '../components/CustomYoutubeVideoInfoItem';
 import CustomVideoModal from '../components/CustomVideoModal';
 
 const ChannelScreen = props => {
-  const [yoututbeItems, setYoutubeItems] = useState({});
+  const [playlistId, setPlaylistId] = useState({});
   const [modalVisible, setModalVisible] = useState(false);
   const [videoId, setVideoId] = useState('');
 
@@ -19,12 +17,12 @@ const ChannelScreen = props => {
         <View style={styles.channelMenuContainer}>
           <CustomMenu
             items={YoutubeChannels}
-            loadItems={setYoutubeItems}
+            loadItems={setPlaylistId}
             isPlaylist={true}
           />
         </View>
         <CustomYoutubeVideoFlatList
-          items={yoututbeItems}
+            playlistId={playlistId}
           videoModalVisable={() => setModalVisible(true)}
           setVideoIdForVideoModal={id => setVideoId(id)}
         />
@@ -51,6 +49,9 @@ const styles = StyleSheet.create({
   safeView: {
     flex: 1,
     backgroundColor: '#ffffff',
+  },
+  container: {
+    flex: 1,
   },
   channelMenuContainer: {
     margin: 10,

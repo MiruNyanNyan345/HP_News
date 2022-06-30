@@ -1,10 +1,34 @@
-import React, {useState} from 'react';
-import {FlatList, Text, View} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {Alert, FlatList, Text, View} from 'react-native';
 import YoutubePlayer from 'react-native-youtube-iframe';
 import CustomYoutubeVideoInfoItem from './CustomYoutubeVideoInfoItem';
+import {HP_News_API_ADDRESS, YOUTUBE_API_KEY} from '../Constants';
 
 const CustomYoutubeVideoFlatList = props => {
   const [thumbnailPressed, setThumbnailPressed] = useState([]);
+  const [playlistItems, setPlayListItems] = useState({});
+
+  useEffect(() => {
+    fetch(
+      'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&playlistId=' +
+        props.playlistId +
+        '&key=' +
+        YOUTUBE_API_KEY +
+        '&maxResults=20',
+      {
+        method: 'GET',
+      },
+    )
+      .then(r => {
+        return r.json();
+      })
+      .then(data => {
+        setPlayListItems(data.items);
+      })
+      .catch(error => {
+        Alert.alert(error);
+      });
+  }, [props.playlistId]);
 
   const clickThumbnail = index => {
     let item = [...thumbnailPressed];
@@ -17,9 +41,19 @@ const CustomYoutubeVideoFlatList = props => {
     props.videoModalVisable(true);
   };
 
+  const getTitleText = t => {
+    if (t.match('「(.*?)」')) {
+      return t.match('「(.*?)」')[1];
+    } else if (t.match('『(.*?)』')) {
+      return t.match('『(.*?)』')[1];
+    } else {
+      return t;
+    }
+  };
+
   return (
     <FlatList
-      data={props.items}
+      data={playlistItems}
       keyExtractor={item => item.id}
       renderItem={({index, item}) => (
         <View
@@ -35,7 +69,7 @@ const CustomYoutubeVideoFlatList = props => {
               showModalVideoPlayer(item.snippet.resourceId.videoId)
             }
             videoType={props.videoType}
-            videoThumbnail={item.snippet.thumbnails.standard.url}
+            videoThumbnail={item.snippet.thumbnails.high.url}
             videoThumbnailStyle={{
               height: 150,
               width: '100%',
@@ -61,7 +95,11 @@ const CustomYoutubeVideoFlatList = props => {
               alignItems: 'center',
             }}
             videoTitle={
-              thumbnailPressed[index] === false ? null : item.snippet.title
+              thumbnailPressed[index] === false
+                ? null
+                : item.snippet.channelTitle +
+                  '\n' +
+                  getTitleText(item.snippet.title)
             }
             videoTitleStyle={{
               color: 'rgb(255,20,147)',

@@ -9,8 +9,6 @@ import {
 } from 'react-native';
 
 const CustomYoutubeVideoInfoItem = props => {
-    console.log(props.videoThumbnail)
-
   return (
     <TouchableOpacity
       onPress={() => props.disableOpacity()}

@@ -51,9 +51,13 @@ const CustomCommentItem = props => {
             //   setDownVoteCnt(downVoteCnt + 1);
             // }
             Alert.alert('Vote Successfully', '');
+            props.onRefresh()
+
           } else {
-            const prob = await r.json();
-            Alert.alert('Warning', prob.vote_error[0]);
+            const msg = await r.json();
+            Object.keys(msg).forEach(key => {
+              Alert.alert(msg[key].toString());
+            });
           }
         })
         .catch(e => console.log(e));

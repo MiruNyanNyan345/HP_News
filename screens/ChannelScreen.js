@@ -22,7 +22,7 @@ const ChannelScreen = props => {
           />
         </View>
         <CustomYoutubeVideoFlatList
-            playlistId={playlistId}
+          playlistId={playlistId}
           videoModalVisable={() => setModalVisible(true)}
           setVideoIdForVideoModal={id => setVideoId(id)}
         />

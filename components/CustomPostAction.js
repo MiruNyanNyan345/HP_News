@@ -100,8 +100,10 @@ export const CustomPostAction = (props, navigation) => {
             }
             Alert.alert('Vote Successfully', '');
           } else {
-            const issue = await r.json();
-            Alert.alert('Warning', issue.vote_error[0]);
+            const msg = await r.json();
+            Object.keys(msg).forEach(key => {
+              Alert.alert(msg[key].toString());
+            });
           }
         })
         .catch(e => console.log(e));

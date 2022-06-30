@@ -31,7 +31,6 @@ const CustomMenu = props => {
             }}
             onPress={() => {
               props.isPlaylist
-                // ? props.loadItems(item.playlistData.items)
                 ? props.loadItems(item.playlistId)
                 : props.loadItems(item);
             }}>

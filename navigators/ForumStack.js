@@ -33,12 +33,17 @@ const ForumStack = props => {
         };
       }}
       initialRouteName="Posts">
-      <forumStack.Screen name="Posts" component={ForumScreen} />
+      <forumStack.Screen
+        name="Posts"
+        component={ForumScreen}
+        options={{animationEnabled: false}}
+      />
       <forumStack.Screen
         name={'MakePost'}
         component={MakePostScreen}
         options={{
           headerShown: false,
+          animationEnabled: false,
         }}
       />
       <forumStack.Screen
@@ -46,6 +51,7 @@ const ForumStack = props => {
         component={CommentsScreen}
         options={({route, navigation}) => {
           return {
+            animationEnabled: false,
             headerStyle: {backgroundColor: '#ff6b6b'},
             headerTintColor: '#fff',
             headerTitleStyle: {

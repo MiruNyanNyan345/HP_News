@@ -64,20 +64,22 @@ const DrawerNavigator = () => {
           );
         }}>
         <drawerNavigator.Screen
-          name="DrawerNavProfile"
-          component={ProfileStack}
-          options={{title: 'Profile'}}
-        />
-        <drawerNavigator.Screen
           name="DrawerNavTabHome"
           component={TabNavigator}
           options={{title: 'Home'}}
+        />
+        <drawerNavigator.Screen
+          name="DrawerNavProfile"
+          component={ProfileStack}
+          options={{title: 'Profile'}}
         />
       </drawerNavigator.Navigator>
     );
   } else {
     return (
-      <drawerNavigator.Navigator screenOptions={{headerShown: false}}>
+      <drawerNavigator.Navigator
+        screenOptions={{headerShown: false}}
+        initialRouteName={'DrawerNavTabHome'}>
         <drawerNavigator.Screen
           name="DrawerNavTabHome"
           component={TabNavigator}

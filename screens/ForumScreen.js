@@ -26,6 +26,12 @@ const ForumScreen = props => {
   const [headerTitle, setHeaderTitle] = useState('Posts');
 
   useEffect(() => {
+    navigation.addListener('focus', () => {
+      onRefresh();
+    });
+  }, [navigation]);
+
+  useEffect(() => {
     navigation.setOptions({
       headerTitle: () => {
         return (
@@ -72,7 +78,7 @@ const ForumScreen = props => {
         setPosts(data);
         setIsFetching(false);
       })
-      .catch(e => console.log(e));
+      .catch(e => console.log(e.message));
   };
 
   const fetchSavedPost = async () => {

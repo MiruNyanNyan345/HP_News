@@ -34,7 +34,7 @@ const TabNavigator = props => {
           },
         };
       }}
-      initialRouteName={'TabNavPlaylist'}>
+      initialRouteName={'TabNavForum'}>
       <Tab.Screen
         name="TabNavPlaylist"
         component={PlaylistStack}

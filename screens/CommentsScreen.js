@@ -25,6 +25,11 @@ const CommentsScreen = ({route, navigation}) => {
   const [replies, setReplies] = useState([]);
   const [replyBody, setReplyBody] = useState('');
   const [isFetching, setIsFetching] = useState(false);
+  useEffect(() => {
+    navigation.addListener('focus', () => {
+      onRefresh();
+    });
+  }, [navigation]);
 
   const fetchComments = () => {
     fetch(
@@ -40,11 +45,12 @@ const CommentsScreen = ({route, navigation}) => {
         setReplies(data);
         setIsFetching(false);
       })
-      .catch(e => console.log('Error:', e));
+      .catch(e => {
+        console.log('Error:', e.message);
+      });
   };
 
   useEffect(() => {
-    console.log('Test');
     navigation.setOptions({
       title: route.params.postItem.title,
     });
@@ -52,35 +58,42 @@ const CommentsScreen = ({route, navigation}) => {
   }, []);
 
   const replyPost = async () => {
-    if (isLoggedIn) {
-      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/reply/', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          Authorization: 'JWT ' + access,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({post: route.params.postItem.id, body: replyBody}),
-      })
-        .then(async r => {
-          const resText = await r.json();
-          Alert.alert(resText, '', [
-            {
-              text: 'OK',
-              onPress: () => {
-                fetchComments();
-              },
-            },
-          ]);
-        })
-        .catch(error => {
-          const err_msg = error.message;
-          Alert.alert(err_msg);
-          console.log('Error: ' + err_msg);
-        });
+    if (replyBody.length < 1) {
+      Alert.alert('Please leave your comment.');
     } else {
-      customAlertUserLogin({navigation: navigation});
+      if (isLoggedIn) {
+        const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+        fetch('http://' + HP_News_API_ADDRESS + '/forum/post/reply/', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            Authorization: 'JWT ' + access,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            post: route.params.postItem.id,
+            body: replyBody,
+          }),
+        })
+          .then(async r => {
+            const resText = await r.json();
+            Alert.alert(resText, '', [
+              {
+                text: 'OK',
+                onPress: () => {
+                  fetchComments();
+                },
+              },
+            ]);
+          })
+          .catch(error => {
+            const err_msg = error.message;
+            console.log('Error: ' + err_msg);
+            Alert.alert(err_msg);
+          });
+      } else {
+        customAlertUserLogin({navigation: navigation});
+      }
     }
   };
 
@@ -123,33 +136,35 @@ const CommentsScreen = ({route, navigation}) => {
     </View>
   );
 
-  return replies.length < 1 ? (
-    <SafeAreaView style={styles.safeView}>
-      {postItem}
-      <View style={styles.emptyCommentView}>
-        <Ionicons name={'chatbox-outline'} size={70} color={'#ff6b6b'} />
-        <Text>No comment yet.</Text>
-      </View>
-      <View style={styles.inputContainer}>
-        <View style={styles.inputFieldContainer}>
-          <TextInput
-            style={styles.inputField}
-            placeholder={'Leave comment here.'}
-            placeholderTextColor={'#8395a7'}
-          />
-        </View>
-        <CustomButton
-          buttonContainerStyle={styles.buttonContainer}
-          buttonStyle={styles.button}
-          buttonTextStyle={styles.buttonText}
-          title={'Send'}
-          onPress={() => {
-            console.log('send');
-          }}
-        />
-      </View>
-    </SafeAreaView>
-  ) : (
+  // return replies.length < 1 ? (
+  //   <SafeAreaView style={styles.safeView}>
+  //     {postItem}
+  //     <View style={styles.emptyCommentView}>
+  //       <Ionicons name={'chatbox-outline'} size={70} color={'#ff6b6b'} />
+  //       <Text>No comment yet.</Text>
+  //     </View>
+  //     <View style={styles.inputContainer}>
+  //       <View style={styles.inputFieldContainer}>
+  //         <TextInput
+  //           style={styles.inputField}
+  //           placeholder={'Leave comment here.'}
+  //           placeholderTextColor={'#8395a7'}
+  //         />
+  //       </View>
+  //       <CustomButton
+  //         buttonContainerStyle={styles.buttonContainer}
+  //         buttonStyle={styles.button}
+  //         buttonTextStyle={styles.buttonText}
+  //         title={'Send'}
+  //         onPress={() => {
+  //           console.log('send');
+  //         }}
+  //       />
+  //     </View>
+  //   </SafeAreaView>
+  // ) : (
+
+  return (
     <SafeAreaView style={styles.safeView}>
       {postItem}
       <FlatList
@@ -163,6 +178,7 @@ const CommentsScreen = ({route, navigation}) => {
           <CustomCommentItem
             itemType={'reply'}
             item={item}
+            onRefresh={onRefresh}
             commentContainer={styles.commentContainer}
             commentBodyContainer={styles.commentBodyContainer}
             commentBody={styles.commentBody}
@@ -196,6 +212,7 @@ const CommentsScreen = ({route, navigation}) => {
       </View>
     </SafeAreaView>
   );
+  // );
 };
 const styles = StyleSheet.create({
   safeView: {

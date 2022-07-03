@@ -3,6 +3,7 @@ import {Alert, FlatList, Text, View} from 'react-native';
 import YoutubePlayer from 'react-native-youtube-iframe';
 import CustomYoutubeVideoInfoItem from './CustomYoutubeVideoInfoItem';
 import {HP_News_API_ADDRESS, YOUTUBE_API_KEY} from '../Constants';
+import {fetchPlaylist} from '../services/channelPlaylist';
 
 const CustomYoutubeVideoFlatList = props => {
   const [thumbnailPressed, setThumbnailPressed] = useState([]);

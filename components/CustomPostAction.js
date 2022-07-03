@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const CustomPostAction = (props, navigation) => {
+export const CustomPostAction = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   const [upVoteCnt, setUpVoteCnt] = useState(0);
@@ -32,7 +32,11 @@ export const CustomPostAction = (props, navigation) => {
   const [isSaved, setIsSaved] = useState(false);
 
   useEffect(() => {
-    checkPostIsSaved({itemID: props.itemID, setIsSaved: setIsSaved()});
+    if (isLoggedIn) {
+      checkPostIsSaved({itemID: props.itemID, setIsSaved: setIsSaved});
+    } else {
+      setIsSaved(false);
+    }
     setVoteCnt(props.post_votes);
   }, [props.post_votes]);
 
@@ -69,8 +73,9 @@ export const CustomPostAction = (props, navigation) => {
       .then(r => {
         return r.json();
       })
-      .then(isSave => {
-        setIsSaved(isSave);
+      .then(r_json => {
+        const isSaved = r_json.isSaved;
+        setIsSaved(isSaved);
       })
       .catch(error => {
         Alert.alert(error);
@@ -79,7 +84,7 @@ export const CustomPostAction = (props, navigation) => {
 
   const vote = async (postID, voteType) => {
     if (!isLoggedIn) {
-      customAlertUserLogin({navigation: navigation});
+      customAlertUserLogin({navigation: props.navigation});
     } else {
       const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
       fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote/', {
@@ -112,7 +117,7 @@ export const CustomPostAction = (props, navigation) => {
 
   const savePost = async () => {
     if (!isLoggedIn) {
-      customAlertUserLogin({navigation: navigation});
+      customAlertUserLogin({navigation: props.navigation});
     } else {
       const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
       fetch('http://' + HP_News_API_ADDRESS + '/forum/post/save_post/', {

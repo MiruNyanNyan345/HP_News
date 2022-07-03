@@ -9,7 +9,7 @@ const customAlertUserLogin = props => {
       {
         text: 'Ok',
         onPress: () => {
-          props.navigation.navigate('Sign-In');
+          props.navigation.navigate('DrawerNavSignIn');
         },
       },
       {

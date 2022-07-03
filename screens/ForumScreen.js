@@ -29,7 +29,7 @@ const ForumScreen = props => {
     navigation.addListener('focus', () => {
       onRefresh();
     });
-  }, [navigation]);
+  }, []);
 
   useEffect(() => {
     navigation.setOptions({
@@ -98,9 +98,7 @@ const ForumScreen = props => {
         setPosts(data);
         setIsFetching(false);
       })
-      .catch(error => {
-        Alert.alert(error);
-      });
+      .catch(e => console.log(e.message));
   };
 
   const onRefresh = () => {
@@ -155,7 +153,6 @@ const ForumScreen = props => {
             postUserNameText={styles.postUserNameText}
             postBookmarkButton={styles.postBookmarkButton}
             postCommentButton={styles.postCommentButton}
-            fetchSavedPost={fetchSavedPost}
             onPress={() => {
               navigation.navigate('Comments', {
                 postItem: item,

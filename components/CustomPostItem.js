@@ -5,8 +5,6 @@ import {getDateDiff} from '../utils/util';
 import {CustomPostAction} from './CustomPostAction';
 
 const CustomPostItem = props => {
-  const navigation = useNavigation();
-
   return (
     <View style={props.postItemStyle}>
       <TouchableOpacity
@@ -29,16 +27,13 @@ const CustomPostItem = props => {
           </View>
         </View>
       </TouchableOpacity>
-      {CustomPostAction(
-        {
-          post_votes: props.item.post_votes,
-          isPostScreen: props.isPostScreen,
-          postItem: props.item,
-          itemID: props.item.id,
-          fetchSavedPost: props.fetchSavedPost,
-        },
-        navigation,
-      )}
+      {CustomPostAction({
+        post_votes: props.item.post_votes,
+        isPostScreen: props.isPostScreen,
+        postItem: props.item,
+        itemID: props.item.id,
+        navigation: props.navigation,
+      })}
     </View>
   );
 };

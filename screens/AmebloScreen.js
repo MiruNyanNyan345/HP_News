@@ -45,7 +45,10 @@ const AmebloScreen = () => {
   };
 
   const loadAmebloContent = item => {
-    navigation.navigate('Website', {url: item.url});
+    navigation.navigate('AmebloWebView', {
+      url: {url: item.url},
+      javaScriptEnabled: false,
+    });
   };
 
   return (

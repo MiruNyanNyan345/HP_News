@@ -1,8 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import WebViewHTMLScreen from '../screens/WebViewHTMLScreen';
 import TwitterScreen from '../screens/TwitterScreen';
 import CustomButton from '../components/CustomButton';
+import WebViewScreen from '../screens/WebViewScreen';
 
 const twitterStack = createStackNavigator();
 const TwitterStack = props => {
@@ -36,11 +36,23 @@ const TwitterStack = props => {
         options={{title: 'Twitter'}}
       />
       <twitterStack.Screen
-        name="Website"
-        component={WebViewHTMLScreen}
+        name="TwitterWebView"
         options={{
-          headerShown: false,
+          headerTitle: '',
+          headerLeft: () => {
+            return (
+              <CustomButton
+                isIconBG={true}
+                buttonContainerStyle={{paddingLeft: 10}}
+                buttonIconName={'chevron-back'}
+                buttonIconSize={30}
+                buttonIconColor={'#fff'}
+                onPress={() => props.navigation.navigate('TwitterStackScreen')}
+              />
+            );
+          },
         }}
+        component={WebViewScreen}
       />
     </twitterStack.Navigator>
   );

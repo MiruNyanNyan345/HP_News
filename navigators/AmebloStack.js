@@ -30,8 +30,30 @@ const AmebloStack = props => {
           },
         };
       }}>
-      <amebloStack.Screen name="Ameblo" component={AmebloScreen} />
-      <amebloStack.Screen name="Website" component={WebViewScreen} />
+      <amebloStack.Screen
+        name="AmebloStackScreen"
+        options={{headerTitle: 'Ameblo'}}
+        component={AmebloScreen}
+      />
+      <amebloStack.Screen
+        name="AmebloWebView"
+        component={WebViewScreen}
+        options={{
+          headerTitle: '',
+          headerLeft: () => {
+            return (
+              <CustomButton
+                isIconBG={true}
+                buttonContainerStyle={{paddingLeft: 10}}
+                buttonIconName={'chevron-back'}
+                buttonIconSize={30}
+                buttonIconColor={'#fff'}
+                onPress={() => props.navigation.navigate('AmebloStackScreen')}
+              />
+            );
+          },
+        }}
+      />
     </amebloStack.Navigator>
   );
 };

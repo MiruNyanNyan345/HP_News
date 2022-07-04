@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import WebViewScreen from '../screens/WebViewScreen';
 import NewsScreen from '../screens/NewsScreen';
 import CustomButton from '../components/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const newsStack = createStackNavigator();
 const NewsStack = props => {
@@ -31,11 +32,25 @@ const NewsStack = props => {
           },
         };
       }}>
-      <newsStack.Screen name="Latest News" component={NewsScreen} />
+      <newsStack.Screen name="NewsStackScreen" component={NewsScreen} options={{headerTitle: 'Latest News'}}/>
       <newsStack.Screen
-        name="Website"
+        name="NewsWebView"
+        options={{
+          headerTitle: '',
+          headerLeft: () => {
+            return (
+              <CustomButton
+                isIconBG={true}
+                buttonContainerStyle={{paddingLeft: 10}}
+                buttonIconName={'chevron-back'}
+                buttonIconSize={30}
+                buttonIconColor={'#fff'}
+                onPress={() => props.navigation.navigate('NewsStackScreen')}
+              />
+            );
+          },
+        }}
         component={WebViewScreen}
-        options={{headerShown: false}}
       />
     </newsStack.Navigator>
   );

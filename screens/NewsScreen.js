@@ -48,8 +48,10 @@ const NewsScreen = props => {
   };
 
   const loadNewsContent = item => {
-    console.log(item.url);
-    navigation.navigate('Website', {url: item.url});
+    navigation.navigate('NewsWebView', {
+      url: {url: item.url},
+      javaScriptEnabled: false,
+    });
   };
 
   const doRefresh = () => {

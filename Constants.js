@@ -1,5 +1,51 @@
 export const HP_News_API_ADDRESS = '127.0.0.1:8000';
 
+export const twitterAccounts = [
+  {
+    label: 'モーニング娘。',
+    url: 'https://twitter.com/MorningMusumeMg',
+    username: 'MorningMusumeMg',
+    icon: 'https://pbs.twimg.com/profile_images/1539050753058566144/mfXE8Fuh_400x400.jpg',
+    color: '#ff9ff3',
+  },
+  {
+    label: '尾形春水',
+    url: 'https://twitter.com/harunaogatajp',
+    username: 'harunaogatajp',
+    icon: 'https://pbs.twimg.com/profile_images/1412269919736000513/kNieTNC9_400x400.jpg',
+    color: '#48dbfb',
+  },
+  {
+    label: '飯窪春菜',
+    url: 'https://twitter.com/haruna__iikubo',
+    username: 'haruna__iikubo',
+    icon: 'https://pbs.twimg.com/profile_images/1502116032659755009/qyNkvjV1_400x400.jpg',
+    color: '#feca57',
+  },
+  {
+    label: '工藤遥',
+    url: 'https://twitter.com/Haruka_Kudo1027',
+    username: 'Haruka_Kudo1027',
+    icon: 'https://pbs.twimg.com/profile_images/1502110278070435849/RjSEL0-p_400x400.jpg',
+    color: '#ff9f43',
+  },
+  {
+    label: '道重さゆみ',
+    url: 'https://twitter.com/tubuyakisayumin',
+    username: 'tubuyakisayumin',
+    icon: 'https://pbs.twimg.com/profile_images/1414760386239234050/h9lD-fk-_400x400.jpg',
+    color: '#f368e0',
+  },
+  {
+    label: '田中れいな',
+    url: 'https://twitter.com/ganbareina11',
+    username: 'tubuyakisayumin',
+    icon: 'https://pbs.twimg.com/profile_images/1346836739621441536/0eP3NpgA_400x400.jpg',
+    color: '#0abde3',
+  },
+];
+
+
 export const AmebloMemberInfo = [
   {
     label: '道重さゆみ',

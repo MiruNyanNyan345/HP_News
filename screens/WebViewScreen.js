@@ -1,19 +1,19 @@
 import React from 'react';
 import WebView from 'react-native-webview';
-import {View, StyleSheet} from 'react-native';
+import {StyleSheet, SafeAreaView} from 'react-native';
 
 const WebViewScreen = props => {
-  const url = props.route.params.url;
+
   return (
-    // <SafeAreaView style={styles.safeView}>
-    <WebView
-      source={{url: url}}
-      javaScriptEnabled={false}
-      domStorageEnabled={true}
-      originWhitelist={['*']}
-      allowsLinkPreview={true}
-    />
-    // </SafeAreaView>
+    <SafeAreaView style={styles.safeView}>
+      <WebView
+        source={props.route.params.url}
+        javaScriptEnabled={props.route.params.javaScriptEnabled}
+        domStorageEnabled={true}
+        originWhitelist={['*']}
+        allowsLinkPreview={true}
+      />
+    </SafeAreaView>
   );
 };
 

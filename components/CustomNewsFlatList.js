@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, FlatList, Linking, View} from 'react-native';
 import {ListItem, Avatar} from 'react-native-elements';
-import WebViewScreen from '../screens/WebViewScreen';
 import {getDateDiff} from '../utils/util';
 
 const CustomNewsFlatList = props => {

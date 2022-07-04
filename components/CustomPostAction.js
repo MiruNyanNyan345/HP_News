@@ -1,11 +1,12 @@
 import {Alert, Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import React, {useEffect, useState} from 'react';
-import customAlertUserLogin from './CustomAlertUserLogin';
+import alertUserLogin from '../services/alertUserLogin';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {HP_News_API_ADDRESS} from '../Constants';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
+import {tokenExpired, verifyToken} from '../services/auth';
 
 const styles = StyleSheet.create({
   postActionContainer: {
@@ -26,6 +27,7 @@ const styles = StyleSheet.create({
 
 export const CustomPostAction = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
+  const dispatch = useDispatch();
 
   const [upVoteCnt, setUpVoteCnt] = useState(0);
   const [downVoteCnt, setDownVoteCnt] = useState(0);
@@ -74,8 +76,7 @@ export const CustomPostAction = props => {
         return r.json();
       })
       .then(r_json => {
-        const isSaved = r_json.isSaved;
-        setIsSaved(isSaved);
+        setIsSaved(r_json.isSaved);
       })
       .catch(error => {
         Alert.alert(error);
@@ -84,68 +85,82 @@ export const CustomPostAction = props => {
 
   const vote = async (postID, voteType) => {
     if (!isLoggedIn) {
-      customAlertUserLogin({navigation: props.navigation});
+      alertUserLogin({navigation: props.navigation});
     } else {
-      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote/', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          Authorization: 'JWT ' + access,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({post: postID, vote: voteType}),
-      })
-        .then(async r => {
-          if (r.ok) {
-            if (voteType) {
-              setUpVoteCnt(upVoteCnt + 1);
-            } else {
-              setDownVoteCnt(downVoteCnt + 1);
-            }
-            Alert.alert('Vote Successfully', '');
-          } else {
-            const msg = await r.json();
-            Object.keys(msg).forEach(key => {
-              Alert.alert(msg[key].toString());
-            });
-          }
+      const tokenIsValid = await verifyToken();
+      if (tokenIsValid) {
+        const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+        fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote/', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            Authorization: 'JWT ' + access,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({post: postID, vote: voteType}),
         })
-        .catch(e => console.log(e));
+          .then(async r => {
+            if (r.ok) {
+              if (voteType) {
+                setUpVoteCnt(upVoteCnt + 1);
+              } else {
+                setDownVoteCnt(downVoteCnt + 1);
+              }
+              Alert.alert('Vote Successfully', '');
+            } else {
+              const msg = await r.json();
+              if (r.status === 400) {
+                Object.keys(msg).forEach(key => {
+                  Alert.alert(msg[key].toString());
+                });
+              } else {
+                Alert.alert(JSON.stringify(msg));
+              }
+            }
+          })
+          .catch(e => console.log(e));
+      } else {
+        tokenExpired({dispatch: dispatch, navigation: props.navigation});
+      }
     }
   };
 
   const savePost = async () => {
     if (!isLoggedIn) {
-      customAlertUserLogin({navigation: props.navigation});
+      alertUserLogin({navigation: props.navigation});
     } else {
-      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/save_post/', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          Authorization: 'JWT ' + access,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({post: props.itemID}),
-      })
-        .then(async r => {
-          return r.json();
+      const tokenIsValid = await verifyToken();
+      if (tokenIsValid) {
+        const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+        fetch('http://' + HP_News_API_ADDRESS + '/forum/post/save_post/', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            Authorization: 'JWT ' + access,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({post: props.itemID}),
         })
-        .then(msg => {
-          Alert.alert(msg, '', [
-            {
-              text: 'OK',
-              onPress: () => {
-                checkPostIsSaved();
+          .then(async r => {
+            return r.json();
+          })
+          .then(msg => {
+            Alert.alert(msg, '', [
+              {
+                text: 'OK',
+                onPress: () => {
+                  checkPostIsSaved();
+                },
               },
-            },
-          ]);
-        })
-        .catch(error => {
-          console.log('Error: ' + error);
-          Alert.alert('Error', error);
-        });
+            ]);
+          })
+          .catch(error => {
+            console.log('Error: ' + error);
+            Alert.alert('Error', error);
+          });
+      } else {
+        tokenExpired({dispatch: dispatch, navigation: props.navigation});
+      }
     }
   };
 
@@ -175,7 +190,7 @@ export const CustomPostAction = props => {
         <TouchableOpacity
           style={styles.postCommentButton}
           onPress={() => {
-            navigation.navigate('Comments', {
+            props.navigation.navigate('Comments', {
               postItem: props.postItem,
             });
           }}>

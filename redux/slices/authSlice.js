@@ -2,9 +2,9 @@ import {createSlice} from '@reduxjs/toolkit';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const initialState = {
-    isLoggedIn: false,
-    username: null,
-    email: null,
+  isLoggedIn: false,
+  username: null,
+  email: null,
 };
 
 const authSlice = createSlice({

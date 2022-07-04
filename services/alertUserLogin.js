@@ -1,7 +1,7 @@
 import {Alert} from 'react-native';
 import React from 'react';
 
-const customAlertUserLogin = props => {
+const alertUserLogin = props => {
   return Alert.alert(
     'Please Login First',
     '',
@@ -21,4 +21,4 @@ const customAlertUserLogin = props => {
   );
 };
 
-export default customAlertUserLogin;
+export default alertUserLogin;

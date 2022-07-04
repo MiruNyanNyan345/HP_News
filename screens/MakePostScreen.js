@@ -13,7 +13,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {HP_News_API_ADDRESS} from '../Constants';
 
 const MakePostScreen = props => {
-  const navigation = useNavigation();
   const [postTitle, setPostTitle] = useState('');
   const [postContent, setPostContent] = useState('');
 
@@ -34,7 +33,7 @@ const MakePostScreen = props => {
           Alert.alert(k.toUpperCase(), rObj[k]);
         });
         if (r.status == 201) {
-          navigation.navigate('Posts');
+          props.navigation.navigate('Posts');
         }
       })
       .catch(error => {
@@ -70,7 +69,7 @@ const MakePostScreen = props => {
           buttonContainerStyle={styles.customBtnContainer}
           buttonStyle={styles.cancelBtn}
           onPress={() => {
-            navigation.navigate('Posts');
+            props.navigation.navigate('Posts');
           }}
         />
         <CustomButton

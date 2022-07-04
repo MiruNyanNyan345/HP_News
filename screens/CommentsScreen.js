@@ -14,10 +14,11 @@ import {HP_News_API_ADDRESS} from '../Constants';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {getDateDiff} from '../utils/util';
 import {CustomPostAction} from '../components/CustomPostAction';
-import customAlertUserLogin from '../components/CustomAlertUserLogin';
-import {useSelector} from 'react-redux';
+import alertUserLogin from '../services/alertUserLogin';
+import {useDispatch, useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {tokenExpired, verifyToken} from '../services/auth';
 
 const CommentsScreen = ({route, navigation}) => {
   const post_id = route.params.postItem.id;
@@ -25,6 +26,8 @@ const CommentsScreen = ({route, navigation}) => {
   const [replies, setReplies] = useState([]);
   const [replyBody, setReplyBody] = useState('');
   const [isFetching, setIsFetching] = useState(false);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     navigation.addListener('focus', () => {
       onRefresh();
@@ -62,37 +65,42 @@ const CommentsScreen = ({route, navigation}) => {
       Alert.alert('Please leave your comment.');
     } else {
       if (isLoggedIn) {
-        const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-        fetch('http://' + HP_News_API_ADDRESS + '/forum/post/reply/', {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            Authorization: 'JWT ' + access,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            post: route.params.postItem.id,
-            body: replyBody,
-          }),
-        })
-          .then(async r => {
-            const resText = await r.json();
-            Alert.alert(resText, '', [
-              {
-                text: 'OK',
-                onPress: () => {
-                  fetchComments();
-                },
-              },
-            ]);
+        const tokenIsValid = await verifyToken();
+        if (tokenIsValid) {
+          const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+          fetch('http://' + HP_News_API_ADDRESS + '/forum/post/reply/', {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              Authorization: 'JWT ' + access,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              post: route.params.postItem.id,
+              body: replyBody,
+            }),
           })
-          .catch(error => {
-            const err_msg = error.message;
-            console.log('Error: ' + err_msg);
-            Alert.alert(err_msg);
-          });
+            .then(async r => {
+              const resText = await r.json();
+              Alert.alert(resText, '', [
+                {
+                  text: 'OK',
+                  onPress: () => {
+                    fetchComments();
+                  },
+                },
+              ]);
+            })
+            .catch(error => {
+              const err_msg = error.message;
+              console.log('Error: ' + err_msg);
+              Alert.alert(err_msg);
+            });
+        } else {
+          tokenExpired({dispatch: dispatch, navigation: navigation});
+        }
       } else {
-        customAlertUserLogin({navigation: navigation});
+        alertUserLogin({navigation: navigation});
       }
     }
   };

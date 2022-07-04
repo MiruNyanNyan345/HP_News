@@ -1,19 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import {Alert, Text, TouchableOpacity, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import customAlertUserLogin from './CustomAlertUserLogin';
+import alertUserLogin from '../services/alertUserLogin';
 import {useNavigation} from '@react-navigation/native';
 import {HP_News_API_ADDRESS} from '../Constants';
 import {getDateDiff} from '../utils/util';
+import {tokenExpired, verifyToken} from '../services/auth';
 
 const CustomCommentItem = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const [upVoteCnt, setUpVoteCnt] = useState(0);
   const [downVoteCnt, setDownVoteCnt] = useState(0);
   const navigation = useNavigation();
+  const dispatch = useDispatch();
+
 
   useEffect(() => {
     let upCnt = 0;
@@ -31,36 +34,40 @@ const CustomCommentItem = props => {
 
   const vote = async (replyID, voteType) => {
     if (!isLoggedIn) {
-      customAlertUserLogin({navigation: navigation});
+      alertUserLogin({navigation: navigation});
     } else {
-      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-      fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote_reply/', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          Authorization: 'JWT ' + access,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({reply: replyID, vote: voteType}),
-      })
-        .then(async r => {
-          if (r.ok) {
-            // if (voteType) {
-            //   setUpVoteCnt(upVoteCnt + 1);
-            // } else {
-            //   setDownVoteCnt(downVoteCnt + 1);
-            // }
-            Alert.alert('Vote Successfully', '');
-            props.onRefresh()
-
-          } else {
-            const msg = await r.json();
-            Object.keys(msg).forEach(key => {
-              Alert.alert(msg[key].toString());
-            });
-          }
+      const tokenIsValid = await verifyToken();
+      if (tokenIsValid) {
+        const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+        fetch('http://' + HP_News_API_ADDRESS + '/forum/post/vote_reply/', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            Authorization: 'JWT ' + access,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({reply: replyID, vote: voteType}),
         })
-        .catch(e => console.log(e));
+          .then(async r => {
+            if (r.ok) {
+              // if (voteType) {
+              //   setUpVoteCnt(upVoteCnt + 1);
+              // } else {
+              //   setDownVoteCnt(downVoteCnt + 1);
+              // }
+              Alert.alert('Vote Successfully', '');
+              props.onRefresh();
+            } else {
+              const msg = await r.json();
+              Object.keys(msg).forEach(key => {
+                Alert.alert(msg[key].toString());
+              });
+            }
+          })
+          .catch(e => console.log(e));
+      } else {
+        tokenExpired({dispatch: dispatch, navigation: props.navigation});
+      }
     }
   };
 

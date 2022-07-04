@@ -11,12 +11,14 @@ import {
 import CustomButton from '../components/CustomButton';
 import {useDispatch, useSelector} from 'react-redux';
 import {
+  selectIsLoggedIn,
   selectUserEmail,
   selectUserName,
   setSignOut,
 } from '../redux/slices/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {HP_News_API_ADDRESS} from '../Constants';
+import {tokenExpired, verifyToken} from '../services/auth';
 
 const ProfileScreen = props => {
   const dispatch = useDispatch();
@@ -150,10 +152,18 @@ const ProfileScreen = props => {
               buttonIconColor={
                 editUserEmail || resetPassword ? '#b2c1d1' : '#ee5253'
               }
-              onPress={() => {
-                editUsername === false
-                  ? setEditUsername(true)
-                  : setEditUsername(false);
+              onPress={async () => {
+                const tokenIsValid = await verifyToken();
+                if (tokenIsValid) {
+                  editUsername === false
+                    ? setEditUsername(true)
+                    : setEditUsername(false);
+                } else {
+                  tokenExpired({
+                    dispatch: dispatch,
+                    navigation: props.navigation,
+                  });
+                }
               }}
               disabled={editUserEmail || resetPassword}
             />
@@ -181,10 +191,18 @@ const ProfileScreen = props => {
               buttonIconColor={
                 editUsername || resetPassword ? '#b2c1d1' : '#ee5253'
               }
-              onPress={() => {
-                editUserEmail === false
-                  ? setEditUserEmail(true)
-                  : setEditUserEmail(false);
+              onPress={async () => {
+                const tokenIsValid = await verifyToken();
+                if (tokenIsValid) {
+                  editUserEmail === false
+                    ? setEditUserEmail(true)
+                    : setEditUserEmail(false);
+                } else {
+                  tokenExpired({
+                    dispatch: dispatch,
+                    navigation: props.navigation,
+                  });
+                }
               }}
               disabled={editUsername || resetPassword}
             />
@@ -233,10 +251,18 @@ const ProfileScreen = props => {
                   buttonContainerStyle={styles.profileButtonContainer}
                   buttonTextStyle={styles.profileButtonText}
                   title={'Reset Password'}
-                  onPress={() => {
-                    resetPassword === false
-                      ? setResetPassword(true)
-                      : setResetPassword(false);
+                  onPress={async () => {
+                    const tokenIsValid = await verifyToken();
+                    if (tokenIsValid) {
+                      resetPassword === false
+                        ? setResetPassword(true)
+                        : setResetPassword(false);
+                    } else {
+                      tokenExpired({
+                        dispatch: dispatch,
+                        navigation: props.navigation,
+                      });
+                    }
                   }}
                 />
                 <CustomButton

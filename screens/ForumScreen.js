@@ -11,16 +11,18 @@ import {
 import CustomButton from '../components/CustomButton';
 import CustomPostItem from '../components/CustomPostItem';
 import {useNavigation} from '@react-navigation/native';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {selectIsLoggedIn} from '../redux/slices/authSlice';
-import customAlertUserLogin from '../components/CustomAlertUserLogin';
+import alertUserLogin from '../services/alertUserLogin';
 import {HP_News_API_ADDRESS} from '../Constants';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {tokenExpired, verifyToken} from '../services/auth';
 
 const ForumScreen = props => {
   const navigation = useNavigation();
   const isLoggedIn = useSelector(selectIsLoggedIn);
+  const dispatch = useDispatch();
   const [posts, setPosts] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
   const [headerTitle, setHeaderTitle] = useState('Posts');
@@ -39,7 +41,9 @@ const ForumScreen = props => {
             style={{justifyContent: 'center'}}
             onPress={() => {
               headerTitle === 'Posts'
-                ? setHeaderTitle('Saved Posts')
+                ? isLoggedIn
+                  ? setHeaderTitle('Saved Posts')
+                  : setHeaderTitle('Posts')
                 : setHeaderTitle('Posts');
             }}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -106,11 +110,16 @@ const ForumScreen = props => {
     headerTitle === 'Posts' ? fetchPosts() : fetchSavedPost();
   };
 
-  const makePost = () => {
+  const makePost = async () => {
     if (isLoggedIn) {
-      props.navigation.navigate('MakePost');
+      const tokenIsValid = await verifyToken();
+      if (tokenIsValid) {
+        props.navigation.navigate('MakePost');
+      } else {
+        tokenExpired({dispatch: dispatch, navigation: navigation});
+      }
     } else {
-      customAlertUserLogin({navigation: navigation});
+      alertUserLogin({navigation: navigation});
     }
   };
   return (

@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {Modal, TouchableOpacity, View} from 'react-native';
+import {
+  Modal,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
 import YoutubePlayer from 'react-native-youtube-iframe';
+import CustomButton from './CustomButton';
 
 const CustomVideoModal = props => {
   return (
@@ -8,20 +14,22 @@ const CustomVideoModal = props => {
       visible={props.videoModalVisible}
       animationType={props.modalAnimationType}
       transparent={props.modalTransparent}>
-      <TouchableOpacity
-        activeOpacity={1}
-        style={{flex: 1}}
-        onPress={() => {
-          props.showVideoModal(false);
-        }}>
-        <View style={props.containerStyle}>
-          <YoutubePlayer
-            height={props.playerHeight}
-            width={props.playerWidth}
-            videoId={props.videoId}
-          />
-        </View>
-      </TouchableOpacity>
+      <View style={props.containerStyle}>
+        <YoutubePlayer
+          height={props.playerHeight}
+          width={props.playerWidth}
+          videoId={props.videoId}
+        />
+        <CustomButton
+          isIconBG={true}
+          buttonIconName={'close-outline'}
+          buttonIconSize={35}
+          buttonIconColor={'#fff'}
+          onPress={() => {
+            props.showVideoModal(false);
+          }}
+        />
+      </View>
     </Modal>
   );
 };

@@ -36,10 +36,6 @@ const ChannelScreen = props => {
         playerWidth={350}
         modalAnimationType="slide"
         modalTransparent={true}
-        closedButtonTitle={'Close'}
-        closeButtonContainerStyle={styles.modalCloseButtonContainer}
-        closeButtonStyle={styles.modalCloseButton}
-        closeButtonTextStyle={styles.modalCloseButtonText}
       />
     </SafeAreaView>
   );

@@ -10,7 +10,7 @@ export const verifyToken = async () => {
   const decoded = jwt_decode(access);
   const exp_dt = new Date(decoded.exp * 1000).toLocaleString('zh-HK');
   const now_dt = new Date().toLocaleString('zh-HK');
-  if (now_dt >= exp_dt) {
+  if (exp_dt > now_dt) {
     return refreshToken();
   } else {
     return true;
@@ -91,9 +91,6 @@ export const tokenExpired = props => {
         props.dispatch(setSignOut());
         props.navigation.navigate('DrawerNavSignIn');
       },
-    },
-    {
-      text: 'Cancel',
     },
   ]);
 };

@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import {
   Alert,
+  KeyboardAvoidingView,
   SafeAreaView,
   StyleSheet,
-  Text,
+  Keyboard,
   TextInput,
+  TouchableWithoutFeedback,
   View,
 } from 'react-native';
 import CustomButton from '../components/CustomButton';
@@ -44,45 +46,49 @@ const MakePostScreen = props => {
 
   return (
     <SafeAreaView style={styles.safeView}>
-      <TextInput
-        style={styles.titleInput}
-        placeholder={'Title'}
-        placeholderTextColor={'#222f3e'}
-        onChangeText={title => {
-          setPostTitle(title);
-        }}
-      />
-      <TextInput
-        style={styles.contentInput}
-        placeholder={'Write here...'}
-        multiline={true}
-        placeholderTextColor={'#222f3e'}
-        onChangeText={content => {
-          setPostContent(content);
-        }}
-      />
-      <View style={styles.btnContainer}>
-        <CustomButton
-          title={'Cancel'}
-          buttonTextStyle={styles.cancelBtnText}
-          buttonTextContainer={styles.customBtnTextContainer}
-          buttonContainerStyle={styles.customBtnContainer}
-          buttonStyle={styles.cancelBtn}
-          onPress={() => {
-            props.navigation.navigate('Posts');
-          }}
-        />
-        <CustomButton
-          title={'Post'}
-          buttonTextStyle={styles.postBtnText}
-          buttonTextContainer={styles.customBtnTextContainer}
-          buttonContainerStyle={styles.customBtnContainer}
-          buttonStyle={styles.postBtn}
-          onPress={() => {
-            post();
-          }}
-        />
-      </View>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+        <KeyboardAvoidingView behavior="padding" style={{flex: 1}}>
+          <TextInput
+            style={styles.titleInput}
+            placeholder={'Title'}
+            placeholderTextColor={'#222f3e'}
+            onChangeText={title => {
+              setPostTitle(title);
+            }}
+          />
+          <TextInput
+            style={styles.contentInput}
+            placeholder={'Write here...'}
+            multiline={true}
+            placeholderTextColor={'#222f3e'}
+            onChangeText={content => {
+              setPostContent(content);
+            }}
+          />
+          <View style={styles.btnContainer}>
+            <CustomButton
+              title={'Cancel'}
+              buttonTextStyle={styles.cancelBtnText}
+              buttonTextContainer={styles.customBtnTextContainer}
+              buttonContainerStyle={styles.customBtnContainer}
+              buttonStyle={styles.cancelBtn}
+              onPress={() => {
+                props.navigation.navigate('Posts');
+              }}
+            />
+            <CustomButton
+              title={'Post'}
+              buttonTextStyle={styles.postBtnText}
+              buttonTextContainer={styles.customBtnTextContainer}
+              buttonContainerStyle={styles.customBtnContainer}
+              buttonStyle={styles.postBtn}
+              onPress={() => {
+                post();
+              }}
+            />
+          </View>
+        </KeyboardAvoidingView>
+      </TouchableWithoutFeedback>
     </SafeAreaView>
   );
 };

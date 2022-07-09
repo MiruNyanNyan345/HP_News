@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {
   Alert,
   FlatList,
+  KeyboardAvoidingView,
   SafeAreaView,
   StyleSheet,
   Text,
@@ -137,6 +138,7 @@ const CommentsScreen = ({route, navigation}) => {
             isPostScreen: false,
             postItem: route.params.postItem,
             itemID: route.params.postItem.id,
+            navigation: navigation,
           },
           navigation,
         )}
@@ -197,27 +199,29 @@ const CommentsScreen = ({route, navigation}) => {
           />
         )}
       />
-      <View style={styles.inputContainer}>
-        <View style={styles.inputFieldContainer}>
-          <TextInput
-            style={styles.inputField}
-            placeholder={'Leave comment here.'}
-            placeholderTextColor={'#8395a7'}
-            onChangeText={body => {
-              setReplyBody(body);
+      <KeyboardAvoidingView behavior="padding" keyboardVerticalOffset={100}>
+        <View style={styles.inputContainer}>
+          <View style={styles.inputFieldContainer}>
+            <TextInput
+              style={styles.inputField}
+              placeholder={'Leave comment here.'}
+              placeholderTextColor={'#8395a7'}
+              onChangeText={body => {
+                setReplyBody(body);
+              }}
+            />
+          </View>
+          <CustomButton
+            buttonContainerStyle={styles.buttonContainer}
+            buttonStyle={styles.button}
+            buttonTextStyle={styles.buttonText}
+            title={'Send'}
+            onPress={() => {
+              replyPost();
             }}
           />
         </View>
-        <CustomButton
-          buttonContainerStyle={styles.buttonContainer}
-          buttonStyle={styles.button}
-          buttonTextStyle={styles.buttonText}
-          title={'Send'}
-          onPress={() => {
-            replyPost();
-          }}
-        />
-      </View>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
   // );

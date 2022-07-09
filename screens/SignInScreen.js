@@ -96,6 +96,7 @@ const SignInScreen = props => {
               <Ionicons name={'mail-outline'} size={22} color={'#ff6b6b'} />
               <TextInput
                 placeholder={'Enter your email ...'}
+                placeholderTextColor={'#a8a7a7'}
                 style={styles.signUpFormInput}
                 autoCapitalize="none"
                 onChangeText={email => {
@@ -111,6 +112,7 @@ const SignInScreen = props => {
               />
               <TextInput
                 placeholder={'Enter your Password ...'}
+                placeholderTextColor={'#a8a7a7'}
                 style={styles.signUpFormInput}
                 secureTextEntry={true}
                 autoCapitalize="none"

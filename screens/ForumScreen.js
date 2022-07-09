@@ -71,7 +71,7 @@ const ForumScreen = props => {
     } else {
       fetchSavedPost();
     }
-  }, [headerTitle, navigation]);
+  }, [headerTitle, isLoggedIn, navigation]);
 
   const fetchPosts = () => {
     fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_posts/')

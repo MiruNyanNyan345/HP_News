@@ -91,6 +91,7 @@ const SignUpScreen = props => {
               <Ionicons name={'person-outline'} size={22} color={'#ff6b6b'} />
               <TextInput
                 placeholder={'Enter your username ...'}
+                placeholderTextColor={'#a8a7a7'}
                 style={styles.signUpFormInput}
                 autoCapitalize="none"
                 onChangeText={username => {
@@ -102,6 +103,7 @@ const SignUpScreen = props => {
               <Ionicons name={'mail-outline'} size={22} color={'#ff6b6b'} />
               <TextInput
                 placeholder={'Enter your email ...'}
+                placeholderTextColor={'#a8a7a7'}
                 style={styles.signUpFormInput}
                 autoCapitalize="none"
                 onChangeText={email => {
@@ -117,6 +119,7 @@ const SignUpScreen = props => {
               />
               <TextInput
                 placeholder={'Enter your Password ...'}
+                placeholderTextColor={'#a8a7a7'}
                 style={styles.signUpFormInput}
                 secureTextEntry={true}
                 autoCapitalize="none"
@@ -133,6 +136,7 @@ const SignUpScreen = props => {
               />
               <TextInput
                 placeholder={'Enter your Password Again...'}
+                placeholderTextColor={'#a8a7a7'}
                 style={styles.signUpFormInput}
                 secureTextEntry={true}
                 autoCapitalize="none"

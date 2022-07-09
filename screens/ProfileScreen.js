@@ -7,6 +7,10 @@ import {
   StyleSheet,
   Image,
   Alert,
+  KeyboardAvoidingView,
+  Keyboard,
+  TouchableWithoutFeedback,
+  ScrollView,
 } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import {useDispatch, useSelector} from 'react-redux';
@@ -123,140 +127,49 @@ const ProfileScreen = props => {
   };
 
   return (
-    <SafeAreaView style={styles.safeArea}>
-      <View style={styles.profileIconContainer}>
-        <Image source={require('../res/user.png')} style={styles.userIcon} />
-      </View>
-      <View style={styles.userInfoContainer}>
-        <View style={styles.userInfoFieldContainer}>
-          <Text style={styles.userInfoLabel}>Username:</Text>
-          <View style={{flexDirection: 'row'}}>
-            <View style={{flex: 1}}>
-              <TextInput
-                defaultValue={userName}
-                editable={editUsername}
-                style={
-                  editUsername && editUserEmail === false
-                    ? styles.editAbleUserInfoText
-                    : styles.editDisableUserInfoText
-                }
-                onChangeText={name => {
-                  setNewUserName(name);
-                }}
-              />
-            </View>
-            <CustomButton
-              isIconBG
-              buttonIconName={'create-outline'}
-              buttonIconSize={25}
-              buttonIconColor={
-                editUserEmail || resetPassword ? '#b2c1d1' : '#ee5253'
-              }
-              onPress={async () => {
-                const tokenIsValid = await verifyToken();
-                if (tokenIsValid) {
-                  editUsername === false
-                    ? setEditUsername(true)
-                    : setEditUsername(false);
-                } else {
-                  tokenExpired({
-                    dispatch: dispatch,
-                    navigation: props.navigation,
-                  });
-                }
-              }}
-              disabled={editUserEmail || resetPassword}
+    <SafeAreaView style={styles.safeAreaView}>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+        <KeyboardAvoidingView
+          behavior="padding"
+          style={{flex: 1}}
+        >
+          <View style={styles.profileIconContainer}>
+            <Image
+              source={require('../res/user.png')}
+              style={styles.userIcon}
             />
           </View>
-        </View>
-        <View style={styles.userInfoFieldContainer}>
-          <Text style={styles.userInfoLabel}>E-mail:</Text>
-          <View style={{flexDirection: 'row'}}>
-            <View style={{flex: 1}}>
-              <TextInput
-                defaultValue={userEmail}
-                editable={editUserEmail}
-                onChangeText={email => setNewUserEmail(email)}
-                style={
-                  editUserEmail && editUsername === false
-                    ? styles.editAbleUserInfoText
-                    : styles.editDisableUserInfoText
-                }
-              />
-            </View>
-            <CustomButton
-              isIconBG
-              buttonIconName={'create-outline'}
-              buttonIconSize={25}
-              buttonIconColor={
-                editUsername || resetPassword ? '#b2c1d1' : '#ee5253'
-              }
-              onPress={async () => {
-                const tokenIsValid = await verifyToken();
-                if (tokenIsValid) {
-                  editUserEmail === false
-                    ? setEditUserEmail(true)
-                    : setEditUserEmail(false);
-                } else {
-                  tokenExpired({
-                    dispatch: dispatch,
-                    navigation: props.navigation,
-                  });
-                }
-              }}
-              disabled={editUsername || resetPassword}
-            />
-          </View>
-        </View>
-
-        {resetPassword === false ? (
-          <View style={styles.profileButtonsContainer}>
-            {editUsername || editUserEmail ? (
-              <View
-                style={{
-                  flexDirection: 'row',
-                }}>
+          <View style={styles.userInfoContainer}>
+            <View style={styles.userInfoFieldContainer}>
+              <Text style={styles.userInfoLabel}>Username:</Text>
+              <View style={{flexDirection: 'row'}}>
+                <View style={{flex: 1}}>
+                  <TextInput
+                    defaultValue={userName}
+                    editable={editUsername}
+                    style={
+                      editUsername && editUserEmail === false
+                        ? styles.editAbleUserInfoText
+                        : styles.editDisableUserInfoText
+                    }
+                    onChangeText={name => {
+                      setNewUserName(name);
+                    }}
+                  />
+                </View>
                 <CustomButton
-                  buttonContainerStyle={{
-                    ...styles.profileButtonContainer,
-                    marginHorizontal: 10,
-                    flex: 1,
-                  }}
-                  buttonTextStyle={styles.profileButtonText}
-                  title={'Save'}
-                  onPress={() => {
-                    changeProfileInfo();
-                  }}
-                />
-                <CustomButton
-                  buttonContainerStyle={{
-                    ...styles.profileButtonContainer,
-                    flex: 1,
-                    marginHorizontal: 10,
-                  }}
-                  buttonTextStyle={styles.profileButtonText}
-                  title={'Cancel'}
-                  onPress={() => {
-                    editUserEmail
-                      ? setEditUserEmail(false)
-                      : editUsername
-                      ? setEditUsername(false)
-                      : null;
-                  }}
-                />
-              </View>
-            ) : (
-              <View>
-                <CustomButton
-                  buttonContainerStyle={styles.profileButtonContainer}
-                  buttonTextStyle={styles.profileButtonText}
-                  title={'Reset Password'}
+                  isIconBG
+                  buttonIconName={'create-outline'}
+                  buttonIconSize={25}
+                  buttonIconColor={
+                    editUserEmail || resetPassword ? '#b2c1d1' : '#ee5253'
+                  }
                   onPress={async () => {
                     const tokenIsValid = await verifyToken();
                     if (tokenIsValid) {
-                      resetPassword === false
-                        ? setResetPassword(true)
-                        : setResetPassword(false);
+                      editUsername === false
+                        ? setEditUsername(true)
+                        : setEditUsername(false);
                     } else {
                       tokenExpired({
                         dispatch: dispatch,
@@ -264,111 +177,212 @@ const ProfileScreen = props => {
                       });
                     }
                   }}
+                  disabled={editUserEmail || resetPassword}
                 />
+              </View>
+            </View>
+            <View style={styles.userInfoFieldContainer}>
+              <Text style={styles.userInfoLabel}>E-mail:</Text>
+              <View style={{flexDirection: 'row'}}>
+                <View style={{flex: 1}}>
+                  <TextInput
+                    defaultValue={userEmail}
+                    editable={editUserEmail}
+                    onChangeText={email => setNewUserEmail(email)}
+                    style={
+                      editUserEmail && editUsername === false
+                        ? styles.editAbleUserInfoText
+                        : styles.editDisableUserInfoText
+                    }
+                  />
+                </View>
                 <CustomButton
-                  buttonContainerStyle={styles.profileButtonContainer}
-                  buttonTextStyle={styles.profileButtonText}
-                  title={'Logout'}
-                  onPress={() =>
-                    Alert.alert('Sign Out?', '', [
-                      {
-                        text: 'Leave',
-                        onPress: async () => {
-                          await AsyncStorage.removeItem('auth');
-                          dispatch(setSignOut());
-                          props.navigation.navigate('DrawerNavSignIn');
-                        },
-                      },
-                      {
-                        text: 'Cancel',
-                      },
-                    ])
+                  isIconBG
+                  buttonIconName={'create-outline'}
+                  buttonIconSize={25}
+                  buttonIconColor={
+                    editUsername || resetPassword ? '#b2c1d1' : '#ee5253'
                   }
-                />
-              </View>
-            )}
-          </View>
-        ) : (
-          <View>
-            <View>
-              <View style={styles.userInfoFieldContainer}>
-                <Text style={styles.userInfoLabel}>Current Password:</Text>
-                <TextInput
-                  secureTextEntry={true}
-                  style={styles.editAbleUserInfoText}
-                  onChangeText={pwd => setCurPassword(pwd)}
-                />
-              </View>
-              <View style={styles.userInfoFieldContainer}>
-                <Text style={styles.userInfoLabel}>New Password:</Text>
-                <TextInput
-                  secureTextEntry={true}
-                  style={styles.editAbleUserInfoText}
-                  onChangeText={pwd => setNewPassword(pwd)}
-                />
-              </View>
-              <View style={styles.userInfoFieldContainer}>
-                <Text style={styles.userInfoLabel}>Confirm Password:</Text>
-                <TextInput
-                  secureTextEntry={true}
-                  style={styles.editAbleUserInfoText}
-                  onChangeText={pwd => setConfirmaNewPassword(pwd)}
+                  onPress={async () => {
+                    const tokenIsValid = await verifyToken();
+                    if (tokenIsValid) {
+                      editUserEmail === false
+                        ? setEditUserEmail(true)
+                        : setEditUserEmail(false);
+                    } else {
+                      tokenExpired({
+                        dispatch: dispatch,
+                        navigation: props.navigation,
+                      });
+                    }
+                  }}
+                  disabled={editUsername || resetPassword}
                 />
               </View>
             </View>
 
-            {/*<View style={styles.profileButtonsContainer}>*/}
-            {/*  <CustomButton*/}
-            {/*    buttonContainerStyle={styles.profileButtonContainer}*/}
-            {/*    buttonTextStyle={styles.profileButtonText}*/}
-            {/*    title={'Save'}*/}
-            {/*    onPress={() => {*/}
-            {/*      changePassword();*/}
-            {/*    }}*/}
-            {/*  />*/}
-            {/*</View>*/}
-            <View
-              style={{
-                flexDirection: 'row',
-              }}>
-              <CustomButton
-                buttonContainerStyle={{
-                  ...styles.profileButtonContainer,
-                  marginHorizontal: 10,
-                  flex: 1,
-                }}
-                buttonTextStyle={styles.profileButtonText}
-                title={'Save'}
-                onPress={() => {
-                  changePassword();
-                }}
-              />
-              <CustomButton
-                buttonContainerStyle={{
-                  ...styles.profileButtonContainer,
-                  flex: 1,
-                  marginHorizontal: 10,
-                }}
-                buttonTextStyle={styles.profileButtonText}
-                title={'Cancel'}
-                onPress={() => {
-                  resetPassword ? setResetPassword(false) : null;
-                }}
-              />
-            </View>
+            {resetPassword === false ? (
+              <View style={styles.profileButtonsContainer}>
+                {editUsername || editUserEmail ? (
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                    }}>
+                    <CustomButton
+                      buttonContainerStyle={{
+                        ...styles.profileButtonContainer,
+                        marginHorizontal: 10,
+                        flex: 1,
+                      }}
+                      buttonTextStyle={styles.profileButtonText}
+                      title={'Save'}
+                      onPress={() => {
+                        changeProfileInfo();
+                      }}
+                    />
+                    <CustomButton
+                      buttonContainerStyle={{
+                        ...styles.profileButtonContainer,
+                        flex: 1,
+                        marginHorizontal: 10,
+                      }}
+                      buttonTextStyle={styles.profileButtonText}
+                      title={'Cancel'}
+                      onPress={() => {
+                        editUserEmail
+                          ? setEditUserEmail(false)
+                          : editUsername
+                          ? setEditUsername(false)
+                          : null;
+                      }}
+                    />
+                  </View>
+                ) : (
+                  <View>
+                    <CustomButton
+                      buttonContainerStyle={styles.profileButtonContainer}
+                      buttonTextStyle={styles.profileButtonText}
+                      title={'Reset Password'}
+                      onPress={async () => {
+                        const tokenIsValid = await verifyToken();
+                        if (tokenIsValid) {
+                          resetPassword === false
+                            ? setResetPassword(true)
+                            : setResetPassword(false);
+                        } else {
+                          tokenExpired({
+                            dispatch: dispatch,
+                            navigation: props.navigation,
+                          });
+                        }
+                      }}
+                    />
+                    <CustomButton
+                      buttonContainerStyle={styles.profileButtonContainer}
+                      buttonTextStyle={styles.profileButtonText}
+                      title={'Logout'}
+                      onPress={() =>
+                        Alert.alert('Sign Out?', '', [
+                          {
+                            text: 'Leave',
+                            onPress: async () => {
+                              await AsyncStorage.removeItem('auth');
+                              dispatch(setSignOut());
+                              props.navigation.navigate('DrawerNavSignIn');
+                            },
+                          },
+                          {
+                            text: 'Cancel',
+                          },
+                        ])
+                      }
+                    />
+                  </View>
+                )}
+              </View>
+            ) : (
+              <View>
+                <View>
+                  <View style={styles.userInfoFieldContainer}>
+                    <Text style={styles.userInfoLabel}>Current Password:</Text>
+                    <TextInput
+                      secureTextEntry={true}
+                      style={styles.editAbleUserInfoText}
+                      onChangeText={pwd => setCurPassword(pwd)}
+                    />
+                  </View>
+                  <View style={styles.userInfoFieldContainer}>
+                    <Text style={styles.userInfoLabel}>New Password:</Text>
+                    <TextInput
+                      secureTextEntry={true}
+                      style={styles.editAbleUserInfoText}
+                      onChangeText={pwd => setNewPassword(pwd)}
+                    />
+                  </View>
+                  <View style={styles.userInfoFieldContainer}>
+                    <Text style={styles.userInfoLabel}>Confirm Password:</Text>
+                    <TextInput
+                      secureTextEntry={true}
+                      style={styles.editAbleUserInfoText}
+                      onChangeText={pwd => setConfirmaNewPassword(pwd)}
+                    />
+                  </View>
+                </View>
+
+                {/*<View style={styles.profileButtonsContainer}>*/}
+                {/*  <CustomButton*/}
+                {/*    buttonContainerStyle={styles.profileButtonContainer}*/}
+                {/*    buttonTextStyle={styles.profileButtonText}*/}
+                {/*    title={'Save'}*/}
+                {/*    onPress={() => {*/}
+                {/*      changePassword();*/}
+                {/*    }}*/}
+                {/*  />*/}
+                {/*</View>*/}
+                <View
+                  style={{
+                    flexDirection: 'row',
+                  }}>
+                  <CustomButton
+                    buttonContainerStyle={{
+                      ...styles.profileButtonContainer,
+                      marginHorizontal: 10,
+                      flex: 1,
+                    }}
+                    buttonTextStyle={styles.profileButtonText}
+                    title={'Save'}
+                    onPress={() => {
+                      changePassword();
+                    }}
+                  />
+                  <CustomButton
+                    buttonContainerStyle={{
+                      ...styles.profileButtonContainer,
+                      flex: 1,
+                      marginHorizontal: 10,
+                    }}
+                    buttonTextStyle={styles.profileButtonText}
+                    title={'Cancel'}
+                    onPress={() => {
+                      resetPassword ? setResetPassword(false) : null;
+                    }}
+                  />
+                </View>
+              </View>
+            )}
           </View>
-        )}
-      </View>
+        </KeyboardAvoidingView>
+      </TouchableWithoutFeedback>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  safeArea: {
+  safeAreaView: {
     flex: 1,
   },
   profileIconContainer: {
-    flex: 0.4,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -393,8 +407,13 @@ const styles = StyleSheet.create({
     borderColor: '#ff6b6b',
     color: '#b2c1d1',
   },
-  userInfoContainer: {flexDirection: 'column', flex: 1, marginHorizontal: 70},
-  userInfoFieldContainer: {flexDirection: 'column', marginVertical: 10},
+  userInfoContainer: {
+    flexDirection: 'column',
+    flex: 1,
+    marginHorizontal: 70,
+    marginBottom: 400,
+  },
+  userInfoFieldContainer: {flexDirection: 'column', marginVertical: 10,},
   userIcon: {
     width: 100,
     height: 100,

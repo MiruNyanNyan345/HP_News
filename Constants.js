@@ -1,5 +1,4 @@
 export const HP_News_API_ADDRESS = '127.0.0.1:8000';
-// export const HP_News_API_ADDRESS = 'ec2-3-14-88-132.us-east-2.compute.amazonaws.com:8000';
 
 export const twitterAccounts = [
   {
@@ -128,4 +127,4 @@ export const YoutubeChannels = [
   },
 ];
 
-export const YOUTUBE_API_KEY = 'AIzaSyAJ7xP9SfUisfv60auxOtwxoMBW524giGo';
+

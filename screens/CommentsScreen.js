@@ -33,6 +33,10 @@ const CommentsScreen = ({route, navigation}) => {
     navigation.addListener('focus', () => {
       onRefresh();
     });
+    navigation.setOptions({
+      title: route.params.postItem.title,
+    });
+    fetchComments();
   }, [navigation]);
 
   const fetchComments = () => {
@@ -53,13 +57,6 @@ const CommentsScreen = ({route, navigation}) => {
         console.log('Error:', e.message);
       });
   };
-
-  useEffect(() => {
-    navigation.setOptions({
-      title: route.params.postItem.title,
-    });
-    fetchComments();
-  }, []);
 
   const replyPost = async () => {
     if (replyBody.length < 1) {
@@ -132,73 +129,50 @@ const CommentsScreen = ({route, navigation}) => {
         <Text style={styles.postBody}>{route.params.postItem.body}</Text>
       </View>
       <View style={styles.postActionContainer}>
-        {CustomPostAction(
-          {
-            post_votes: route.params.postItem.post_votes,
-            isPostScreen: false,
-            postItem: route.params.postItem,
-            itemID: route.params.postItem.id,
-            navigation: navigation,
-          },
-          navigation,
-        )}
+        {CustomPostAction({
+          isPostScreen: false,
+          postItem: route.params.postItem,
+          navigation: navigation,
+        })}
       </View>
     </View>
   );
 
-  // return replies.length < 1 ? (
-  //   <SafeAreaView style={styles.safeView}>
-  //     {postItem}
-  //     <View style={styles.emptyCommentView}>
-  //       <Ionicons name={'chatbox-outline'} size={70} color={'#ff6b6b'} />
-  //       <Text>No comment yet.</Text>
-  //     </View>
-  //     <View style={styles.inputContainer}>
-  //       <View style={styles.inputFieldContainer}>
-  //         <TextInput
-  //           style={styles.inputField}
-  //           placeholder={'Leave comment here.'}
-  //           placeholderTextColor={'#8395a7'}
-  //         />
-  //       </View>
-  //       <CustomButton
-  //         buttonContainerStyle={styles.buttonContainer}
-  //         buttonStyle={styles.button}
-  //         buttonTextStyle={styles.buttonText}
-  //         title={'Send'}
-  //         onPress={() => {
-  //           console.log('send');
-  //         }}
-  //       />
-  //     </View>
-  //   </SafeAreaView>
-  // ) : (
+  const emptyCommentRender = (
+    <View style={styles.emptyCommentView}>
+      <Ionicons name={'chatbox-outline'} size={70} color={'#ff6b6b'} />
+      <Text>No comment yet.</Text>
+    </View>
+  );
 
+  const commentsRenders = (
+    <FlatList
+      data={replies}
+      keyExtractor={item => item.id}
+      onRefresh={() => {
+        onRefresh();
+      }}
+      refreshing={isFetching}
+      renderItem={({index, item}) => (
+        <CustomCommentItem
+          itemType={'reply'}
+          item={item}
+          onRefresh={onRefresh}
+          commentContainer={styles.commentContainer}
+          commentBodyContainer={styles.commentBodyContainer}
+          commentBody={styles.commentBody}
+          commentInfoContainer={styles.commentInfoContainer}
+          commentUserNameText={styles.commentUserNameText}
+          commentText={styles.commentText}
+          commentActionContainer={styles.commentActionContainer}
+        />
+      )}
+    />
+  );
   return (
     <SafeAreaView style={styles.safeView}>
       {postItem}
-      <FlatList
-        data={replies}
-        keyExtractor={item => item.id}
-        onRefresh={() => {
-          onRefresh();
-        }}
-        refreshing={isFetching}
-        renderItem={({index, item}) => (
-          <CustomCommentItem
-            itemType={'reply'}
-            item={item}
-            onRefresh={onRefresh}
-            commentContainer={styles.commentContainer}
-            commentBodyContainer={styles.commentBodyContainer}
-            commentBody={styles.commentBody}
-            commentInfoContainer={styles.commentInfoContainer}
-            commentUserNameText={styles.commentUserNameText}
-            commentText={styles.commentText}
-            commentActionContainer={styles.commentActionContainer}
-          />
-        )}
-      />
+      {replies.length < 1 ? emptyCommentRender : commentsRenders}
       <KeyboardAvoidingView behavior="padding" keyboardVerticalOffset={100}>
         <View style={styles.inputContainer}>
           <View style={styles.inputFieldContainer}>
@@ -224,8 +198,14 @@ const CommentsScreen = ({route, navigation}) => {
       </KeyboardAvoidingView>
     </SafeAreaView>
   );
+  //
+  // return
+  //
+  // ) : (
+  //
   // );
 };
+
 const styles = StyleSheet.create({
   safeView: {
     flex: 1,

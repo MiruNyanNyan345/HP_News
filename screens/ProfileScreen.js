@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   SafeAreaView,
   Text,
@@ -29,6 +29,14 @@ const ProfileScreen = props => {
 
   const userName = useSelector(selectUserName);
   const userEmail = useSelector(selectUserEmail);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
+
+  useEffect(() => {
+    console.log('isLoggedIn: ' + isLoggedIn);
+    console.log('userEmail: ' + userEmail);
+    console.log('userName: ' + userName);
+  }, []);
+
   const [newUserName, setNewUserName] = useState('');
   const [newUserEmail, setNewUserEmail] = useState('');
   const [editUsername, setEditUsername] = useState(false);
@@ -129,10 +137,7 @@ const ProfileScreen = props => {
   return (
     <SafeAreaView style={styles.safeAreaView}>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-        <KeyboardAvoidingView
-          behavior="padding"
-          style={{flex: 1}}
-        >
+        <KeyboardAvoidingView behavior="padding" style={{flex: 1}}>
           <View style={styles.profileIconContainer}>
             <Image
               source={require('../res/user.png')}
@@ -413,7 +418,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 70,
     marginBottom: 400,
   },
-  userInfoFieldContainer: {flexDirection: 'column', marginVertical: 10,},
+  userInfoFieldContainer: {flexDirection: 'column', marginVertical: 10},
   userIcon: {
     width: 100,
     height: 100,
@@ -438,4 +443,5 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 });
+
 export default ProfileScreen;

@@ -31,16 +31,13 @@ export const CustomPostAction = props => {
 
   const [upVoteCnt, setUpVoteCnt] = useState(0);
   const [downVoteCnt, setDownVoteCnt] = useState(0);
-  const [isSaved, setIsSaved] = useState(false);
+
+  const [isPostSaved, setPostSaved] = useState(false);
 
   useEffect(() => {
-    if (isLoggedIn) {
-      checkPostIsSaved({itemID: props.itemID, setIsSaved: setIsSaved});
-    } else {
-      setIsSaved(false);
-    }
-    setVoteCnt(props.post_votes);
-  }, [props.post_votes]);
+    setVoteCnt(props.postItem.post_votes);
+    setPostSaved(props.postItem.isSaved);
+  }, []);
 
   const setVoteCnt = post_votes => {
     let upCnt = 0;
@@ -54,33 +51,6 @@ export const CustomPostAction = props => {
       setUpVoteCnt(upCnt);
       setDownVoteCnt(downCnt);
     });
-  };
-
-  const checkPostIsSaved = async () => {
-    const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-    fetch(
-      'http://' +
-        HP_News_API_ADDRESS +
-        '/forum/post/post_is_saved/?post_id=' +
-        props.itemID,
-      {
-        method: 'GET',
-        headers: {
-          Accept: 'application/json',
-          Authorization: 'JWT ' + access,
-          'Content-Type': 'application/json',
-        },
-      },
-    )
-      .then(r => {
-        return r.json();
-      })
-      .then(r_json => {
-        setIsSaved(r_json.isSaved);
-      })
-      .catch(error => {
-        Alert.alert(error);
-      });
   };
 
   const vote = async (postID, voteType) => {
@@ -139,7 +109,7 @@ export const CustomPostAction = props => {
             Authorization: 'JWT ' + access,
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({post: props.itemID}),
+          body: JSON.stringify({post: props.postItem.id}),
         })
           .then(async r => {
             return r.json();
@@ -148,14 +118,17 @@ export const CustomPostAction = props => {
             Alert.alert(msg, '', [
               {
                 text: 'OK',
-                onPress: () => {
-                  checkPostIsSaved();
-                },
+                // onPress: props.onRefresh,
+                onPress: props.isPostScreen
+                  ? props.onRefresh
+                  : () => {
+                      isPostSaved ? setPostSaved(false) : setPostSaved(true);
+                    },
               },
             ]);
           })
           .catch(error => {
-            console.log('Error: ' + error);
+            console.log('Error: ' + error.message);
             Alert.alert('Error', error);
           });
       } else {
@@ -171,11 +144,20 @@ export const CustomPostAction = props => {
         onPress={() => {
           savePost();
         }}>
-        {isSaved ? (
+        {/*{props.postItem.isSaved ? (*/}
+
+        {props.isPostScreen ? (
+          props.postItem.isSaved ? (
+            <Ionicons name={'bookmarks'} size={20} color={'#54a0ff'} />
+          ) : (
+            <Ionicons name={'bookmarks-outline'} size={20} color={'#54a0ff'} />
+          )
+        ) : isPostSaved ? (
           <Ionicons name={'bookmarks'} size={20} color={'#54a0ff'} />
         ) : (
           <Ionicons name={'bookmarks-outline'} size={20} color={'#54a0ff'} />
         )}
+
         <Text
           style={{
             alignSelf: 'center',
@@ -183,7 +165,13 @@ export const CustomPostAction = props => {
             fontWeight: '500',
             color: '#54a0ff',
           }}>
-          {isSaved ? 'Unsave' : 'Save'}
+          {props.isPostScreen
+            ? props.postItem.isSaved
+              ? 'Unsave'
+              : 'Save'
+            : isPostSaved
+            ? 'Unsave'
+            : 'Save'}
         </Text>
       </TouchableOpacity>
       {props.isPostScreen ? (
@@ -205,7 +193,7 @@ export const CustomPostAction = props => {
         <TouchableOpacity
           style={{flexDirection: 'row'}}
           onPress={() => {
-            vote(props.itemID, true);
+            vote(props.postItem.id, true);
           }}>
           <Ionicons name={'thumbs-up-outline'} size={20} color={'#f368e0'} />
           <View style={{justifyContent: 'center', marginHorizontal: 5}}>
@@ -215,7 +203,7 @@ export const CustomPostAction = props => {
         <TouchableOpacity
           style={{flexDirection: 'row'}}
           onPress={() => {
-            vote(props.itemID, false);
+            vote(props.postItem.id, false);
           }}>
           <View style={{justifyContent: 'center', marginHorizontal: 5}}>
             <Text style={{color: '#0abde3', fontSize: 15}}>{downVoteCnt}</Text>

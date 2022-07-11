@@ -24,16 +24,15 @@ const ForumScreen = props => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const dispatch = useDispatch();
   const [posts, setPosts] = useState([]);
+  const [savedPosts, setSavedPosts] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
   const [headerTitle, setHeaderTitle] = useState('Posts');
 
   useEffect(() => {
+    onRefresh();
     navigation.addListener('focus', () => {
       onRefresh();
     });
-  }, []);
-
-  useEffect(() => {
     navigation.setOptions({
       headerTitle: () => {
         return (
@@ -66,40 +65,37 @@ const ForumScreen = props => {
         );
       },
     });
-    if (headerTitle === 'Posts') {
-      fetchPosts();
-    } else {
-      fetchSavedPost();
-    }
   }, [headerTitle, isLoggedIn, navigation]);
 
-  const fetchPosts = () => {
-    fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_posts/')
-      .then(r => {
-        return r.json();
-      })
-      .then(data => {
-        setPosts(data);
-        setIsFetching(false);
-      })
-      .catch(e => console.log(e.message));
-  };
-
-  const fetchSavedPost = async () => {
-    const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
-    fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_saved_posts/', {
-      method: 'GET',
-      headers: {
+  const fetchPosts = async () => {
+    let headers;
+    if (isLoggedIn) {
+      const access = JSON.parse(await AsyncStorage.getItem('auth')).access;
+      headers = {
         Accept: 'application/json',
         Authorization: 'JWT ' + access,
         'Content-Type': 'application/json',
-      },
+      };
+    } else {
+      headers = {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      };
+    }
+    fetch('http://' + HP_News_API_ADDRESS + '/forum/post/get_posts/', {
+      method: 'GET',
+      headers: headers,
     })
       .then(r => {
         return r.json();
       })
       .then(data => {
         setPosts(data);
+        setSavedPosts(
+          data.filter(i => {
+            return i.isSaved === true;
+          }),
+        );
         setIsFetching(false);
       })
       .catch(e => console.log(e.message));
@@ -107,7 +103,7 @@ const ForumScreen = props => {
 
   const onRefresh = () => {
     setIsFetching(true);
-    headerTitle === 'Posts' ? fetchPosts() : fetchSavedPost();
+    fetchPosts();
   };
 
   const makePost = async () => {
@@ -142,7 +138,7 @@ const ForumScreen = props => {
       />
 
       <FlatList
-        data={posts}
+        data={headerTitle === 'Posts' ? posts : savedPosts}
         keyExtractor={item => item.id}
         onRefresh={() => {
           onRefresh();
@@ -162,6 +158,9 @@ const ForumScreen = props => {
             postUserNameText={styles.postUserNameText}
             postBookmarkButton={styles.postBookmarkButton}
             postCommentButton={styles.postCommentButton}
+            onRefresh={() => {
+              onRefresh();
+            }}
             onPress={() => {
               navigation.navigate('Comments', {
                 postItem: item,

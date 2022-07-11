@@ -10,31 +10,14 @@ export const verifyToken = async () => {
   const decoded = jwt_decode(access);
   const exp_dt = new Date(decoded.exp * 1000).toLocaleString('zh-HK');
   const now_dt = new Date().toLocaleString('zh-HK');
-  if (exp_dt > now_dt) {
+  console.log(
+    'Current DateTime: ' + now_dt + '\nToken Expire DateTime: ' + exp_dt,
+  );
+  if (now_dt > exp_dt) {
     return refreshToken();
   } else {
     return true;
   }
-
-  // return fetch('http://' + HP_News_API_ADDRESS + '/user/token/verify/', {
-  //   method: 'POST',
-  //   headers: {
-  //     Accept: 'application/json',
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({token: access}),
-  // })
-  //   .then(async r => {
-  //     if (r.ok) {
-  //       return true;
-  //     } else {
-  //       return refreshToken();
-  //     }
-  //   })
-  //   .catch(error => {
-  //     const err_msg = error.message;
-  //     console.log('Error: ' + err_msg);
-  //   });
 };
 
 export const refreshToken = async () => {
@@ -42,7 +25,7 @@ export const refreshToken = async () => {
   const decoded = jwt_decode(refresh);
   const exp_dt = new Date(decoded.exp * 1000).toLocaleString('zh-HK');
   const now_dt = new Date().toLocaleString('zh-HK');
-  if (now_dt >= exp_dt) {
+  if (now_dt > exp_dt) {
     return false;
   } else {
     return fetch('http://' + HP_News_API_ADDRESS + '/user/token/refresh/', {
@@ -57,19 +40,6 @@ export const refreshToken = async () => {
         const auth = await response.json();
         if (response.ok) {
           await AsyncStorage.setItem('auth', JSON.stringify(auth));
-          const new_decoded = jwt_decode(auth.refresh);
-          const new_exp_dt = new Date(new_decoded.exp * 1000).toLocaleString(
-            'zh-HK',
-          );
-          // console.log(
-          //   'Refresh Token Expired DT: ' +
-          //     exp_dt +
-          //     '\tNew Refresh Token Expired DT: ' +
-          //     new_exp_dt +
-          //     '\tNow DT: ' +
-          //     now_dt +
-          //     '\ntoken is refreshed',
-          // );
           return true;
         } else {
           return false;

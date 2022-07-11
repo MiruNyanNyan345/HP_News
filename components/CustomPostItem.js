@@ -28,10 +28,9 @@ const CustomPostItem = props => {
         </View>
       </TouchableOpacity>
       {CustomPostAction({
-        post_votes: props.item.post_votes,
+        onRefresh: props.onRefresh,
         isPostScreen: props.isPostScreen,
         postItem: props.item,
-        itemID: props.item.id,
         navigation: props.navigation,
       })}
     </View>
